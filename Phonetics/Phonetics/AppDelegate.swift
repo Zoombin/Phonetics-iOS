@@ -15,8 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // Override point for customization after application launch.
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        //定义一个视图控制器
+        let vc = MainViewController(nibName:nil, bundle: nil);
+        //创建导航控制器
+        let nvc = UINavigationController(rootViewController:vc);
+        //设置根视图
+        self.window!.rootViewController = nvc;
         return true
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		18D0EE7B1B10205D005273CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7A1B10205D005273CE /* AppDelegate.swift */; };
-		18D0EE7D1B10205D005273CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7C1B10205D005273CE /* ViewController.swift */; };
+		18D0EE7D1B10205D005273CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7C1B10205D005273CE /* MainViewController.swift */; };
 		18D0EE821B10205D005273CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D0EE811B10205D005273CE /* Images.xcassets */; };
 		18D0EE911B10205D005273CE /* PhoneticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE901B10205D005273CE /* PhoneticsTests.swift */; };
+		58510DCD1B1305130043DA3D /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58510DCC1B1305130043DA3D /* bgmusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +28,12 @@
 		18D0EE751B10205D005273CE /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0EE791B10205D005273CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D0EE7A1B10205D005273CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18D0EE7C1B10205D005273CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18D0EE7C1B10205D005273CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		18D0EE811B10205D005273CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18D0EE8A1B10205D005273CE /* PhoneticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0EE8F1B10205D005273CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D0EE901B10205D005273CE /* PhoneticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneticsTests.swift; sourceTree = "<group>"; };
+		58510DCC1B1305130043DA3D /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				18D0EE7A1B10205D005273CE /* AppDelegate.swift */,
-				18D0EE7C1B10205D005273CE /* ViewController.swift */,
+				18D0EE7C1B10205D005273CE /* MainViewController.swift */,
 				18D0EE811B10205D005273CE /* Images.xcassets */,
 				18D0EE781B10205D005273CE /* Supporting Files */,
 			);
@@ -84,6 +86,7 @@
 		18D0EE781B10205D005273CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58510DCC1B1305130043DA3D /* bgmusic.mp3 */,
 				18D0EE791B10205D005273CE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D0EE821B10205D005273CE /* Images.xcassets in Resources */,
+				58510DCD1B1305130043DA3D /* bgmusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18D0EE7D1B10205D005273CE /* ViewController.swift in Sources */,
+				18D0EE7D1B10205D005273CE /* MainViewController.swift in Sources */,
 				18D0EE7B1B10205D005273CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
