@@ -22,9 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         //定义一个视图控制器
-        let vc = MainViewController(nibName:nil, bundle: nil);
+        let vc = MainViewController(nibName:"MainViewController", bundle: nil)
         //创建导航控制器
-        let nvc = UINavigationController(rootViewController:vc);
+        let nvc = UINavigationController(rootViewController:vc)
+        nvc.navigationBarHidden = true
         //设置根视图
         self.window!.rootViewController = nvc;
         return true

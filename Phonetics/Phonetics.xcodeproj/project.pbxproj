@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187968F01B1961C700E9E230 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187968EF1B1961C700E9E230 /* MainViewController.xib */; };
 		18D0EE7B1B10205D005273CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7A1B10205D005273CE /* AppDelegate.swift */; };
 		18D0EE7D1B10205D005273CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7C1B10205D005273CE /* MainViewController.swift */; };
 		18D0EE821B10205D005273CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D0EE811B10205D005273CE /* Images.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187968EF1B1961C700E9E230 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		18D0EE751B10205D005273CE /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0EE791B10205D005273CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D0EE7A1B10205D005273CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				18D0EE7A1B10205D005273CE /* AppDelegate.swift */,
 				18D0EE7C1B10205D005273CE /* MainViewController.swift */,
+				187968EF1B1961C700E9E230 /* MainViewController.xib */,
 				18D0EE811B10205D005273CE /* Images.xcassets */,
 				18D0EE781B10205D005273CE /* Supporting Files */,
 			);
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D0EE821B10205D005273CE /* Images.xcassets in Resources */,
+				187968F01B1961C700E9E230 /* MainViewController.xib in Resources */,
 				58510DCD1B1305130043DA3D /* bgmusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

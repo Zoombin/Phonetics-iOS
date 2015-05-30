@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        playVoice("bgmusic")
+//        playVoice("bgmusic")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     }
     
     //播放声音
-    func playVoice(fileName : NSString){
+    func playVoice(fileName : String){
         let musicPath = NSBundle.mainBundle().pathForResource(fileName, ofType: "mp3")
         //指定音乐路径
         let url = NSURL(fileURLWithPath: musicPath!)
