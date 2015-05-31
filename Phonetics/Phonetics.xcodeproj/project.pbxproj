@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		187968F01B1961C700E9E230 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187968EF1B1961C700E9E230 /* MainViewController.xib */; };
+		187968F31B1ACCBA00E9E230 /* VoiceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187968F11B1ACCBA00E9E230 /* VoiceDetailViewController.swift */; };
+		187968F41B1ACCBA00E9E230 /* VoiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187968F21B1ACCBA00E9E230 /* VoiceDetailViewController.xib */; };
+		187968F71B1ACCF100E9E230 /* VoiceSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187968F51B1ACCF100E9E230 /* VoiceSelectCell.swift */; };
+		187968F81B1ACCF100E9E230 /* VoiceSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187968F61B1ACCF100E9E230 /* VoiceSelectCell.xib */; };
 		18D0EE7B1B10205D005273CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7A1B10205D005273CE /* AppDelegate.swift */; };
 		18D0EE7D1B10205D005273CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0EE7C1B10205D005273CE /* MainViewController.swift */; };
 		18D0EE821B10205D005273CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D0EE811B10205D005273CE /* Images.xcassets */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		187968EF1B1961C700E9E230 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		187968F11B1ACCBA00E9E230 /* VoiceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceDetailViewController.swift; sourceTree = "<group>"; };
+		187968F21B1ACCBA00E9E230 /* VoiceDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceDetailViewController.xib; sourceTree = "<group>"; };
+		187968F51B1ACCF100E9E230 /* VoiceSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceSelectCell.swift; sourceTree = "<group>"; };
+		187968F61B1ACCF100E9E230 /* VoiceSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceSelectCell.xib; sourceTree = "<group>"; };
 		18D0EE751B10205D005273CE /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D0EE791B10205D005273CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D0EE7A1B10205D005273CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 				18D0EE7A1B10205D005273CE /* AppDelegate.swift */,
 				18D0EE7C1B10205D005273CE /* MainViewController.swift */,
 				187968EF1B1961C700E9E230 /* MainViewController.xib */,
+				187968F11B1ACCBA00E9E230 /* VoiceDetailViewController.swift */,
+				187968F21B1ACCBA00E9E230 /* VoiceDetailViewController.xib */,
+				187968F51B1ACCF100E9E230 /* VoiceSelectCell.swift */,
+				187968F61B1ACCF100E9E230 /* VoiceSelectCell.xib */,
 				18D0EE811B10205D005273CE /* Images.xcassets */,
 				18D0EE781B10205D005273CE /* Supporting Files */,
 			);
@@ -194,7 +206,9 @@
 			files = (
 				18D0EE821B10205D005273CE /* Images.xcassets in Resources */,
 				187968F01B1961C700E9E230 /* MainViewController.xib in Resources */,
+				187968F41B1ACCBA00E9E230 /* VoiceDetailViewController.xib in Resources */,
 				58510DCD1B1305130043DA3D /* bgmusic.mp3 in Resources */,
+				187968F81B1ACCF100E9E230 /* VoiceSelectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +228,8 @@
 			files = (
 				18D0EE7D1B10205D005273CE /* MainViewController.swift in Sources */,
 				18D0EE7B1B10205D005273CE /* AppDelegate.swift in Sources */,
+				187968F71B1ACCF100E9E230 /* VoiceSelectCell.swift in Sources */,
+				187968F31B1ACCBA00E9E230 /* VoiceDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

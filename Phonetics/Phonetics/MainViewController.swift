@@ -9,14 +9,17 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     var audioPlayer: AVAudioPlayer!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        playVoice("bgmusic")
+        //        playVoice("bgmusic")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,7 +38,24 @@ class MainViewController: UIViewController {
         audioPlayer.prepareToPlay()
         audioPlayer.play()
     }
-
-
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        var nibs : NSArray = NSBundle.mainBundle().loadNibNamed("VoiceSelectCell", owner: nil, options: nil)
+        var cell =  nibs.lastObject as! UITableViewCell
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row);
+    }
 }
 
