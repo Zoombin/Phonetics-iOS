@@ -1,23 +1,23 @@
 //
-//  VoiceDetailViewController.m
+//  SearchViewController.m
 //  Phonetics
 //
-//  Created by yc on 15-6-3.
+//  Created by yc on 15-6-4.
 //  Copyright (c) 2015年 yc. All rights reserved.
 //
 
-#import "VoiceDetailViewController.h"
+#import "SearchViewController.h"
 
-@interface VoiceDetailViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation VoiceDetailViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = NO;
-    self.title = @"详情";
+    self.title = @"搜索";
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -26,6 +26,10 @@
     self.navigationController.navigationBarHidden = YES;
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 /*
 #pragma mark - Navigation

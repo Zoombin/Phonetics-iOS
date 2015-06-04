@@ -10,4 +10,6 @@
 
 @interface VoiceCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel *describeLabel;
 @end

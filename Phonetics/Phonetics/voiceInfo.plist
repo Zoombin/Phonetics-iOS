@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advanced</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Consonant cluster</string>
+			<key>describe</key>
+			<string>A phenomenon of sound change when two consonants continue together.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Devoicing</string>
+			<key>describe</key>
+			<string>A phenonmenon where a voiced sound becomes unvoiced (doesn&apos;t make the throat vibrate).</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Unreleased stop</string>
+			<key>describe</key>
+			<string>A phonemenon where breath release is left out when two or more stops continue together.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Nasa release</string>
+			<key>describe</key>
+			<string>A phenomenon where the breath relase for /t/ and /d/ is left out and the breath escapes through the nose.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Lateral release</string>
+			<key>describe</key>
+			<string>A phenomenon where the breath relase for /t/ and /d/ is left out and the breath escapes form both sides of the tongue.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Assimilation</string>
+			<key>describe</key>
+			<string>A phenomenon where one of two sounds resembles the other when they continue together.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Elison</string>
+			<key>describe</key>
+			<string>A phenomenon of elision in fast, casual speak.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Reduction</string>
+			<key>describe</key>
+			<string>A phenomenon where function words (prepositions, auxiliaries, etc.) take their weak from.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Aspiration</string>
+			<key>describe</key>
+			<string>A phenomenon where a strong breath sound is made in the space moving from a voiceless stop to vowel.</string>
+		</dict>
+	</array>
+	<key>basics</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Stop</string>
+			<key>describe</key>
+			<string>Speech sounds produced with a sudden release of air pressure made with the tongue and libs.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Fricative</string>
+			<key>describe</key>
+			<string>Speech sounds produced by forcing the air through a narrow channel made with the tongue and lips.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Nasal</string>
+			<key>describe</key>
+			<string>Speech sounds produced by blocking the air with the tongue and libs so that it escapes through the nose as it does in humming.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Lateral</string>
+			<key>describe</key>
+			<string>Speech sounds produced by the air proceeding along the sides of the tongue as it is being blocked by the tongue from going through the middle of the mouth.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Semi-vowel</string>
+			<key>describe</key>
+			<string>Speech sounds produced by the transition from a vowel-like sound created with a particular shape of the mouth or the tongue to a subsequent vowel.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Short-vowel</string>
+			<key>describe</key>
+			<string>Relatively short vowels produced with the tongue ofen relaxed.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Long-vowel</string>
+			<key>describe</key>
+			<string>Relatively long vowels produced with the tonque ofen tensed.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Diphthong</string>
+			<key>describe</key>
+			<string>Vowels produced by the combination of two different types of vowels</string>
+		</dict>
+	</array>
+</dict>
+</plist>
