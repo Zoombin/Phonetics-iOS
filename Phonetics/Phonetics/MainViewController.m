@@ -10,6 +10,7 @@
 #import "VoiceDetailViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MainViewController ()
 
@@ -19,6 +20,7 @@
     NSMutableArray *voiceArray;
     NSArray *basicsArr;
     NSArray *advancedArr;
+    AVAudioPlayer *audioPlayer;
 }
 
 - (void)viewDidLoad {
@@ -28,6 +30,24 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
     [_segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)playVoice {
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:musicUrl];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
+                                  ];
+    audioPlayer.numberOfLoops = -1;
+    audioPlayer.volume = 1;
+    [audioPlayer prepareToPlay];
+    [audioPlayer play];
+    audioPlayer.currentTime = 30;
+    [self performSelector:@selector(playStop) withObject:nil afterDelay:5.0];
+    
+}
+
+- (void)playStop {
+    [audioPlayer stop];
 }
 
 - (void)valueChanged:(id)sender {
@@ -79,7 +99,8 @@
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
-    _menuView.hidden = !_menuView.hidden;
+//    _menuView.hidden = !_menuView.hidden;
+    [self playVoice];
 }
 
 @end
