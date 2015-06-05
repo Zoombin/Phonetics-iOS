@@ -14,7 +14,6 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic, weak) IBOutlet UIView *menuView;
-- (IBAction)searchButtonClicked:(id)sender;
 - (IBAction)menuButtonClicked:(id)sender;
 @end
 

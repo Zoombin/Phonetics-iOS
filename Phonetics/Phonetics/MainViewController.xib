@@ -35,25 +35,10 @@
                                 <action selector="menuButtonClicked:" destination="-1" eventType="touchUpInside" id="vxP-LC-1RL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rwR-wB-Z8N">
-                            <rect key="frame" x="0.0" y="19" width="160" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                            <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="Search" backgroundImage="search_n">
-                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="highlighted" backgroundImage="search_a"/>
-                            <connections>
-                                <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="otj-Rr-iQ5"/>
-                            </connections>
-                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Phonetics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ux1-Cy-Gx0">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英语英标" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ux1-Cy-Gx0">
                     <rect key="frame" x="60" y="63" width="200" height="21"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -73,8 +58,8 @@
                     <rect key="frame" x="80" y="93" width="161" height="29"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <segments>
-                        <segment title="Basics"/>
-                        <segment title="Advanced"/>
+                        <segment title="基础技巧"/>
+                        <segment title="高级技巧"/>
                     </segments>
                     <color key="tintColor" red="0.25882352939999997" green="0.74117647060000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                 </segmentedControl>
@@ -137,8 +122,6 @@
         <image name="btn_help_a" width="50" height="50"/>
         <image name="btn_help_n" width="50" height="50"/>
         <image name="icon" width="60" height="60"/>
-        <image name="search_a" width="272" height="50"/>
-        <image name="search_n" width="272" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

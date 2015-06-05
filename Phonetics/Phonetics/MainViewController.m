@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "SearchViewController.h"
 #import "VoiceDetailViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
@@ -83,8 +82,4 @@
     _menuView.hidden = !_menuView.hidden;
 }
 
-- (IBAction)searchButtonClicked:(id)sender {
-    SearchViewController *searchViewController = [SearchViewController new];
-    [self.navigationController pushViewController:searchViewController animated:YES];
-}
 @end
