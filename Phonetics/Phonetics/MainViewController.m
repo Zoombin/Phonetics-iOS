@@ -10,7 +10,7 @@
 #import "VoiceDetailViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
-#import <AVFoundation/AVFoundation.h>
+
 
 @interface MainViewController ()
 
@@ -20,7 +20,7 @@
     NSMutableArray *voiceArray;
     NSArray *basicsArr;
     NSArray *advancedArr;
-    AVAudioPlayer *audioPlayer;
+    
 }
 
 - (void)viewDidLoad {
@@ -30,24 +30,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
     [_segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
-}
-
-- (void)playVoice {
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:musicUrl];
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
-                                  ];
-    audioPlayer.numberOfLoops = -1;
-    audioPlayer.volume = 1;
-    [audioPlayer prepareToPlay];
-    [audioPlayer play];
-    audioPlayer.currentTime = 30;
-    [self performSelector:@selector(playStop) withObject:nil afterDelay:5.0];
-    
-}
-
-- (void)playStop {
-    [audioPlayer stop];
 }
 
 - (void)valueChanged:(id)sender {
@@ -75,7 +57,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return 130;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -87,9 +69,19 @@
         cell.backgroundColor = [UIColor clearColor];
     }
     VoiceInfo *info = voiceArray[indexPath.row];
+    cell.delegate = self;
     cell.titleLabel.text = info.title;
     cell.describeLabel.text = info.describeInfo;
+    if (info.voices) {
+        [cell showVoices:info.voices];
+    }
     return cell;
+}
+
+- (void)voiceButtonClicked:(VoiceItem *)item {
+    VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
+    detailViewController.item = item;
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -99,8 +91,7 @@
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
-//    _menuView.hidden = !_menuView.hidden;
-    [self playVoice];
+    _menuView.hidden = !_menuView.hidden;
 }
 
 @end

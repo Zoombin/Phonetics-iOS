@@ -7,6 +7,7 @@
 //
 
 #import "VoiceInfo.h"
+#import "VoiceItem.h"
 
 @implementation VoiceInfo
 
@@ -15,6 +16,9 @@
     if (self) {
         self.title = dict[@"title"];
         self.describeInfo = dict[@"describe"];
+        if ([dict[@"voices"] isKindOfClass:[NSArray class]]) {
+            self.voices = [VoiceItem createWithArray:dict[@"voices"]];
+        }
     }
     return self;
 }

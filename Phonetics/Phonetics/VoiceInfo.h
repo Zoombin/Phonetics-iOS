@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *describeInfo;
+@property (nonatomic, strong) NSArray *voices;
 
 - (id)initWithAttribte:(NSDictionary *)dict;
 + (NSArray *)createWithArray:(NSArray *)arr;

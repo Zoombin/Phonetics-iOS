@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F57D01B248DCD00774A2F /* VoiceItem.m */; };
 		5808F3141B1EDFA700ED3377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3131B1EDFA700ED3377 /* main.m */; };
 		5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3161B1EDFA700ED3377 /* AppDelegate.m */; };
 		5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3191B1EDFA700ED3377 /* MainViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186F57CF1B248DCD00774A2F /* VoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceItem.h; sourceTree = "<group>"; };
+		186F57D01B248DCD00774A2F /* VoiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceItem.m; sourceTree = "<group>"; };
 		5808F30E1B1EDFA700ED3377 /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5808F3121B1EDFA700ED3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5808F3131B1EDFA700ED3377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 			children = (
 				58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */,
 				58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */,
+				186F57CF1B248DCD00774A2F /* VoiceItem.h */,
+				186F57D01B248DCD00774A2F /* VoiceItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
 				5808F3141B1EDFA700ED3377 /* main.m in Sources */,
+				186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

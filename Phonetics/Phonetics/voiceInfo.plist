@@ -62,48 +62,482 @@
 	<key>basics</key>
 	<array>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.379</string>
+					<key>stime</key>
+					<string>44.332</string>
+					<key>etime</key>
+					<string>44.711</string>
+					<key>img</key>
+					<string>symbol_P</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.223</string>
+					<key>stime</key>
+					<string>45.245</string>
+					<key>etime</key>
+					<string>45.469</string>
+					<key>img</key>
+					<string>symbol_B</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.251</string>
+					<key>stime</key>
+					<string>46.269</string>
+					<key>etime</key>
+					<string>46.520</string>
+					<key>img</key>
+					<string>symbol_T</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.214</string>
+					<key>stime</key>
+					<string>47.252</string>
+					<key>etime</key>
+					<string>47.466</string>
+					<key>img</key>
+					<string>symbol_D</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.228</string>
+					<key>stime</key>
+					<string>48.243</string>
+					<key>etime</key>
+					<string>48.471</string>
+					<key>img</key>
+					<string>symbol_K</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.268</string>
+					<key>stime</key>
+					<string>49.248</string>
+					<key>etime</key>
+					<string>49.516</string>
+					<key>img</key>
+					<string>symbol_G</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.238</string>
+					<key>stime</key>
+					<string>50.248</string>
+					<key>etime</key>
+					<string>50.487</string>
+					<key>img</key>
+					<string>symbol_CH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.236</string>
+					<key>stime</key>
+					<string>51.277</string>
+					<key>etime</key>
+					<string>51.514</string>
+					<key>img</key>
+					<string>symbol_JH</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Stop</string>
 			<key>describe</key>
 			<string>Speech sounds produced with a sudden release of air pressure made with the tongue and libs.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.378</string>
+					<key>stime</key>
+					<string>52.248</string>
+					<key>etime</key>
+					<string>52.626</string>
+					<key>img</key>
+					<string>symbol_F</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.341</string>
+					<key>stime</key>
+					<string>53.264</string>
+					<key>etime</key>
+					<string>53.606</string>
+					<key>img</key>
+					<string>symbol_V</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.666</string>
+					<key>stime</key>
+					<string>54.266</string>
+					<key>etime</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.527</string>
+					<key>stime</key>
+					<string>55.251</string>
+					<key>etime</key>
+					<string>55.779</string>
+					<key>img</key>
+					<string>symbol_DH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.507</string>
+					<key>stime</key>
+					<string>56.277</string>
+					<key>etime</key>
+					<string>56.784</string>
+					<key>img</key>
+					<string>symbol_S</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.505</string>
+					<key>stime</key>
+					<string>57.273</string>
+					<key>etime</key>
+					<string>57.779</string>
+					<key>img</key>
+					<string>symbol_Z</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.531</string>
+					<key>stime</key>
+					<string>58.249</string>
+					<key>etime</key>
+					<string>58.781</string>
+					<key>img</key>
+					<string>symbol_SH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.437</string>
+					<key>stime</key>
+					<string>59.252</string>
+					<key>etime</key>
+					<string>59.689</string>
+					<key>img</key>
+					<string>symbol_ZH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.638</string>
+					<key>stime</key>
+					<string>60.250</string>
+					<key>etime</key>
+					<string>60.889</string>
+					<key>img</key>
+					<string>symbol_H</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Fricative</string>
 			<key>describe</key>
 			<string>Speech sounds produced by forcing the air through a narrow channel made with the tongue and lips.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.428</string>
+					<key>stime</key>
+					<string>61.286</string>
+					<key>etime</key>
+					<string>61.724</string>
+					<key>img</key>
+					<string>symbol_M</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.463</string>
+					<key>stime</key>
+					<string>62.251</string>
+					<key>etime</key>
+					<string>62.715</string>
+					<key>img</key>
+					<string>symbol_N</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.450</string>
+					<key>stime</key>
+					<string>63.274</string>
+					<key>etime</key>
+					<string>63.724</string>
+					<key>img</key>
+					<string>symbol_NG</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Nasal</string>
 			<key>describe</key>
 			<string>Speech sounds produced by blocking the air with the tongue and libs so that it escapes through the nose as it does in humming.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.627</string>
+					<key>stime</key>
+					<string>64.251</string>
+					<key>etime</key>
+					<string>64.879</string>
+					<key>img</key>
+					<string>symbol_L</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.627</string>
+					<key>stime</key>
+					<string>64.251</string>
+					<key>etime</key>
+					<string>64.879</string>
+					<key>img</key>
+					<string>symbol_LH</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Lateral</string>
 			<key>describe</key>
 			<string>Speech sounds produced by the air proceeding along the sides of the tongue as it is being blocked by the tongue from going through the middle of the mouth.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.530</string>
+					<key>stime</key>
+					<string>65.257</string>
+					<key>etime</key>
+					<string>65.788</string>
+					<key>img</key>
+					<string>symbol_R</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.556</string>
+					<key>stime</key>
+					<string>66.266</string>
+					<key>etime</key>
+					<string>66.822</string>
+					<key>img</key>
+					<string>symbol_Y</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.532</string>
+					<key>stime</key>
+					<string>67.258</string>
+					<key>etime</key>
+					<string>67.790</string>
+					<key>img</key>
+					<string>symbol_W</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Semi-vowel</string>
 			<key>describe</key>
 			<string>Speech sounds produced by the transition from a vowel-like sound created with a particular shape of the mouth or the tongue to a subsequent vowel.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.577</string>
+					<key>stime</key>
+					<string>68.285</string>
+					<key>etime</key>
+					<string>68.862</string>
+					<key>img</key>
+					<string>symbol_AA</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.530</string>
+					<key>stime</key>
+					<string>69.267</string>
+					<key>etime</key>
+					<string>69.797</string>
+					<key>img</key>
+					<string>symbol_AH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.240</string>
+					<key>stime</key>
+					<string>70.257</string>
+					<key>etime</key>
+					<string>70.498</string>
+					<key>img</key>
+					<string>symbol_AH0</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.458</string>
+					<key>stime</key>
+					<string>71.271</string>
+					<key>etime</key>
+					<string>71.729</string>
+					<key>img</key>
+					<string>symbol_AE</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.440</string>
+					<key>stime</key>
+					<string>72.262</string>
+					<key>etime</key>
+					<string>72.702</string>
+					<key>img</key>
+					<string>symbol_IH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.417</string>
+					<key>stime</key>
+					<string>73.250</string>
+					<key>etime</key>
+					<string>73.667</string>
+					<key>img</key>
+					<string>symbol_UH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.484</string>
+					<key>stime</key>
+					<string>74.249</string>
+					<key>etime</key>
+					<string>74.734</string>
+					<key>img</key>
+					<string>symbol_EH</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Short-vowel</string>
 			<key>describe</key>
 			<string>Relatively short vowels produced with the tongue ofen relaxed.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.530</string>
+					<key>stime</key>
+					<string>75.257</string>
+					<key>etime</key>
+					<string>75.788</string>
+					<key>img</key>
+					<string>symbol_ER</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.563</string>
+					<key>stime</key>
+					<string>76.264</string>
+					<key>etime</key>
+					<string>76.828</string>
+					<key>img</key>
+					<string>symbol_IY</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.533</string>
+					<key>stime</key>
+					<string>77.254</string>
+					<key>etime</key>
+					<string>77.787</string>
+					<key>img</key>
+					<string>symbol_UW</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.552</string>
+					<key>stime</key>
+					<string>78.259</string>
+					<key>etime</key>
+					<string>78.811</string>
+					<key>img</key>
+					<string>symbol_AO</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Long-vowel</string>
 			<key>describe</key>
 			<string>Relatively long vowels produced with the tonque ofen tensed.</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.476</string>
+					<key>stime</key>
+					<string>79.270</string>
+					<key>etime</key>
+					<string>79.747</string>
+					<key>img</key>
+					<string>symbol_AY</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.560</string>
+					<key>stime</key>
+					<string>80.266</string>
+					<key>etime</key>
+					<string>80.827</string>
+					<key>img</key>
+					<string>symbol_AW</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.550</string>
+					<key>stime</key>
+					<string>81.254</string>
+					<key>etime</key>
+					<string>81.804</string>
+					<key>img</key>
+					<string>symbol_EY</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.527</string>
+					<key>stime</key>
+					<string>82.248</string>
+					<key>etime</key>
+					<string>82.776</string>
+					<key>img</key>
+					<string>symbol_OY</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.467</string>
+					<key>stime</key>
+					<string>83.247</string>
+					<key>etime</key>
+					<string>83.714</string>
+					<key>img</key>
+					<string>symbol_OW</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Diphthong</string>
 			<key>describe</key>
