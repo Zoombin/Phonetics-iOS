@@ -5,141 +5,58 @@
 	<key>advanced</key>
 	<array>
 		<dict>
-			<key>voices</key>
-			<array>
-				<dict>
-					<key>long</key>
-					<string>0.379</string>
-					<key>stime</key>
-					<string>44.332</string>
-					<key>etime</key>
-					<string>44.711</string>
-					<key>img</key>
-					<string>symbol_P</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.223</string>
-					<key>stime</key>
-					<string>45.245</string>
-					<key>etime</key>
-					<string>45.469</string>
-					<key>img</key>
-					<string>symbol_B</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.251</string>
-					<key>stime</key>
-					<string>46.269</string>
-					<key>etime</key>
-					<string>46.520</string>
-					<key>img</key>
-					<string>symbol_T</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.214</string>
-					<key>stime</key>
-					<string>47.252</string>
-					<key>etime</key>
-					<string>47.466</string>
-					<key>img</key>
-					<string>symbol_D</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.228</string>
-					<key>stime</key>
-					<string>48.243</string>
-					<key>etime</key>
-					<string>48.471</string>
-					<key>img</key>
-					<string>symbol_K</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.268</string>
-					<key>stime</key>
-					<string>49.248</string>
-					<key>etime</key>
-					<string>49.516</string>
-					<key>img</key>
-					<string>symbol_G</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.238</string>
-					<key>stime</key>
-					<string>50.248</string>
-					<key>etime</key>
-					<string>50.487</string>
-					<key>img</key>
-					<string>symbol_CH</string>
-				</dict>
-				<dict>
-					<key>long</key>
-					<string>0.236</string>
-					<key>stime</key>
-					<string>51.277</string>
-					<key>etime</key>
-					<string>51.514</string>
-					<key>img</key>
-					<string>symbol_JH</string>
-				</dict>
-			</array>
 			<key>title</key>
-			<string>Consonant cluster</string>
+			<string>辅音结合</string>
 			<key>describe</key>
-			<string>A phenomenon of sound change when two consonants continue together.</string>
+			<string>指存在两个辅音时，声音发生变化的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Devoicing</string>
+			<string>无声化</string>
 			<key>describe</key>
-			<string>A phenonmenon where a voiced sound becomes unvoiced (doesn&apos;t make the throat vibrate).</string>
+			<string>指有声音变成无声音（无喉头震动）的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Unreleased stop</string>
+			<string>省略张开</string>
 			<key>describe</key>
-			<string>A phonemenon where breath release is left out when two or more stops continue together.</string>
+			<string>指两虚出现两个闭锁音时，省略张开吐气动作的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Nasa release</string>
+			<string>鼻腔开放</string>
 			<key>describe</key>
-			<string>A phenomenon where the breath relase for /t/ and /d/ is left out and the breath escapes through the nose.</string>
+			<string>指省略/t或/d的张开吐气动作，由鼻腔出气的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Lateral release</string>
+			<string>侧面开放</string>
 			<key>describe</key>
-			<string>A phenomenon where the breath relase for /t/ and /d/ is left out and the breath escapes form both sides of the tongue.</string>
+			<string>指省略/t或/d的张开吐气动作，由舌两侧出气的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Assimilation</string>
+			<string>同化</string>
 			<key>describe</key>
-			<string>A phenomenon where one of two sounds resembles the other when they continue together.</string>
+			<string>指连续出现两个发音时，其中一个发言变得像另外一个的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Elison</string>
+			<string>脱落</string>
 			<key>describe</key>
-			<string>A phenomenon of elision in fast, casual speak.</string>
+			<string>指较随便的对话中出现的省略发音的现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Reduction</string>
+			<string>弱化</string>
 			<key>describe</key>
-			<string>A phenomenon where function words (prepositions, auxiliaries, etc.) take their weak from.</string>
+			<string>指功能语（介词/助动词等）发音变得较弱等现象。</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>Aspiration</string>
+			<string>气音</string>
 			<key>describe</key>
-			<string>A phenomenon where a strong breath sound is made in the space moving from a voiceless stop to vowel.</string>
+			<string>指无声闭锁音变成元音前，产生强烈气息声等现象。</string>
 		</dict>
 	</array>
 	<key>basics</key>

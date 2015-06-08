@@ -86,8 +86,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
-    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
