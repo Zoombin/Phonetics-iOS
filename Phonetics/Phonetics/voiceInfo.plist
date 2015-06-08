@@ -5,6 +5,89 @@
 	<key>advanced</key>
 	<array>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>long</key>
+					<string>0.379</string>
+					<key>stime</key>
+					<string>44.332</string>
+					<key>etime</key>
+					<string>44.711</string>
+					<key>img</key>
+					<string>symbol_P</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.223</string>
+					<key>stime</key>
+					<string>45.245</string>
+					<key>etime</key>
+					<string>45.469</string>
+					<key>img</key>
+					<string>symbol_B</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.251</string>
+					<key>stime</key>
+					<string>46.269</string>
+					<key>etime</key>
+					<string>46.520</string>
+					<key>img</key>
+					<string>symbol_T</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.214</string>
+					<key>stime</key>
+					<string>47.252</string>
+					<key>etime</key>
+					<string>47.466</string>
+					<key>img</key>
+					<string>symbol_D</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.228</string>
+					<key>stime</key>
+					<string>48.243</string>
+					<key>etime</key>
+					<string>48.471</string>
+					<key>img</key>
+					<string>symbol_K</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.268</string>
+					<key>stime</key>
+					<string>49.248</string>
+					<key>etime</key>
+					<string>49.516</string>
+					<key>img</key>
+					<string>symbol_G</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.238</string>
+					<key>stime</key>
+					<string>50.248</string>
+					<key>etime</key>
+					<string>50.487</string>
+					<key>img</key>
+					<string>symbol_CH</string>
+				</dict>
+				<dict>
+					<key>long</key>
+					<string>0.236</string>
+					<key>stime</key>
+					<string>51.277</string>
+					<key>etime</key>
+					<string>51.514</string>
+					<key>img</key>
+					<string>symbol_JH</string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>Consonant cluster</string>
 			<key>describe</key>
@@ -146,9 +229,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Stop</string>
+			<string>闭锁音</string>
 			<key>describe</key>
-			<string>Speech sounds produced with a sudden release of air pressure made with the tongue and libs.</string>
+			<string>指用舌、唇等节流气息后，随后张开闭锁位置而产生等声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -241,13 +324,13 @@
 					<key>etime</key>
 					<string>60.889</string>
 					<key>img</key>
-					<string>symbol_H</string>
+					<string>symbol_HH</string>
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Fricative</string>
+			<string>摩擦音</string>
 			<key>describe</key>
-			<string>Speech sounds produced by forcing the air through a narrow channel made with the tongue and lips.</string>
+			<string>指在唇、舌等之间留出缝隙，并让气息通过该缝隙，由此产生等声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -284,9 +367,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Nasal</string>
+			<string>鼻音</string>
 			<key>describe</key>
-			<string>Speech sounds produced by blocking the air with the tongue and libs so that it escapes through the nose as it does in humming.</string>
+			<string>指用舌、唇等将气流截流后，用鼻子哼出等声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -313,9 +396,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Lateral</string>
+			<string>侧音</string>
 			<key>describe</key>
-			<string>Speech sounds produced by the air proceeding along the sides of the tongue as it is being blocked by the tongue from going through the middle of the mouth.</string>
+			<string>指用舌顶住等同时，从舌等左右两侧溢出气息而产生等声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -352,9 +435,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Semi-vowel</string>
+			<string>半元音</string>
 			<key>describe</key>
-			<string>Speech sounds produced by the transition from a vowel-like sound created with a particular shape of the mouth or the tongue to a subsequent vowel.</string>
+			<string>指将舌头从某元音等舌位移动到另一舌位时产生到声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -431,9 +514,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Short-vowel</string>
+			<string>短元音</string>
 			<key>describe</key>
-			<string>Relatively short vowels produced with the tongue ofen relaxed.</string>
+			<string>指放松舌头时发出短，相对较短短伴有喉头震动短声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -480,9 +563,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Long-vowel</string>
+			<string>长元音</string>
 			<key>describe</key>
-			<string>Relatively long vowels produced with the tonque ofen tensed.</string>
+			<string>指舌部用力发音，相对较长短、伴有喉头震动短声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -539,9 +622,9 @@
 				</dict>
 			</array>
 			<key>title</key>
-			<string>Diphthong</string>
+			<string>双元音</string>
 			<key>describe</key>
-			<string>Vowels produced by the combination of two different types of vowels</string>
+			<string>指两音组合而成为一个声音的元音。</string>
 		</dict>
 	</array>
 </dict>
