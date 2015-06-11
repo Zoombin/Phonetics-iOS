@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"详情";
+    bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
+    bannerView.delegate = self;
+    [_bottomView addSubview:bannerView];
+    
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     // Do any additional setup after loading the view from its nib.
@@ -56,6 +60,24 @@
 - (void)playStop {
     [audioPlayer stop];
 }
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    NSLog(@"Error loading");
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    NSLog(@"Ad loaded");
+}
+
+- (void)bannerViewWillLoadAd:(ADBannerView *)banner {
+    NSLog(@"Ad will load");
+}
+
+- (void)bannerViewActionDidFinish:(ADBannerView *)banner {
+    NSLog(@"Ad did finish");
+}
+
+
 
 /*
 #pragma mark - Navigation
