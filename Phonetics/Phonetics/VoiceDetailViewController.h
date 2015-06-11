@@ -15,9 +15,11 @@
 }
 
 @property (nonatomic, strong) VoiceItem *item;
+@property (nonatomic, weak) IBOutlet UIButton *selectMaleOrFemaleBtn;	
 @property (nonatomic, strong) IBOutlet UIView *bottomView;
 @property (nonatomic, weak) IBOutlet UIButton *voiceButton;
 @property (nonatomic, weak) IBOutlet UIButton *voiceBkgBtn;
 - (IBAction)voiceButtonClick:(id)sender;
 - (IBAction)backButtonClick:(id)sender;
+- (IBAction)maleOrFemaleBtnClicked:(id)sender;
 @end

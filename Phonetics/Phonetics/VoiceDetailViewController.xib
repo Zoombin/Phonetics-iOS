@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoiceDetailViewController">
             <connections>
                 <outlet property="bottomView" destination="NVg-Tb-Y4h" id="hlc-y6-zy0"/>
+                <outlet property="selectMaleOrFemaleBtn" destination="cbX-7J-OeK" id="PyL-yR-tBq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="voiceBkgBtn" destination="npj-HK-8Mz" id="ok6-VL-mGS"/>
                 <outlet property="voiceButton" destination="Y4a-oy-lQa" id="cc2-Wr-wiL"/>
@@ -70,6 +71,9 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <state key="selected" backgroundImage="btn_icon_male"/>
+                    <connections>
+                        <action selector="maleOrFemaleBtnClicked:" destination="-1" eventType="touchUpInside" id="1pQ-lI-SYg"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" id="NVg-Tb-Y4h">
                     <rect key="frame" x="0.0" y="428" width="320" height="100"/>

@@ -29,6 +29,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (IBAction)maleOrFemaleBtnClicked:(id)sender {
+    _selectMaleOrFemaleBtn.selected = !_selectMaleOrFemaleBtn.selected;
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 }
