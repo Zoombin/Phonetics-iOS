@@ -14,8 +14,8 @@
     self = [super init];
     if (self) {
         self.voiceLong = dict[@"long"];
-        self.startTime = dict[@"stime"];
-        self.endTime = dict[@"etime"];
+        self.startTime = dict[@"stime_female"];
+        self.endTime = dict[@"etime_female"];
         self.imgName = dict[@"img"];
     }
     return self;
