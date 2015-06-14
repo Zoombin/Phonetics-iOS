@@ -13,10 +13,19 @@
 - (id)initWithAttribte:(NSDictionary *)dict {
     self = [super init];
     if (self) {
-        self.voiceLong = dict[@"long"];
-        self.startTime = dict[@"stime_female"];
-        self.endTime = dict[@"etime_female"];
+        self.voiceFemaleLong = dict[@"long_female"];
+        self.startFemaleTime = dict[@"stime_female"];
+        self.endFemaleTime = dict[@"etime_female"];
+        self.voiceMaleLong = dict[@"long_male"];
+        self.startMaleTime = dict[@"stime_male"];
+        self.endMaleTime = dict[@"etime_male"];
+        self.picsFront = dict[@"pics_front"];
+        self.picsSides = dict[@"pics_side"];
         self.imgName = dict[@"img"];
+        self.describeText = dict[@"describe"];
+        self.stepCount = dict[@"step_count"];
+        self.stepDescribes = dict[@"step_describes"];
+        self.stepTypes = dict[@"step_types"];
     }
     return self;
 }

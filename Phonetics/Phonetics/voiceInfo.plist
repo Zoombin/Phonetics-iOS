@@ -65,7 +65,25 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>step_types</key>
+					<string>1,2</string>
+					<key>step_describes</key>
+					<string>闭上嘴，用唇截流气息。&amp;&amp;张开嘴，让气息冒出来。</string>
+					<key>step_count</key>
+					<string>2</string>
+					<key>describe</key>
+					<string>在这个音后加上日语的「ア・イ・ウ・エ・オ」后，听起来像日语的「パ・ピ・プ・ペ・ポ」。只是，英语具有比日语的「パ・ピ・プ・ペ・ポ」更强的空气破裂感。心里想着吐西瓜子的动作，用力从闭着的嘴唇间吐出气息的话，就可以把它发得标准。</string>
+					<key>pics_side</key>
+					<string>p1,p2,p3,p4,p5,p6</string>
+					<key>pics_front</key>
+					<string>p1,p2,p3,p4,p5,p6</string>
+					<key>long_male</key>
+					<string>0.142</string>
+					<key>etime_male</key>
+					<string>3.391</string>
+					<key>stime_male</key>
+					<string>3.249</string>
+					<key>long_female</key>
 					<string>0.379</string>
 					<key>stime_female</key>
 					<string>44.332</string>
@@ -75,7 +93,25 @@
 					<string>symbol_P</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>step_types</key>
+					<string>1,2,3</string>
+					<key>step_describes</key>
+					<string>闭上嘴，用唇截流气息。&amp;&amp;张开嘴，让气息冒出来。&amp;&amp;发这个音时要出声，也就是振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
+					<key>step_count</key>
+					<string>3</string>
+					<key>describe</key>
+					<string>在这个音后加上日语的「ア・イ・ウ・エ・オ」，听起来像日语「バ・ビ・ブ・ベ・ボ」。只是，英语具有比日语「バ・ビ・ブ・ベ・ボ」更强的空气破裂感。</string>
+					<key>pics_side</key>
+					<string>b1,b2,b3,b4,b5,b6</string>
+					<key>pics_front</key>
+					<string>b1,b2,b3,b4,b5,b6</string>
+					<key>long_male</key>
+					<string>0.157</string>
+					<key>stime_male</key>
+					<string>4.286</string>
+					<key>etime_male</key>
+					<string>4.444</string>
+					<key>long_female</key>
 					<string>0.223</string>
 					<key>stime_female</key>
 					<string>45.245</string>
@@ -85,7 +121,7 @@
 					<string>symbol_B</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.251</string>
 					<key>stime_female</key>
 					<string>46.269</string>
@@ -95,7 +131,7 @@
 					<string>symbol_T</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.214</string>
 					<key>stime_female</key>
 					<string>47.252</string>
@@ -105,7 +141,7 @@
 					<string>symbol_D</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.228</string>
 					<key>stime_female</key>
 					<string>48.243</string>
@@ -115,7 +151,7 @@
 					<string>symbol_K</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.268</string>
 					<key>stime_female</key>
 					<string>49.248</string>
@@ -125,7 +161,7 @@
 					<string>symbol_G</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.238</string>
 					<key>stime_female</key>
 					<string>50.248</string>
@@ -135,7 +171,7 @@
 					<string>symbol_CH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.236</string>
 					<key>stime_female</key>
 					<string>51.277</string>
@@ -154,7 +190,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.378</string>
 					<key>stime_female</key>
 					<string>52.248</string>
@@ -164,7 +200,7 @@
 					<string>symbol_F</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.341</string>
 					<key>stime_female</key>
 					<string>53.264</string>
@@ -174,7 +210,7 @@
 					<string>symbol_V</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.666</string>
 					<key>stime_female</key>
 					<string>54.266</string>
@@ -184,7 +220,7 @@
 					<string>symbol_TH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.527</string>
 					<key>stime_female</key>
 					<string>55.251</string>
@@ -194,7 +230,7 @@
 					<string>symbol_DH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.507</string>
 					<key>stime_female</key>
 					<string>56.277</string>
@@ -204,7 +240,7 @@
 					<string>symbol_S</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.505</string>
 					<key>stime_female</key>
 					<string>57.273</string>
@@ -214,7 +250,7 @@
 					<string>symbol_Z</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.531</string>
 					<key>stime_female</key>
 					<string>58.249</string>
@@ -224,7 +260,7 @@
 					<string>symbol_SH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.437</string>
 					<key>stime_female</key>
 					<string>59.252</string>
@@ -234,7 +270,7 @@
 					<string>symbol_ZH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.638</string>
 					<key>stime_female</key>
 					<string>60.250</string>
@@ -253,7 +289,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.428</string>
 					<key>stime_female</key>
 					<string>61.286</string>
@@ -263,7 +299,7 @@
 					<string>symbol_M</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.463</string>
 					<key>stime_female</key>
 					<string>62.251</string>
@@ -273,7 +309,7 @@
 					<string>symbol_N</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.450</string>
 					<key>stime_female</key>
 					<string>63.274</string>
@@ -292,7 +328,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.627</string>
 					<key>stime_female</key>
 					<string>64.251</string>
@@ -302,7 +338,7 @@
 					<string>symbol_L</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.627</string>
 					<key>stime_female</key>
 					<string>64.251</string>
@@ -321,7 +357,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.530</string>
 					<key>stime_female</key>
 					<string>65.257</string>
@@ -331,7 +367,7 @@
 					<string>symbol_R</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.556</string>
 					<key>stime_female</key>
 					<string>66.266</string>
@@ -341,7 +377,7 @@
 					<string>symbol_Y</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.532</string>
 					<key>stime_female</key>
 					<string>67.258</string>
@@ -360,7 +396,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.577</string>
 					<key>stime_female</key>
 					<string>68.285</string>
@@ -370,7 +406,7 @@
 					<string>symbol_AA</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.530</string>
 					<key>stime_female</key>
 					<string>69.267</string>
@@ -380,7 +416,7 @@
 					<string>symbol_AH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.240</string>
 					<key>stime_female</key>
 					<string>70.257</string>
@@ -390,7 +426,7 @@
 					<string>symbol_AH0</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.458</string>
 					<key>stime_female</key>
 					<string>71.271</string>
@@ -400,7 +436,7 @@
 					<string>symbol_AE</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.440</string>
 					<key>stime_female</key>
 					<string>72.262</string>
@@ -410,7 +446,7 @@
 					<string>symbol_IH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.417</string>
 					<key>stime_female</key>
 					<string>73.250</string>
@@ -420,7 +456,7 @@
 					<string>symbol_UH</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.484</string>
 					<key>stime_female</key>
 					<string>74.249</string>
@@ -439,7 +475,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.530</string>
 					<key>stime_female</key>
 					<string>75.257</string>
@@ -449,7 +485,7 @@
 					<string>symbol_ER</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.563</string>
 					<key>stime_female</key>
 					<string>76.264</string>
@@ -459,7 +495,7 @@
 					<string>symbol_IY</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.533</string>
 					<key>stime_female</key>
 					<string>77.254</string>
@@ -469,7 +505,7 @@
 					<string>symbol_UW</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.552</string>
 					<key>stime_female</key>
 					<string>78.259</string>
@@ -488,7 +524,7 @@
 			<key>voices</key>
 			<array>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.476</string>
 					<key>stime_female</key>
 					<string>79.270</string>
@@ -498,7 +534,7 @@
 					<string>symbol_AY</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.560</string>
 					<key>stime_female</key>
 					<string>80.266</string>
@@ -508,7 +544,7 @@
 					<string>symbol_AW</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.550</string>
 					<key>stime_female</key>
 					<string>81.254</string>
@@ -518,7 +554,7 @@
 					<string>symbol_EY</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.527</string>
 					<key>stime_female</key>
 					<string>82.248</string>
@@ -528,7 +564,7 @@
 					<string>symbol_OY</string>
 				</dict>
 				<dict>
-					<key>long</key>
+					<key>long_female</key>
 					<string>0.467</string>
 					<key>stime_female</key>
 					<string>83.247</string>
