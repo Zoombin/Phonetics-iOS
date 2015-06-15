@@ -80,6 +80,11 @@
 
 - (void)voiceButtonClicked:(VoiceItem *)item {
     VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
+    if (_segmentedControl.selectedSegmentIndex == 0) {
+        detailViewController.voiceArray = basicsArr;
+    } else {
+        detailViewController.voiceArray = advancedArr;
+    }
     detailViewController.item = item;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }

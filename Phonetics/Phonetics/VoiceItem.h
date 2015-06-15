@@ -33,6 +33,9 @@
 @property (nonatomic, strong) NSString *similarSlowRead;
 @property (nonatomic, strong) NSString *similarYB;
 @property (nonatomic, strong) NSString *similarCount;
+@property (nonatomic, strong) NSString *similarYBName;
+@property (nonatomic, strong) NSString *examplesYBName;
+@property (nonatomic, strong) NSString *name;
 
 - (id)initWithAttribte:(NSDictionary *)dict;
 + (NSArray *)createWithArray:(NSArray *)arr;

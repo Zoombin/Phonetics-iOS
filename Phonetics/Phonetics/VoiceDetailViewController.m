@@ -9,6 +9,7 @@
 #import "VoiceDetailViewController.h"
 #import "StepCell.h"
 #import "ExampleCell.h"
+#import "VoiceInfo.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface VoiceDetailViewController ()
@@ -66,6 +67,16 @@
 - (void)loadExampleInfo {
     if (_item.examplesCount) {
         exampleCount =  [_item.examplesCount integerValue];
+        NSArray *voices = [_item.similarYBName componentsSeparatedByString:@"&&"];
+        if ([voices count] > 0) {
+            NSArray *ybs = [voices[0] componentsSeparatedByString:@","];
+            for (int i = 0; i < [ybs count]; i++) {
+                UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+                [button setBackgroundColor:[UIColor lightGrayColor]];
+                [button setFrame:CGRectMake(50 * i, 0, 50, 50)];
+                [_headerView addSubview:button];
+            }
+        }
         [_exampleTableView reloadData];
     }
 }
@@ -354,6 +365,20 @@
     [audioPlayer prepareToPlay];
     [audioPlayer play];
     [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
+}
+
+- (VoiceItem *)searchVoiceByName:(NSString *)voice {
+    NSLog(@"starting find...");
+    for (VoiceInfo *info in _voiceArray) {
+        for (VoiceItem *item in info.voices) {
+            if ([item.name isEqualToString:voice]) {
+                NSLog(@"got it！");
+                return item;
+            }
+        }
+    }
+     NSLog(@"has not found！");
+    return nil;
 }
 
 @end

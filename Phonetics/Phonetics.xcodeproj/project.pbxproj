@@ -20,6 +20,7 @@
 		5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5808F33C1B1EE39D00ED3377 /* VoiceDetailViewController.xib */; };
 		5808F3421B1EE40F00ED3377 /* VoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3401B1EE40F00ED3377 /* VoiceCell.m */; };
 		5808F3431B1EE40F00ED3377 /* VoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5808F3411B1EE40F00ED3377 /* VoiceCell.xib */; };
+		58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58605C2A1B2F36920035ACA3 /* VoiceButton.m */; };
 		586B27321B2EC7650000A91E /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B27301B2EC7650000A91E /* ExampleCell.m */; };
 		586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586B27311B2EC7650000A91E /* ExampleCell.xib */; };
 		58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */; };
@@ -62,6 +63,8 @@
 		5808F33F1B1EE40F00ED3377 /* VoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceCell.h; sourceTree = "<group>"; };
 		5808F3401B1EE40F00ED3377 /* VoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceCell.m; sourceTree = "<group>"; };
 		5808F3411B1EE40F00ED3377 /* VoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceCell.xib; sourceTree = "<group>"; };
+		58605C291B2F36920035ACA3 /* VoiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceButton.h; sourceTree = "<group>"; };
+		58605C2A1B2F36920035ACA3 /* VoiceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceButton.m; sourceTree = "<group>"; };
 		586B272F1B2EC7650000A91E /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
 		586B27301B2EC7650000A91E /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
 		586B27311B2EC7650000A91E /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				586B272F1B2EC7650000A91E /* ExampleCell.h */,
 				586B27301B2EC7650000A91E /* ExampleCell.m */,
 				586B27311B2EC7650000A91E /* ExampleCell.xib */,
+				58605C291B2F36920035ACA3 /* VoiceButton.h */,
+				58605C2A1B2F36920035ACA3 /* VoiceButton.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */,
 				586B27321B2EC7650000A91E /* ExampleCell.m in Sources */,
 				5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */,
+				58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */,
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,

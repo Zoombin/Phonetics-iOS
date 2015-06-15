@@ -65,6 +65,10 @@
 			<key>voices</key>
 			<array>
 				<dict>
+					<key>examples_yb_name</key>
+					<string>p,b</string>
+					<key>similar_yb_name</key>
+					<string>p,b&amp;&amp;b,p</string>
 					<key>similar_slow_read</key>
 					<string>951.248,0.513,448.248,0.434&amp;&amp;721.248,0.713,218.248,0.428</string>
 					<key>similar_read</key>

@@ -13,6 +13,7 @@
 - (id)initWithAttribte:(NSDictionary *)dict {
     self = [super init];
     if (self) {
+        self.name = dict[@"name"];
         self.voiceFemaleLong = dict[@"long_female"];
         self.startFemaleTime = dict[@"stime_female"];
         self.endFemaleTime = dict[@"etime_female"];
@@ -36,6 +37,8 @@
         self.examplesSlowRead = dict[@"examples_slow_read"];
         self.similarRead = dict[@"similar_read"];
         self.similarSlowRead = dict[@"similar_slow_read"];
+        self.similarYBName = dict[@"similar_yb_name"];
+        self.examplesYBName = dict[@"examples_yb_name"];
     }
     return self;
 }
