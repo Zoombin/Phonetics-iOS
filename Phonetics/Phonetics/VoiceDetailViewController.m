@@ -8,6 +8,7 @@
 
 #import "VoiceDetailViewController.h"
 #import "StepCell.h"
+#import "ExampleCell.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface VoiceDetailViewController ()
@@ -18,11 +19,13 @@
     AVAudioPlayer *audioPlayer;
     NSMutableArray *bottomButtons;
     NSInteger count;
+    NSInteger exampleCount;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     count = 0;
+    exampleCount = 0;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
     bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
@@ -39,6 +42,7 @@
     _describeTextView.text = _item.describeText;
     [self initBottomButton];
     [self loadStepInfo];
+    [self loadExampleInfo];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -46,6 +50,13 @@
     if (_item.stepCount) {
         count = [_item.stepCount integerValue];
         [_stepTableView reloadData];
+    }
+}
+
+- (void)loadExampleInfo {
+    if (_item.examplesCount) {
+        exampleCount =  [_item.examplesCount integerValue];
+        [_exampleTableView reloadData];
     }
 }
 
@@ -80,6 +91,9 @@
         case 1:
             _stepView.hidden = NO;
             break;
+        case 2:
+            _liView.hidden = NO;
+            break;
         default:
             break;
     }
@@ -91,6 +105,7 @@
     }
     _describeView.hidden = YES;
     _stepView.hidden = YES;
+    _liView.hidden = YES;
 }
 
 - (IBAction)maleOrFemaleBtnClicked:(id)sender {
@@ -178,31 +193,52 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return count;
+    if (tableView == _stepTableView) {
+        return count;
+    }
+    return exampleCount;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    if (tableView == _stepTableView) {
+        return 70;
+    }
+    return 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier =	 @"UITableViewCell";
-    StepCell *cell = (StepCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"StepCell" owner:nil options:nil];
-        cell = [nibs lastObject];
-        cell.backgroundColor = [UIColor clearColor];
+    if (tableView == _stepTableView) {
+        static NSString *CellIdentifier = @"UITableViewCell";
+        StepCell *cell = (StepCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"StepCell" owner:nil options:nil];
+            cell = [nibs lastObject];
+            cell.backgroundColor = [UIColor clearColor];
+        }
+        NSArray *stepDescribe = [_item.stepDescribes componentsSeparatedByString:@"&&"];
+        if ([stepDescribe count] == count) {
+            cell.describeLabel.text = stepDescribe[indexPath.row];
+        }
+        NSArray *stepStep = [_item.stepTypes componentsSeparatedByString:@","];
+        if ([stepStep count] == count) {
+            cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"step_%@", stepStep[indexPath.row]]];
+        }
+        
+        return cell;
+    } else {
+        static NSString *CellIdentifier = @"UITableViewCell";
+        ExampleCell *cell = (ExampleCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"ExampleCell" owner:nil options:nil];
+            cell = [nibs lastObject];
+            cell.backgroundColor = [UIColor clearColor];
+        }
+        NSArray *words = [_item.examples componentsSeparatedByString:@","];
+        if ([words count] == exampleCount) {
+            cell.voiceLabel.text = words[indexPath.row];
+        }
+        return cell;
     }
-    NSArray *stepDescribe = [_item.stepDescribes componentsSeparatedByString:@"&&"];
-    if ([stepDescribe count] == count) {
-        cell.describeLabel.text = stepDescribe[indexPath.row];
-    }
-    NSArray *stepStep = [_item.stepTypes componentsSeparatedByString:@","];
-    if ([stepStep count] == count) {
-        cell.imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"step_%@", stepStep[indexPath.row]]];
-    }
-    
-    return cell;
 }
 
 - (void)voiceButtonClicked:(VoiceItem *)item {

@@ -65,6 +65,16 @@
 			<key>voices</key>
 			<array>
 				<dict>
+					<key>similar_count</key>
+					<string>2</string>
+					<key>similar</key>
+					<string>pay,bay</string>
+					<key>examples_count</key>
+					<string>1</string>
+					<key>examples</key>
+					<string>pay</string>
+					<key>name</key>
+					<string>p</string>
 					<key>step_types</key>
 					<string>1,2</string>
 					<key>step_describes</key>
@@ -93,6 +103,8 @@
 					<string>symbol_P</string>
 				</dict>
 				<dict>
+					<key>name</key>
+					<string>b</string>
 					<key>step_types</key>
 					<string>1,2,3</string>
 					<key>step_describes</key>
@@ -100,7 +112,8 @@
 					<key>step_count</key>
 					<string>3</string>
 					<key>describe</key>
-					<string>在这个音后加上日语的「ア・イ・ウ・エ・オ」，听起来像日语「バ・ビ・ブ・ベ・ボ」。只是，英语具有比日语「バ・ビ・ブ・ベ・ボ」更强的空气破裂感。</string>
+					<string>在这个音后加上日语的「ア・イ・ウ・エ・オ」，听起来像日语「バ・ビ・ブ・ベ・ボ」。
+只是，英语具有比日语「バ・ビ・ブ・ベ・ボ」更强的空气破裂感。</string>
 					<key>pics_side</key>
 					<string>b1,b2,b3,b4,b5,b6</string>
 					<key>pics_front</key>

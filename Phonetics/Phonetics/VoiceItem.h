@@ -23,6 +23,10 @@
 @property (nonatomic, strong) NSString *stepDescribes;
 @property (nonatomic, strong) NSString *stepTypes;
 @property (nonatomic, strong) NSString *stepCount;
+@property (nonatomic, strong) NSString *examples;
+@property (nonatomic, strong) NSString *examplesCount;
+@property (nonatomic, strong) NSString *similar;
+@property (nonatomic, strong) NSString *similarCount;
 
 - (id)initWithAttribte:(NSDictionary *)dict;
 + (NSArray *)createWithArray:(NSArray *)arr;

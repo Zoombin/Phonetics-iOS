@@ -23,6 +23,7 @@
 @property (nonatomic, weak) IBOutlet UITextView *describeTextView;
 @property (nonatomic, weak) IBOutlet UIImageView *describeIcon;
 @property (nonatomic, weak) IBOutlet UITableView *stepTableView;
+@property (nonatomic, weak) IBOutlet UITableView *exampleTableView;
 
 @property (nonatomic, weak) IBOutlet UIView *describeView;
 @property (nonatomic, weak) IBOutlet UIView *stepView;

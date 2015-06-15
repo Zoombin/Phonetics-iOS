@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoiceDetailViewController">
@@ -10,7 +10,9 @@
                 <outlet property="describeIcon" destination="puD-QE-Xl4" id="ThY-Cs-ypV"/>
                 <outlet property="describeTextView" destination="siI-mh-e27" id="e4g-MU-WZk"/>
                 <outlet property="describeView" destination="ZFK-zz-8Hh" id="Ywc-7M-FoW"/>
+                <outlet property="exampleTableView" destination="Q2g-dL-NWG" id="0Jm-dN-J6h"/>
                 <outlet property="gifImageView" destination="53M-3Z-N4w" id="f2r-Zv-FUc"/>
+                <outlet property="liView" destination="D0C-7O-JjE" id="anl-Xp-r4o"/>
                 <outlet property="selectMaleOrFemaleBtn" destination="cbX-7J-OeK" id="PyL-yR-tBq"/>
                 <outlet property="stepTableView" destination="x5o-cT-nfs" id="pRw-Cw-dTx"/>
                 <outlet property="stepView" destination="HGh-pk-68j" id="O28-YS-y74"/>
@@ -122,6 +124,22 @@
                             <rect key="frame" x="21" y="11" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" id="D0C-7O-JjE">
+                    <rect key="frame" x="0.0" y="220" width="320" height="208"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q2g-dL-NWG">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="JwT-ja-wsy"/>
+                                <outlet property="delegate" destination="-1" id="aCt-kV-adY"/>
+                            </connections>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
