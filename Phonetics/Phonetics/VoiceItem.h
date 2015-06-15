@@ -24,8 +24,14 @@
 @property (nonatomic, strong) NSString *stepTypes;
 @property (nonatomic, strong) NSString *stepCount;
 @property (nonatomic, strong) NSString *examples;
+@property (nonatomic, strong) NSString *examplesSlowRead;
+@property (nonatomic, strong) NSString *examplesRead;
+@property (nonatomic, strong) NSString *examplesYB;
 @property (nonatomic, strong) NSString *examplesCount;
 @property (nonatomic, strong) NSString *similar;
+@property (nonatomic, strong) NSString *similarRead;
+@property (nonatomic, strong) NSString *similarSlowRead;
+@property (nonatomic, strong) NSString *similarYB;
 @property (nonatomic, strong) NSString *similarCount;
 
 - (id)initWithAttribte:(NSDictionary *)dict;

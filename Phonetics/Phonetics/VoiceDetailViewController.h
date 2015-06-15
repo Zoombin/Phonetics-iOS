@@ -29,6 +29,8 @@
 @property (nonatomic, weak) IBOutlet UIView *stepView;
 @property (nonatomic, weak) IBOutlet UIView *simView;
 @property (nonatomic, weak) IBOutlet UIView *liView;
+@property (nonatomic, weak) IBOutlet UIView *headerView;
+@property (nonatomic, weak) IBOutlet UILabel *voiceLabel;
 - (IBAction)voiceButtonClick:(id)sender;
 - (IBAction)backButtonClick:(id)sender;
 - (IBAction)maleOrFemaleBtnClicked:(id)sender;

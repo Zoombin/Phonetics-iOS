@@ -20,12 +20,17 @@
     NSMutableArray *bottomButtons;
     NSInteger count;
     NSInteger exampleCount;
+    NSInteger similarCount;
+    NSInteger currentIndex;
+    BOOL isExample;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     count = 0;
     exampleCount = 0;
+    currentIndex = 0;
+    isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
     bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
@@ -34,21 +39,26 @@
     
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
-     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
+    NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:imageName[0]];
     }
     _describeIcon.image = [UIImage imageNamed:_item.imgName];
     _describeTextView.text = _item.describeText;
+    [_exampleTableView setTableHeaderView:_headerView];
     [self initBottomButton];
     [self loadStepInfo];
     [self loadExampleInfo];
+    [self loadSimilarInfo];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)loadStepInfo {
     if (_item.stepCount) {
         count = [_item.stepCount integerValue];
+        if (count > 0) {
+            _voiceLabel.text = [_item.examples componentsSeparatedByString:@","][0];
+        }
         [_stepTableView reloadData];
     }
 }
@@ -57,6 +67,12 @@
     if (_item.examplesCount) {
         exampleCount =  [_item.examplesCount integerValue];
         [_exampleTableView reloadData];
+    }
+}
+
+- (void)loadSimilarInfo {
+    if (_item.similarCount) {
+        similarCount =  [_item.similarCount integerValue];
     }
 }
 
@@ -93,11 +109,30 @@
             break;
         case 2:
             _liView.hidden = NO;
+            currentIndex = 0;
+            isExample = YES;
+            [self showHeader];
+            [_exampleTableView reloadData];
+            break;
+        case 3:
+            _liView.hidden = NO;
+            currentIndex = 0;
+            isExample = NO;
+            [self showHeader];
+            [_exampleTableView reloadData];
             break;
         default:
             break;
     }
 }
+
+- (void)showHeader {
+    NSArray *example = [isExample ? _item.examples : _item.similar componentsSeparatedByString:@","];
+    if ([example count] > 0) {
+        _voiceLabel.text = example[currentIndex];
+    }
+}
+
 
 - (void)allUnClicked {
     for (UIButton *btn in bottomButtons) {
@@ -196,7 +231,7 @@
     if (tableView == _stepTableView) {
         return count;
     }
-    return exampleCount;
+    return isExample ? exampleCount : similarCount;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -233,10 +268,27 @@
             cell = [nibs lastObject];
             cell.backgroundColor = [UIColor clearColor];
         }
-        NSArray *words = [_item.examples componentsSeparatedByString:@","];
-        if ([words count] == exampleCount) {
-            cell.voiceLabel.text = words[indexPath.row];
+        [cell.slowButton setTag:indexPath.row];
+        [cell.slowButton addTarget:self action:@selector(slowButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        if (currentIndex != indexPath.row) {
+            cell.slowButton.hidden = YES;
+        } else {
+            cell.slowButton.hidden = NO;
         }
+        if (isExample) {
+            NSArray *words = [_item.examples componentsSeparatedByString:@","];
+            NSArray *ybs = [_item.examplesYB componentsSeparatedByString:@","];
+            if ([words count] == exampleCount) {
+                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybs[indexPath.row]];
+            }
+        } else {
+            NSArray *words = [_item.similar componentsSeparatedByString:@","];
+            NSArray *ybs = [_item.similarYB componentsSeparatedByString:@","];
+            if ([words count] == similarCount) {
+                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybs[indexPath.row]];
+            }
+        }
+        
         return cell;
     }
 }
@@ -247,8 +299,61 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
+- (void)slowButtonClicked:(id)sender {
+    NSInteger index = [sender tag];
+    [self read:index isSlow:YES];
+}
+
+- (void)read:(NSInteger)index isSlow:(BOOL)isSlow {
+    float startTime = 0.0f;
+    float vLong = 0.0f;
+    NSString *readStr = nil;
+    if (isExample) {
+        readStr = isSlow ? _item.examplesSlowRead : _item.examplesRead;
+    } else {
+        readStr = isSlow ? _item.similarSlowRead : _item.similarRead;
+    }
+    NSArray *voices = [readStr componentsSeparatedByString:@"&&"];
+    NSString *wordsStr = voices[index];
+    NSArray *wordsReadArr = [wordsStr componentsSeparatedByString:@","];
+    
+    if (!_selectMaleOrFemaleBtn.selected) {
+        if ([wordsReadArr count] == 4) {
+            startTime = [wordsReadArr[0] floatValue];
+            vLong = [wordsReadArr[1] floatValue];
+            [self playVoice:startTime andLong:vLong isSlow:isSlow];
+        }
+    } else {
+        if ([wordsReadArr count] == 4) {
+            startTime = [wordsReadArr[2] floatValue];
+            vLong = [wordsReadArr[3] floatValue];
+            [self playVoice:startTime andLong:vLong isSlow:isSlow];
+        }
+    }
+
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (tableView == _exampleTableView) {
+        currentIndex = indexPath.row;
+        [self showHeader];
+        [_exampleTableView reloadData];
+        [self read:indexPath.row isSlow:NO];
+    }
+}
+
+- (void)playVoice:(float)startTime andLong:(float)vLong isSlow:(BOOL)isSlow{
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:musicUrl];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
+                   ];
+    audioPlayer.numberOfLoops = -1;
+    audioPlayer.volume = 1;
+    audioPlayer.currentTime = startTime;
+    [audioPlayer prepareToPlay];
+    [audioPlayer play];
+    [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
 }
 
 @end

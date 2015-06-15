@@ -30,6 +30,12 @@
         self.similarCount = dict[@"similar_count"];
         self.examples = dict[@"examples"];
         self.examplesCount = dict[@"examples_count"];
+        self.examplesYB = dict[@"examples_yb"];
+        self.similarYB = dict[@"similar_yb"];
+        self.examplesRead = dict[@"examples_read"];
+        self.examplesSlowRead = dict[@"examples_slow_read"];
+        self.similarRead = dict[@"similar_read"];
+        self.similarSlowRead = dict[@"similar_slow_read"];
     }
     return self;
 }

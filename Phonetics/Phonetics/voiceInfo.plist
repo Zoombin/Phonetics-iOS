@@ -65,6 +65,18 @@
 			<key>voices</key>
 			<array>
 				<dict>
+					<key>similar_slow_read</key>
+					<string>951.248,0.513,448.248,0.434&amp;&amp;721.248,0.713,218.248,0.428</string>
+					<key>similar_read</key>
+					<string>951.248,0.513,448.248,0.434&amp;&amp;721.248,0.713,218.248,0.428</string>
+					<key>examples_read</key>
+					<string>951.248,0.513,448.248,0.434</string>
+					<key>examples_slow_read</key>
+					<string>951.248,0.513,448.248,0.434</string>
+					<key>similar_yb</key>
+					<string>p eɪ,b eɪ</string>
+					<key>examples_yb</key>
+					<string>p eɪ</string>
 					<key>similar_count</key>
 					<string>2</string>
 					<key>similar</key>
