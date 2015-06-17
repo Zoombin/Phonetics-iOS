@@ -10,6 +10,7 @@
 #import "StepCell.h"
 #import "ExampleCell.h"
 #import "VoiceInfo.h"
+#import "VoiceButton.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface VoiceDetailViewController ()
@@ -67,16 +68,7 @@
 - (void)loadExampleInfo {
     if (_item.examplesCount) {
         exampleCount =  [_item.examplesCount integerValue];
-        NSArray *voices = [_item.similarYBName componentsSeparatedByString:@"&&"];
-        if ([voices count] > 0) {
-            NSArray *ybs = [voices[0] componentsSeparatedByString:@","];
-            for (int i = 0; i < [ybs count]; i++) {
-                UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-                [button setBackgroundColor:[UIColor lightGrayColor]];
-                [button setFrame:CGRectMake(50 * i, 0, 50, 50)];
-                [_headerView addSubview:button];
-            }
-        }
+        [self showYBView];
         [_exampleTableView reloadData];
     }
 }
@@ -84,7 +76,44 @@
 - (void)loadSimilarInfo {
     if (_item.similarCount) {
         similarCount =  [_item.similarCount integerValue];
+        [self showYBView];
+        [_exampleTableView reloadData];
     }
+}
+
+- (void)showYBView {
+    NSArray *voices = [isExample ? _item.examplesYBName : _item.similarYBName componentsSeparatedByString:@"&&"];
+    for (id view in _headerView.subviews) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            NSLog(@"删除~");
+            [view removeFromSuperview];
+        }
+    }
+    if ([voices count] > 0) {
+        NSArray *ybs = [voices[currentIndex] componentsSeparatedByString:@","];
+        CGFloat buttonWidth = 50;
+        CGFloat buttonHeight = 50;
+        CGFloat buttonOffSet = 5;
+        CGFloat startX = ([UIScreen mainScreen].bounds.size.width - ([ybs count] * buttonWidth) - (([ybs count] - 1 ) * buttonOffSet)) / 2;
+        CGFloat startY = CGRectGetMaxY(_voiceLabel.frame);
+        for (int i = 0; i < [ybs count]; i++) {
+            VoiceItem *item = [self searchVoiceByName:ybs[i]];
+            VoiceButton *button = [VoiceButton buttonWithType:UIButtonTypeCustom];
+            [button setBackgroundColor:[UIColor lightGrayColor]];
+            [button setFrame:CGRectMake(startX + (buttonWidth * i) + i * buttonOffSet, startY + 5, buttonWidth, buttonHeight)];
+            if (item != nil) {
+                [button addTarget:self action:@selector(loadYB:) forControlEvents:UIControlEventTouchUpInside];
+                [button setBackgroundImage:[UIImage imageNamed:item.imgName] forState:UIControlStateNormal];
+                button.item = item;
+            }
+            [_headerView addSubview:button];
+        }
+    }
+}
+
+- (void)loadYB:(id)sender {
+    VoiceButton *button = (VoiceButton *)sender;
+    [self playVoice:button.item];
 }
 
 - (void)initBottomButton {
@@ -123,6 +152,7 @@
             currentIndex = 0;
             isExample = YES;
             [self showHeader];
+            [self showYBView];
             [_exampleTableView reloadData];
             break;
         case 3:
@@ -130,6 +160,7 @@
             currentIndex = 0;
             isExample = NO;
             [self showHeader];
+            [self showYBView];
             [_exampleTableView reloadData];
             break;
         default:
@@ -349,6 +380,7 @@
     if (tableView == _exampleTableView) {
         currentIndex = indexPath.row;
         [self showHeader];
+        [self showYBView];
         [_exampleTableView reloadData];
         [self read:indexPath.row isSlow:NO];
     }

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VoiceItem.h"
 
 @interface VoiceButton : UIButton
 
+@property (nonatomic, strong) VoiceItem *item;
 @end
