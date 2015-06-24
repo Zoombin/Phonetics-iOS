@@ -59,11 +59,11 @@
 }
 
 - (IBAction)maleOrFemaleBtn1Clicked:(id)sender {
-    
+    _selectMOrFBtn1.selected = !_selectMOrFBtn1.selected;
 }
 
 - (IBAction)maleOrFemaleBtn2Clicked:(id)sender {
-    
+    _selectMOrFBtn2.selected = !_selectMOrFBtn2.selected;
 }
 
 @end
