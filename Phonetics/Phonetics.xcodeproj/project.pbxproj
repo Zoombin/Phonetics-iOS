@@ -21,6 +21,10 @@
 		5808F3421B1EE40F00ED3377 /* VoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3401B1EE40F00ED3377 /* VoiceCell.m */; };
 		5808F3431B1EE40F00ED3377 /* VoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5808F3411B1EE40F00ED3377 /* VoiceCell.xib */; };
 		58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58605C2A1B2F36920035ACA3 /* VoiceButton.m */; };
+		58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58635FEF1B39BAE700A757C4 /* CompareViewController.m */; };
+		58635FF21B39BAE700A757C4 /* CompareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58635FF01B39BAE700A757C4 /* CompareViewController.xib */; };
+		58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58635FF41B39C32200A757C4 /* VoiceSelectViewController.m */; };
+		58635FF71B39C32200A757C4 /* VoiceSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */; };
 		586B27321B2EC7650000A91E /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B27301B2EC7650000A91E /* ExampleCell.m */; };
 		586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586B27311B2EC7650000A91E /* ExampleCell.xib */; };
 		58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */; };
@@ -65,6 +69,12 @@
 		5808F3411B1EE40F00ED3377 /* VoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceCell.xib; sourceTree = "<group>"; };
 		58605C291B2F36920035ACA3 /* VoiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceButton.h; sourceTree = "<group>"; };
 		58605C2A1B2F36920035ACA3 /* VoiceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceButton.m; sourceTree = "<group>"; };
+		58635FEE1B39BAE700A757C4 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
+		58635FEF1B39BAE700A757C4 /* CompareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareViewController.m; sourceTree = "<group>"; };
+		58635FF01B39BAE700A757C4 /* CompareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompareViewController.xib; sourceTree = "<group>"; };
+		58635FF31B39C32200A757C4 /* VoiceSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceSelectViewController.h; sourceTree = "<group>"; };
+		58635FF41B39C32200A757C4 /* VoiceSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceSelectViewController.m; sourceTree = "<group>"; };
+		58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceSelectViewController.xib; sourceTree = "<group>"; };
 		586B272F1B2EC7650000A91E /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
 		586B27301B2EC7650000A91E /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
 		586B27311B2EC7650000A91E /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
@@ -157,23 +167,29 @@
 		5808F3391B1EE38300ED3377 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5808F3181B1EDFA700ED3377 /* MainViewController.h */,
-				5808F3191B1EDFA700ED3377 /* MainViewController.m */,
-				5808F3371B1EE0BD00ED3377 /* MainViewController.xib */,
-				5808F33A1B1EE39D00ED3377 /* VoiceDetailViewController.h */,
-				5808F33B1B1EE39D00ED3377 /* VoiceDetailViewController.m */,
-				5808F33C1B1EE39D00ED3377 /* VoiceDetailViewController.xib */,
-				5808F33F1B1EE40F00ED3377 /* VoiceCell.h */,
-				5808F3401B1EE40F00ED3377 /* VoiceCell.m */,
-				5808F3411B1EE40F00ED3377 /* VoiceCell.xib */,
-				18877ED01B2DCBFF00B11029 /* StepCell.h */,
-				18877ED11B2DCBFF00B11029 /* StepCell.m */,
-				18877ED21B2DCBFF00B11029 /* StepCell.xib */,
+				58635FEE1B39BAE700A757C4 /* CompareViewController.h */,
+				58635FEF1B39BAE700A757C4 /* CompareViewController.m */,
+				58635FF01B39BAE700A757C4 /* CompareViewController.xib */,
 				586B272F1B2EC7650000A91E /* ExampleCell.h */,
 				586B27301B2EC7650000A91E /* ExampleCell.m */,
 				586B27311B2EC7650000A91E /* ExampleCell.xib */,
+				5808F3181B1EDFA700ED3377 /* MainViewController.h */,
+				5808F3191B1EDFA700ED3377 /* MainViewController.m */,
+				5808F3371B1EE0BD00ED3377 /* MainViewController.xib */,
+				18877ED01B2DCBFF00B11029 /* StepCell.h */,
+				18877ED11B2DCBFF00B11029 /* StepCell.m */,
+				18877ED21B2DCBFF00B11029 /* StepCell.xib */,
 				58605C291B2F36920035ACA3 /* VoiceButton.h */,
 				58605C2A1B2F36920035ACA3 /* VoiceButton.m */,
+				5808F33F1B1EE40F00ED3377 /* VoiceCell.h */,
+				5808F3401B1EE40F00ED3377 /* VoiceCell.m */,
+				5808F3411B1EE40F00ED3377 /* VoiceCell.xib */,
+				5808F33A1B1EE39D00ED3377 /* VoiceDetailViewController.h */,
+				5808F33B1B1EE39D00ED3377 /* VoiceDetailViewController.m */,
+				5808F33C1B1EE39D00ED3377 /* VoiceDetailViewController.xib */,
+				58635FF31B39C32200A757C4 /* VoiceSelectViewController.h */,
+				58635FF41B39C32200A757C4 /* VoiceSelectViewController.m */,
+				58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -270,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5808F3431B1EE40F00ED3377 /* VoiceCell.xib in Resources */,
+				58635FF71B39C32200A757C4 /* VoiceSelectViewController.xib in Resources */,
+				58635FF21B39BAE700A757C4 /* CompareViewController.xib in Resources */,
 				5808F31F1B1EDFA700ED3377 /* Images.xcassets in Resources */,
 				5808F3381B1EE0BD00ED3377 /* MainViewController.xib in Resources */,
 				18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */,
@@ -296,10 +314,12 @@
 			files = (
 				5808F3421B1EE40F00ED3377 /* VoiceCell.m in Sources */,
 				18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */,
+				58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */,
 				586B27321B2EC7650000A91E /* ExampleCell.m in Sources */,
 				5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */,
 				58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */,
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
+				58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
 				5808F3141B1EDFA700ED3377 /* main.m in Sources */,

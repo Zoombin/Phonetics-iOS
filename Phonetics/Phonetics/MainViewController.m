@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "VoiceDetailViewController.h"
+#import "CompareViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
 
@@ -53,29 +54,48 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (tableView == _menuTableView) {
+        return 1;
+    }
     return [voiceArray count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (tableView == _menuTableView) {
+        return 44;
+    }
     return 130;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier =	 @"UITableViewCell";
-    VoiceCell *cell = (VoiceCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"VoiceCell" owner:nil options:nil];
-        cell = [nibs lastObject];
-        cell.backgroundColor = [UIColor clearColor];
+    if (tableView == _menuTableView) {
+        static NSString *cellIdentifier = @"UITableViewCell";
+        UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        }
+        if (indexPath.row == 0) {
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.textLabel.text = @"音标对比";
+        }
+        return cell;
+    } else {
+        static NSString *cellIdentifier = @"UITableViewCell";
+        VoiceCell *cell = (VoiceCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        if (cell == nil) {
+            NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"VoiceCell" owner:nil options:nil];
+            cell = [nibs lastObject];
+            cell.backgroundColor = [UIColor clearColor];
+        }
+        VoiceInfo *info = voiceArray[indexPath.row];
+        cell.delegate = self;
+        cell.titleLabel.text = info.title;
+        cell.describeLabel.text = info.describeInfo;
+        if (info.voices) {
+            [cell showVoices:info.voices];
+        }
+        return cell;
     }
-    VoiceInfo *info = voiceArray[indexPath.row];
-    cell.delegate = self;
-    cell.titleLabel.text = info.title;
-    cell.describeLabel.text = info.describeInfo;
-    if (info.voices) {
-        [cell showVoices:info.voices];
-    }
-    return cell;
 }
 
 - (void)voiceButtonClicked:(VoiceItem *)item {
@@ -91,6 +111,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (tableView == _menuTableView) {
+        if (indexPath.row == 0) {
+            //音标对比
+            NSLog(@"音标对比");
+            CompareViewController *compareViewController = [CompareViewController new];
+            compareViewController.basicArray = basicsArr;
+            [self.navigationController pushViewController:compareViewController animated:YES];
+        }
+    }
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
