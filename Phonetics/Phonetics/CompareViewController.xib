@@ -6,9 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompareViewController">
             <connections>
+                <outlet property="gifImageView1" destination="eaR-HT-fEi" id="4CL-s7-xOk"/>
+                <outlet property="gifImageView2" destination="lbF-wu-oKP" id="8tj-5I-7l8"/>
                 <outlet property="selectMOrFBtn1" destination="Ilz-OG-JWv" id="Qj1-NX-6nd"/>
                 <outlet property="selectMOrFBtn2" destination="icB-9w-nNt" id="nTM-fD-9W8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voiceButton1" destination="6BJ-2x-moD" id="5zI-JR-9r5"/>
+                <outlet property="voiceButton2" destination="2rR-AH-RGW" id="BUh-ZF-RYm"/>
                 <outlet property="voiceView1" destination="7cN-y1-Z7z" id="asP-Cd-grJ"/>
                 <outlet property="voiceView2" destination="0o1-L6-C4t" id="xRn-Lj-oKl"/>
             </connections>
@@ -34,6 +38,9 @@
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="playVoiceButton1:" destination="-1" eventType="touchUpInside" id="LyO-UR-cac"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ilz-OG-JWv">
                             <rect key="frame" x="14" y="148" width="64" height="64"/>
@@ -76,6 +83,9 @@
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="playVoiceButton2:" destination="-1" eventType="touchUpInside" id="fnB-5t-BiG"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="icB-9w-nNt">
                             <rect key="frame" x="14" y="148" width="64" height="64"/>
