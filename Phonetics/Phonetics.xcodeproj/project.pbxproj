@@ -11,6 +11,12 @@
 		18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18877ED11B2DCBFF00B11029 /* StepCell.m */; };
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
 		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
+		58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B861B3C05F30081113D /* libWeChatSDK.a */; };
+		58029B8B1B3C05F30081113D /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58029B871B3C05F30081113D /* read_me.txt */; };
+		58029B8D1B3C076F0081113D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B8C1B3C076F0081113D /* SystemConfiguration.framework */; };
+		58029B8F1B3C077A0081113D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B8E1B3C077A0081113D /* libz.dylib */; };
+		58029B911B3C078F0081113D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B901B3C078F0081113D /* libsqlite3.0.dylib */; };
+		58029B931B3C082E0081113D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B921B3C082E0081113D /* libc++.dylib */; };
 		5808F3141B1EDFA700ED3377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3131B1EDFA700ED3377 /* main.m */; };
 		5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3161B1EDFA700ED3377 /* AppDelegate.m */; };
 		5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3191B1EDFA700ED3377 /* MainViewController.m */; };
@@ -52,6 +58,14 @@
 		18877ED21B2DCBFF00B11029 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
 		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
 		58029B821B3BD94A0081113D /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
+		58029B861B3C05F30081113D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		58029B871B3C05F30081113D /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		58029B881B3C05F30081113D /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		58029B891B3C05F30081113D /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		58029B8C1B3C076F0081113D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		58029B8E1B3C077A0081113D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		58029B901B3C078F0081113D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		58029B921B3C082E0081113D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		5808F30E1B1EDFA700ED3377 /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5808F3121B1EDFA700ED3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5808F3131B1EDFA700ED3377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +107,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58029B931B3C082E0081113D /* libc++.dylib in Frameworks */,
+				58029B911B3C078F0081113D /* libsqlite3.0.dylib in Frameworks */,
+				58029B8F1B3C077A0081113D /* libz.dylib in Frameworks */,
+				58029B8D1B3C076F0081113D /* SystemConfiguration.framework in Frameworks */,
+				58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */,
 				58FD81D41B296FBD00BA1264 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +135,25 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		58029B841B3C05E50081113D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				58029B851B3C05F30081113D /* WeChatSDK_1.5 */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		58029B851B3C05F30081113D /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				58029B861B3C05F30081113D /* libWeChatSDK.a */,
+				58029B871B3C05F30081113D /* read_me.txt */,
+				58029B881B3C05F30081113D /* WXApi.h */,
+				58029B891B3C05F30081113D /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
 		5808F3051B1EDFA700ED3377 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +175,7 @@
 		5808F3101B1EDFA700ED3377 /* Phonetics */ = {
 			isa = PBXGroup;
 			children = (
+				58029B841B3C05E50081113D /* Library */,
 				58029B801B3BD8C20081113D /* Utils */,
 				58FCDF2A1B202D7700A12529 /* Model */,
 				5808F3391B1EE38300ED3377 /* UI */,
@@ -151,6 +190,10 @@
 		5808F3111B1EDFA700ED3377 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58029B921B3C082E0081113D /* libc++.dylib */,
+				58029B901B3C078F0081113D /* libsqlite3.0.dylib */,
+				58029B8E1B3C077A0081113D /* libz.dylib */,
+				58029B8C1B3C076F0081113D /* SystemConfiguration.framework */,
 				58FD81D31B296FBD00BA1264 /* iAd.framework */,
 				58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */,
 				5808F3121B1EDFA700ED3377 /* Info.plist */,
@@ -306,6 +349,7 @@
 				18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */,
 				586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */,
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
+				58029B8B1B3C05F30081113D /* read_me.txt in Resources */,
 				58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */,
 				58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */,
 			);
@@ -443,6 +487,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Phonetics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -454,6 +502,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Phonetics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

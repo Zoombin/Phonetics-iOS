@@ -55,7 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _menuTableView) {
-        return 1;
+        return 2;
     }
     return [voiceArray count];
 }
@@ -77,6 +77,9 @@
         if (indexPath.row == 0) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
             cell.textLabel.text = @"音标对比";
+        } else if (indexPath.row == 1) {
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.textLabel.text = @"分享到朋友圈";
         }
         return cell;
     } else {
@@ -118,6 +121,9 @@
             CompareViewController *compareViewController = [CompareViewController new];
             compareViewController.basicArray = basicsArr;
             [self.navigationController pushViewController:compareViewController animated:YES];
+        } else if (indexPath.row == 1) {
+            NSLog(@"分享到朋友圈");
+            //欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com
         }
     }
 }
