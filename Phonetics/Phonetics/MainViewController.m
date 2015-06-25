@@ -11,6 +11,7 @@
 #import "CompareViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
+#import <ShareSDK/ShareSDK.h>
 
 
 @interface MainViewController ()
@@ -124,6 +125,36 @@
         } else if (indexPath.row == 1) {
             NSLog(@"分享到朋友圈");
             //欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com
+            //构造分享内容
+            id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
+                                               defaultContent:@"测试一下"
+                                                        image:nil
+                                                        title:@"ShareSDK"
+                                                          url:@"http://www.mob.com"
+                                                  description:@"这是一条测试信息"
+                                                    mediaType:SSPublishContentMediaTypeNews];
+            //创建弹出菜单容器
+            id<ISSContainer> container = [ShareSDK container];
+            [container setIPadContainerWithView:self.view arrowDirect:UIPopoverArrowDirectionUp];
+            
+            //弹出分享菜单
+            [ShareSDK showShareActionSheet:container
+                                 shareList:nil
+                                   content:publishContent
+                             statusBarTips:YES
+                               authOptions:nil
+                              shareOptions:nil
+                                    result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                        
+                                        if (state == SSResponseStateSuccess)
+                                        {
+                                            NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
+                                        }
+                                        else if (state == SSResponseStateFail)
+                                        {
+                                            NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                        }
+                                    }];
         }
     }
 }
