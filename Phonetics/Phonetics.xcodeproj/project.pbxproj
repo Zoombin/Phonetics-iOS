@@ -10,6 +10,7 @@
 		186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F57D01B248DCD00774A2F /* VoiceItem.m */; };
 		18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18877ED11B2DCBFF00B11029 /* StepCell.m */; };
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
+		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
 		5808F3141B1EDFA700ED3377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3131B1EDFA700ED3377 /* main.m */; };
 		5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3161B1EDFA700ED3377 /* AppDelegate.m */; };
 		5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5808F3191B1EDFA700ED3377 /* MainViewController.m */; };
@@ -49,6 +50,8 @@
 		18877ED01B2DCBFF00B11029 /* StepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCell.h; sourceTree = "<group>"; };
 		18877ED11B2DCBFF00B11029 /* StepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCell.m; sourceTree = "<group>"; };
 		18877ED21B2DCBFF00B11029 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
+		58029B821B3BD94A0081113D /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		5808F30E1B1EDFA700ED3377 /* Phonetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5808F3121B1EDFA700ED3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5808F3131B1EDFA700ED3377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58029B801B3BD8C20081113D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58029B811B3BD94A0081113D /* UserDefaultManager.h */,
+				58029B821B3BD94A0081113D /* UserDefaultManager.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		5808F3051B1EDFA700ED3377 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 		5808F3101B1EDFA700ED3377 /* Phonetics */ = {
 			isa = PBXGroup;
 			children = (
+				58029B801B3BD8C20081113D /* Utils */,
 				58FCDF2A1B202D7700A12529 /* Model */,
 				5808F3391B1EE38300ED3377 /* UI */,
 				5808F3151B1EDFA700ED3377 /* AppDelegate.h */,
@@ -316,6 +329,7 @@
 				18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */,
 				58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */,
 				586B27321B2EC7650000A91E /* ExampleCell.m in Sources */,
+				58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */,
 				5808F31A1B1EDFA700ED3377 /* MainViewController.m in Sources */,
 				58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */,
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,

@@ -2055,7 +2055,7 @@
 					<key>examples</key>
 					<string></string>
 					<key>name</key>
-					<string></string>
+					<string>b</string>
 					<key>step_types</key>
 					<string></string>
 					<key>step_describes</key>
@@ -2109,7 +2109,7 @@
 					<key>examples</key>
 					<string></string>
 					<key>name</key>
-					<string></string>
+					<string>t</string>
 					<key>step_types</key>
 					<string></string>
 					<key>step_describes</key>
@@ -2163,7 +2163,7 @@
 					<key>examples</key>
 					<string></string>
 					<key>name</key>
-					<string></string>
+					<string>d</string>
 					<key>step_types</key>
 					<string></string>
 					<key>step_describes</key>
