@@ -31,6 +31,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
+    [_bkgButton addTarget:self action:@selector(menuButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
@@ -127,11 +128,11 @@
             //欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com
             //构造分享内容
             id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
-                                               defaultContent:@"测试一下"
+                                               defaultContent:@"欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com"
                                                         image:nil
-                                                        title:@"ShareSDK"
-                                                          url:@"http://www.mob.com"
-                                                  description:@"这是一条测试信息"
+                                                        title:@"花华组日语"
+                                                          url:@"http://www,baidu.com"
+                                                  description:@"分享信息"
                                                     mediaType:SSPublishContentMediaTypeNews];
             //创建弹出菜单容器
             id<ISSContainer> container = [ShareSDK container];
@@ -149,14 +150,20 @@
                                         if (state == SSResponseStateSuccess)
                                         {
                                             NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
+                                            [self showAlert:@"分享成功"];
                                         }
                                         else if (state == SSResponseStateFail)
                                         {
                                             NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
+                                            [self showAlert:@"分享失败"];
                                         }
                                     }];
         }
     }
+}
+
+- (void)showAlert:(NSString *)message {
+    [[[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
 }
 
 - (IBAction)menuButtonClicked:(id)sender {
