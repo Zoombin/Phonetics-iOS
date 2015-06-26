@@ -10,6 +10,7 @@
 #import "VoiceSelectViewController.h"
 #import "UserDefaultManager.h"
 #import <AVFoundation/AVFoundation.h>
+#import "TimeUtil.h"
 
 @interface CompareViewController ()
 
@@ -238,11 +239,11 @@
         maleOrFemaleBtn = _selectMOrFBtn2;
     }
     if (!maleOrFemaleBtn.selected) {
-        stime = [item.startFemaleTime floatValue];
-        vLong = [item.voiceFemaleLong floatValue];
+        stime = [TimeUtil getPlayTime:item.startFemaleTime];
+        vLong = [TimeUtil getPlayTime:item.voiceFemaleLong];
     } else {
-        stime = [item.startMaleTime floatValue];
-        vLong = [item.voiceMaleLong floatValue];
+        stime = [TimeUtil getPlayTime:item.startMaleTime];
+        vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
     NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:musicUrl];

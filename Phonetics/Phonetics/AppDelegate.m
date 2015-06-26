@@ -10,7 +10,6 @@
 #import <ShareSDK/ShareSDK.h>
 #import "MainViewController.h"
 
-
 @interface AppDelegate ()
 
 @end

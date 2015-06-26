@@ -12,6 +12,7 @@
 #import "VoiceInfo.h"
 #import "VoiceButton.h"
 #import <AVFoundation/AVFoundation.h>
+#import "TimeUtil.h"
 
 @interface VoiceDetailViewController ()
 
@@ -197,11 +198,11 @@
     float stime = 0.0f;
     float vLong = 0.0f;
     if (!_selectMaleOrFemaleBtn.selected) {
-        stime = [item.startFemaleTime floatValue];
-        vLong = [item.voiceFemaleLong floatValue];
+        stime = [TimeUtil getPlayTime:item.startFemaleTime];
+        vLong = [TimeUtil getPlayTime:item.voiceFemaleLong];
     } else {
-        stime = [item.startMaleTime floatValue];
-        vLong = [item.voiceMaleLong floatValue];
+        stime = [TimeUtil getPlayTime:item.startMaleTime];
+        vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
     NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:musicUrl];
@@ -361,14 +362,14 @@
     
     if (!_selectMaleOrFemaleBtn.selected) {
         if ([wordsReadArr count] == 4) {
-            startTime = [wordsReadArr[0] floatValue];
-            vLong = [wordsReadArr[1] floatValue];
+            startTime = [TimeUtil getPlayTime:wordsReadArr[0]];
+            vLong = [TimeUtil getPlayTime:wordsReadArr[1]];
             [self playVoice:startTime andLong:vLong isSlow:isSlow];
         }
     } else {
         if ([wordsReadArr count] == 4) {
-            startTime = [wordsReadArr[2] floatValue];
-            vLong = [wordsReadArr[3] floatValue];
+            startTime = [TimeUtil getPlayTime:wordsReadArr[2]];
+            vLong = [TimeUtil getPlayTime:wordsReadArr[3]];
             [self playVoice:startTime andLong:vLong isSlow:isSlow];
         }
     }

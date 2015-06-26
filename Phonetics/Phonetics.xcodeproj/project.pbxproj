@@ -50,6 +50,7 @@
 		58635FF71B39C32200A757C4 /* VoiceSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */; };
 		586B27321B2EC7650000A91E /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B27301B2EC7650000A91E /* ExampleCell.m */; };
 		586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586B27311B2EC7650000A91E /* ExampleCell.xib */; };
+		587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 587288441B3CF4BB0088BF00 /* TimeUtil.m */; };
 		58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */; };
 		58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */; };
 		58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */; };
@@ -130,6 +131,8 @@
 		586B272F1B2EC7650000A91E /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
 		586B27301B2EC7650000A91E /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
 		586B27311B2EC7650000A91E /* ExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCell.xib; sourceTree = "<group>"; };
+		587288431B3CF4BB0088BF00 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		587288441B3CF4BB0088BF00 /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
 		58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInfo.h; sourceTree = "<group>"; };
 		58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceInfo.m; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 			children = (
 				58029B811B3BD94A0081113D /* UserDefaultManager.h */,
 				58029B821B3BD94A0081113D /* UserDefaultManager.m */,
+				587288431B3CF4BB0088BF00 /* TimeUtil.h */,
+				587288441B3CF4BB0088BF00 /* TimeUtil.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
 				58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
+				587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
 				5808F3141B1EDFA700ED3377 /* main.m in Sources */,
 				186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */,
