@@ -15,6 +15,7 @@
 }
 
 @property (nonatomic, strong) VoiceItem *item;
+@property (nonatomic, assign) BOOL isBasic;
 @property (nonatomic, strong) NSArray *voiceArray;
 @property (nonatomic, weak) IBOutlet UIButton *selectMaleOrFemaleBtn;	
 @property (nonatomic, strong) IBOutlet UIView *bottomView;

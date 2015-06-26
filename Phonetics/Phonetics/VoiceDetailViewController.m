@@ -118,10 +118,14 @@
 }
 
 - (void)initBottomButton {
-    CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / 4;
-    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
     NSArray *names = @[@"描述", @"基础", @"举列", @"相似"];
-    for (int i = 0; i < 4; i++) {
+    if (!_isBasic) {
+        names = @[@"描述", @"举例"];
+    }
+    CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
+    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
+    
+    for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setFrame:CGRectMake(i * buttonWidth, 0, buttonWidth, buttonHeight)];
         [btn setBackgroundColor:[UIColor clearColor]];

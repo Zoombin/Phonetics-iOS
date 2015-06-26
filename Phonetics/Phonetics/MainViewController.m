@@ -106,8 +106,10 @@
 - (void)voiceButtonClicked:(VoiceItem *)item {
     VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
     if (_segmentedControl.selectedSegmentIndex == 0) {
+        detailViewController.isBasic = YES;
         detailViewController.voiceArray = basicsArr;
     } else {
+        detailViewController.isBasic = NO;
         detailViewController.voiceArray = advancedArr;
     }
     detailViewController.item = item;
