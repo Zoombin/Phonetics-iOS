@@ -324,15 +324,31 @@
         }
         if (isExample) {
             NSArray *words = [_item.examples componentsSeparatedByString:@","];
-            NSArray *ybs = [_item.examplesYB componentsSeparatedByString:@","];
+            NSArray *ybs = [_item.examplesYB componentsSeparatedByString:@"&&"];
+            NSString *ybStr = @"";
+            for (int i = 0; i < [ybs count]; i++) {
+                if (indexPath.row == i) {
+                    NSString *str = ybs[i];
+                    ybStr = [ybStr stringByAppendingString:str];
+                }
+            }
+            ybStr = [ybStr stringByReplacingOccurrencesOfString:@"," withString:@" "];
             if ([words count] == exampleCount) {
-                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybs[indexPath.row]];
+                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybStr];
             }
         } else {
             NSArray *words = [_item.similar componentsSeparatedByString:@","];
-            NSArray *ybs = [_item.similarYB componentsSeparatedByString:@","];
+            NSArray *ybs = [_item.similarYB componentsSeparatedByString:@"&&"];
+            NSString *ybStr = @"";
+            for (int i = 0; i < [ybs count]; i++) {
+                if (indexPath.row == i) {
+                    NSString *str = ybs[i];
+                    ybStr = [ybStr stringByAppendingString:str];
+                }
+            }
+            ybStr = [ybStr stringByReplacingOccurrencesOfString:@"," withString:@" "];
             if ([words count] == similarCount) {
-                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybs[indexPath.row]];
+                cell.voiceLabel.text = [NSString stringWithFormat:@"%@ %@", words[indexPath.row], ybStr];
             }
         }
         
