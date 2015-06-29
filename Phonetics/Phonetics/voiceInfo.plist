@@ -1977,21 +1977,21 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string>p,b</string>
+					<string>p,eɪ</string>
 					<key>similar_yb_name</key>
-					<string>p,b&amp;&amp;b,p</string>
+					<string>p,eɪ&amp;&amp;b,eɪ</string>
 					<key>similar_slow_read</key>
-					<string>951.248,0.513,448.248,0.434&amp;&amp;721.248,0.713,218.248,0.428</string>
+					<string></string>
 					<key>similar_read</key>
-					<string>951.248,0.513,448.248,0.434&amp;&amp;721.248,0.713,218.248,0.428</string>
+					<string>15:51.248,0.513,7:28.248,0.434&amp;&amp;12:01.248,0.713,3:38.248,0.428</string>
 					<key>examples_read</key>
-					<string>951.248,0.513,448.248,0.434</string>
+					<string>15:51.248,0.513,7:28.248,0.434</string>
 					<key>examples_slow_read</key>
-					<string>951.248,0.513,448.248,0.434</string>
+					<string></string>
 					<key>similar_yb</key>
-					<string>p eɪ,b eɪ</string>
+					<string>p,eɪ&amp;&amp;b,eɪ</string>
 					<key>examples_yb</key>
-					<string>p eɪ</string>
+					<string>p,eɪ</string>
 					<key>similar_count</key>
 					<string>2</string>
 					<key>similar</key>
@@ -2009,7 +2009,7 @@
 					<key>step_count</key>
 					<string>2</string>
 					<key>describe</key>
-					<string>在这个音后加上日语的「ア・イ・ウ・エ・オ」后，听起来像日语的「パ・ピ・プ・ペ・ポ」。只是，英语具有比日语的「パ・ピ・プ・ペ・ポ」更强的空气破裂感。心里想着吐西瓜子的动作，用力从闭着的嘴唇间吐出气息的话，就可以把它发得标准。</string>
+					<string>日式英语：在这个音后加上日语的「ア・イ・ウ・エ・オ」后，听起来像日语的「パ・ピ・プ・ペ・ポ」。只是，英语具有比日语的「パ・ピ・プ・ペ・ポ」更强的空气破裂感。心里想着吐西瓜子的动作，用力从闭着的嘴唇间吐出气息的话，就可以把它发得标准。</string>
 					<key>pics_side</key>
 					<string>p1,p2,p3,p4,p5,p6</string>
 					<key>pics_front</key>
@@ -2017,393 +2017,393 @@
 					<key>long_male</key>
 					<string>0.142</string>
 					<key>etime_male</key>
-					<string>3.391</string>
+					<string>0:03.391</string>
 					<key>stime_male</key>
-					<string>3.249</string>
+					<string>0:03.249</string>
 					<key>long_female</key>
 					<string>0.379</string>
 					<key>stime_female</key>
-					<string>44.332</string>
+					<string>0:44.332</string>
 					<key>etime_female</key>
-					<string>44.711</string>
+					<string>0:44.711</string>
 					<key>img</key>
 					<string>symbol_P</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>b,eɪ</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>b,eɪ&amp;&amp;p,eɪ</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>12:01.248,0.713,3:38.248,0.428&amp;&amp;15:51.248,0.513,7:28.248,0.434</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>12:01.248,0.713,3:38.248, 0.428</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>b,eɪ&amp;&amp;p,eɪ</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>b,eɪ</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>3</string>
 					<key>similar</key>
-					<string></string>
+					<string>bay,pay</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>bay</string>
 					<key>name</key>
 					<string>b</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>闭上嘴，用唇截流气息。&amp;&amp;张开嘴，让气息冒出来。&amp;&amp;发这个音时要出声，也就是振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语的「ア・イ・ウ・エ・オ」，听起来像日语「バ・ビ・ブ・ベ・ボ」。只是，英语具有比日语「バ・ビ・ブ・ベ・ボ」更强的空气破裂感。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>b1,b2,b3,b4,b5,b6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>b1,b2,b3,b4,b5,b6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.157</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:04.444</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:04.286</string>
 					<key>long_female</key>
 					<string>0.223</string>
 					<key>stime_female</key>
-					<string>45.245</string>
+					<string>0:45.245</string>
 					<key>etime_female</key>
-					<string>45.469</string>
+					<string>0:45.469</string>
 					<key>img</key>
 					<string>symbol_B</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>t,i:,m</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>t,i:,m&amp;&amp;s,i:,m</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>17:35.246,0.598,9:12.248,0.519&amp;&amp;16:42.248,0.769,8:19.248, 0.684</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>17:35.246,0.598,9:12.248, 0.519</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>t,i:,m&amp;&amp;s,i:,m</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>t,i:,m</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>team, seem</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>team</string>
 					<key>name</key>
 					<string>t</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>舌抵住门牙后的牙龈，以舌尖截流气息。&amp;&amp;.放开舌头用力让气息喷出来。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个发音一般使用日语的「タ・テ・ト」代替，但日本人发这几个音时，舌头会接触到门牙，而且破裂感很弱。与此不同，英语发音时的气息，吹得起挡在嘴前的纸巾碎片。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>t1,t2,t3,t4,t5,t6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>t1,t2,t3,t4,t5,t6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.147</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:05.414</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:05.266</string>
 					<key>long_female</key>
-					<string>0.251</string>
+					<string>0:00.251</string>
 					<key>stime_female</key>
-					<string>46.269</string>
+					<string>0:46.268</string>
 					<key>etime_female</key>
-					<string>46.520</string>
+					<string>0:46.520</string>
 					<key>img</key>
 					<string>symbol_T</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>s,aɪ,d</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>s,aɪ,d&amp;&amp;s,aɪ,n</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>6:57.247,0.683,8:34.240,0.584&amp;&amp;16:58.248,0.732,8:35.245,0.569</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>6:57.247,0.683,8:34.240,0.584</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>s,aɪ,d&amp;&amp;s,aɪ,n</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>s,aɪ,d</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>side,sign</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>side</string>
 					<key>name</key>
 					<string>d</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>舌抵住门牙后面的牙龈，用舌尖截流气息。&amp;&amp;放开舌头，用力让气息喷出来。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：和日语的对比d 在日语里，这个发音一般使用日语的「ダ・デ・ド」代替，但日本人发这几个音时，舌头会接触到门牙，而且破裂感很弱。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>d1,d2,d3,d4,d5,d6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>d1,d2,d3,d4,d5,d6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.212</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:06.471</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:06.259</string>
 					<key>long_female</key>
 					<string>0.214</string>
 					<key>stime_female</key>
-					<string>47.252</string>
+					<string>0:47.252</string>
 					<key>etime_female</key>
-					<string>47.466</string>
+					<string>0:47.466</string>
 					<key>img</key>
 					<string>symbol_D</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>p,ɪ,k</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>p,ɪ,k&amp;&amp;p,ɪ,g</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>15:56.247,0.417,7:33.248,0.417&amp;&amp;15:57.248,0.479,7:34.248, 0.435</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>15:56.247,0.417,7:33.248,0.417</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>p,ɪ,k&amp;&amp;p,ɪ,g</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>p,ɪ,k</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>pick,pig</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>pick</string>
 					<key>name</key>
-					<string></string>
+					<string>k</string>
 					<key>step_types</key>
-					<string></string>
+					<string>2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>抬起舌根、让它接触到软腭（上牙堂后面较软的部位），用舌根截流气息。&amp;&amp;放开舌头用力让气息喷出来。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语的「ア・イ・ウ・エ・オ」后，会变成日语「カ・キ・ク・ケ・コ」。只是日语气息较弱，尤其在词尾或词中部时弱到听起来像g。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>k1,k2,k3,k4,k5,k6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>k1,k2,k3,k4,k5,k6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.209</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:07.458</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:07.248</string>
 					<key>long_female</key>
 					<string>0.228</string>
 					<key>stime_female</key>
-					<string>48.243</string>
+					<string>0:48.243</string>
 					<key>etime_female</key>
-					<string>48.471</string>
+					<string>0:48.471</string>
 					<key>img</key>
 					<string>symbol_K</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>p,ɪ,g</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>p,ɪ,g&amp;&amp;p,ɪ,k</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>15:57.248,0.479,7:34.248,0.435&amp;&amp;15:56.247,0.417,7:33.248,0.417</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>15:57.248,0.479,7:34.248,0.435</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>p,ɪ,g&amp;&amp;p,ɪ,k</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>p,ɪ,g</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>pig,pick</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>pig</string>
 					<key>name</key>
-					<string></string>
+					<string>g</string>
 					<key>step_types</key>
-					<string></string>
+					<string>3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>抬起舌头的后部、使其接触到软腭（上牙堂后面较软的部位），用舌根截流气息。&amp;&amp;放开舌头用力让气息喷出来。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语的「ア・イ・ウ・エ・オ」后，听起来很像日语的「ガ・ギ・グ・ゲ・ゴ」。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>g1,g2,g3,g4,g5,g6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>g1,g2,g3,g4,g5,g6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.201</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:08.451</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:08.250</string>
 					<key>long_female</key>
 					<string>0.268</string>
 					<key>stime_female</key>
-					<string>49.248</string>
+					<string>0:49.248</string>
 					<key>etime_female</key>
-					<string>49.516</string>
+					<string>0:49.516</string>
 					<key>img</key>
 					<string>symbol_G</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>tʃ,oʊ,k</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>tʃ,oʊ,k&amp;&amp;dʒ,oʊ,k</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>12:47.246,0.467,4:24.246,0.573&amp;&amp;14:39.252,0.478,6:16.248,0.473</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>12:47.246,0.467,4:24.246,0.573</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>tʃ,oʊ,k&amp;&amp;dʒ,oʊ,k</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>tʃ,oʊ,k</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>choke,joke</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>choke</string>
 					<key>name</key>
-					<string></string>
+					<string>tʃ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>抬高舌头，让舌头整体接近口腔上方的拱形部分，用这个姿势让舌尖贴上牙龈。&amp;&amp;用舌尖截流气息后，放开舌头用力让气息喷出来。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后面加「イ」后，听起来就像日语的「チ」。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>tʃ1,tʃ2,tʃ3,tʃ4,tʃ5,tʃ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>tʃ1,tʃ2,tʃ3,tʃ4,tʃ5,tʃ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.276</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:09.527</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:09.250</string>
 					<key>long_female</key>
 					<string>0.238</string>
 					<key>stime_female</key>
-					<string>50.248</string>
+					<string>0:50.248</string>
 					<key>etime_female</key>
-					<string>50.487</string>
+					<string>0:50.487</string>
 					<key>img</key>
 					<string>symbol_CH</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>dʒ,oʊ,k</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>dʒ,oʊ,k&amp;&amp;tʃ,oʊ,k</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>14:39.252,0.478,6:16.248,0.473&amp;&amp;12:47.246,0.467,4:24.246,0.573</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>14:39.252,0.478,6:16.248,0.473</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>dʒ,oʊ,k&amp;&amp;tʃ,oʊ,k</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>dʒ,oʊ,k</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>joke,choke</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>joke</string>
 					<key>name</key>
-					<string></string>
+					<string>dʒ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>抬高舌头，让舌头整体接近口腔上方的拱形部分，用这个姿势让舌尖贴上牙龈。&amp;&amp;用舌尖截流气息后，放开舌头用力让气息喷出来。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后面加「イ」后，听起来像日语「ヂ」。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>dʒ1,dʒ2,dʒ3,dʒ4,dʒ5,dʒ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>dʒ1,dʒ2,dʒ3,dʒ4,dʒ5,dʒ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.277</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:10.526</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:10.248</string>
 					<key>long_female</key>
 					<string>0.236</string>
 					<key>stime_female</key>
-					<string>51.277</string>
+					<string>0:51.277</string>
 					<key>etime_female</key>
-					<string>51.514</string>
+					<string>0:51.514</string>
 					<key>img</key>
 					<string>symbol_JH</string>
 				</dict>
@@ -2418,385 +2418,385 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>l,i:,f</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>l,i:,f&amp;&amp;l,i:,v</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>14:51.250,0.511,6:28.248,0.477&amp;&amp;14:54.248,0.609,6:31.248,0.513</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>14:51.250,0.511,6:28.248,0.477</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>l,i:,f&amp;&amp;l,i:,v</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>l,i:,f</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>leaf,leave</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>leaf</string>
 					<key>name</key>
-					<string></string>
+					<string>f</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>门牙轻轻接触下唇。&amp;&amp;在此状态下，在唇和齿的缝隙间、用力释放气息。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般用日语「ファ・フィ・フ・フェ・フォ」代替，但日本人在说这个音的时口型像吹蜡烛，而不是上牙触碰下唇。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>f1,f2,f3,f4,f5,f6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>f1,f2,f3,f4,f5,f6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.338</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:11.587</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:11.249</string>
 					<key>long_female</key>
 					<string>0.378</string>
 					<key>stime_female</key>
-					<string>52.248</string>
+					<string>0:52.248</string>
 					<key>etime_female</key>
-					<string>52.626</string>
+					<string>0:52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>l,i:,v</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>l,i:,v&amp;&amp;l,i:,f</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>14:54.248,0.609,6:31.248,0.513&amp;&amp;14:51.250,0.511,6:28.248,0.477</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>14:54.248,0.609,6:31.248,0.513</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>l,i:,v&amp;&amp;l,i:,f</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>l,i:,v</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>leave,leaf</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>leave</string>
 					<key>name</key>
-					<string></string>
+					<string>v</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>门牙轻轻接触下唇。&amp;&amp;在此状态下，在唇和齿的缝隙间、用力喷出气息。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般用日语「バ・ビ・ブ・ベ・ボ」代替，但这些日语发音用唇调音，而不用牙，所以英语国家的人常把它们听成/b/。日本人这样发音、我们比较会难懂。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>v1,v2,v3,v4,v5,v6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>v1,v2,v3,v4,v5,v6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.287</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:12.545</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:12.257</string>
 					<key>long_female</key>
 					<string>0.341</string>
 					<key>stime_female</key>
-					<string>53.264</string>
+					<string>0:53.264</string>
 					<key>etime_female</key>
-					<string>53.606</string>
+					<string>0:53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>m,aʊ,θ</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>m,aʊ,θ&amp;&amp;m,aʊ,s</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>15:21.248,0.605,6:58.248,0.633&amp;&amp;15:20.248,0.704,6:57.248,0.697</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>15:21.248,0.605,6:58.248,0.633</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>m,aʊ,θ&amp;&amp;m,aʊ,s</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>m,aʊ,θ</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>mouth,mouse</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>mouth</string>
 					<key>name</key>
-					<string></string>
+					<string>θ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>轻轻地使舌尖贴上门牙内侧。&amp;&amp;在此状态下，从舌和齿的缝隙间挤出气息。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般用日语「サ・シ・ス・セ・ソ」代替，但因为日语的这些发音舌位会降低得较为靠后，所以英语国家的人常把它们听成/s/、/ʃ/。日本人这样发音、我们比较会难懂。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>θ1,θ2,θ3,θ4,θ5,θ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>θ1,θ2,θ3,θ4,θ5,θ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.441</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:13.693</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:13.251</string>
 					<key>long_female</key>
 					<string>0.666</string>
 					<key>stime_female</key>
-					<string>54.266</string>
+					<string>0:54.266</string>
 					<key>etime_female</key>
-					<string>54.933</string>
+					<string>0:54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>b,r,i:,ð</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>b,r,i:,ð&amp;&amp;b,r,i:,z</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>12:23.248,0.502,4:00.248,0.594&amp;&amp;12:25.242,0.714,4:02.248,0.641</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>12:23.248,0.502,4:00.248,0.594</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>b,r,i:ð&amp;&amp;b,r,i:,z</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>b,r,i:,ð</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>breathe,breeze</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>breathe</string>
 					<key>name</key>
-					<string></string>
+					<string>ð</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>轻轻地使舌尖贴上门牙内侧牙龈。&amp;&amp;在此状态下，从舌和齿的缝隙间挤出气息。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般用日语「ザ・ジ・ズ・ゼ・ゾ」代替，但因为用日语发这些音时，舌尖不会触碰牙齿，所以英语国家的人常把它们听成/z/、/ʒ/。日本人这样发音、我们比较会难懂。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>ð1,ð2,ð3,ð4,ð5,ð6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>ð1,ð2,ð3,ð4,ð5,ð6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.422</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:14.676</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:14.254</string>
 					<key>long_female</key>
 					<string>0.527</string>
 					<key>stime_female</key>
-					<string>55.251</string>
+					<string>0:55.251</string>
 					<key>etime_female</key>
-					<string>55.779</string>
+					<string>0:55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>m,aʊ,s</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>m,aʊ,s&amp;&amp; m,aʊ,θ</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>15:20.248,0.704,6:57.248,0.697&amp;&amp;15:21.248,0.605,6:58.248,0.633</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>15:20.248,0.704,6:57.248,0.697</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>m,aʊ,s&amp;&amp;m,aʊ,θ</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>m,aʊ,s</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>mouse,mouth</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>mouse</string>
 					<key>name</key>
-					<string></string>
+					<string>s</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>轻轻地使舌头两侧立，摆成U形、筒状。舌尖几乎接触门牙后方的牙龈。&amp;&amp;在此状态下，让气息变得像一根线一样，并直直用力地喷出。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语的「ア・ウ・エ・オ」后，会成日语的「サ・ス・セ・ソ」。只是，日语里的「シ」更接近另一个英语发音/ʃ/，所以我们可以听出日本人的这两个发音不标准。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>s1,s2,s3,s4,s5,s6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>s1,s2,s3,s4,s5,s6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.414</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:15.668</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:15.253</string>
 					<key>long_female</key>
 					<string>0.507</string>
 					<key>stime_female</key>
-					<string>56.277</string>
+					<string>0:56.277</string>
 					<key>etime_female</key>
-					<string>56.784</string>
+					<string>0:56.784</string>
 					<key>img</key>
 					<string>symbol_S</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>b,r,i:,z</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>b,r,i:,z&amp;&amp;b,r,i:,ð</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>12:25.242,0.714,4:02.248,0.641&amp;&amp;12:23.248,0.502,4:00.248,0.594</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>12:25.242,0.714,4:02.248,0.641</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>b,r,i:,z&amp;&amp;b,r,i:,ð</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>b,r,i:,z</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>breeze,breathe</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>breeze</string>
 					<key>name</key>
-					<string></string>
+					<string>z</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>轻轻地使舌头两侧立，摆成U形、筒状。舌尖几乎接触门牙后方的牙龈。&amp;&amp;在此状态下，让气息变得像一根线一样，并直直用力地喷出。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语的「ア・ウ・エ・オ」后，会成日语的「ザ・ズ・ゼ・ゾ」。只是，日语里的「ジ」更接近另一个英语发音/ ʒ/，所以日本人需要区分这两个音。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>z1,z2,z3,z4,z5,z6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>z1,z2,z3,z4,z5,z6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.409</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:16.663</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:16.254</string>
 					<key>long_female</key>
 					<string>0.505</string>
 					<key>stime_female</key>
-					<string>57.273</string>
+					<string>0:57.273</string>
 					<key>etime_female</key>
-					<string>57.779</string>
+					<string>0:57.779</string>
 					<key>img</key>
 					<string>symbol_Z</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>ʃ,i:</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>ʃ,i:&amp;&amp;s,i:</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>16:51.248,0.732,8:28.251,0.616&amp;&amp;16:41.246,0.594,8:18.248,0.551</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>16:51.248,0.732,8:28.251,0.616</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>ʃ,i:&amp;&amp;s i:</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>ʃ,i:</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>she,see</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>she</string>
 					<key>name</key>
-					<string></string>
+					<string>ʃ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>让舌头整体接近口腔上方的拱形部分，舌前部几乎嵌入拱形区域。&amp;&amp;在此状态下，从舌与口腔上方的拱形部分之间，用力将气息喷至上面牙龈的里侧。&amp;&amp;同时嘴唇向各个方向外扩。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语「イ」的话，听起来像日语的「シ」。只是，这个音的舌位比日语「シ」更靠近口腔深处，所以比较低沉。（日语「シ」不伴有圆唇以及突出嘴唇的动作，所以音色听起来比英语更高亢轻盈）</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>ʃ1,ʃ2,ʃ3,ʃ4,ʃ5,ʃ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>ʃ1,ʃ2,ʃ3,ʃ4,ʃ5,ʃ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.463</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:17.711</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:17.248</string>
 					<key>long_female</key>
 					<string>0.531</string>
 					<key>stime_female</key>
-					<string>58.249</string>
+					<string>0:58.249</string>
 					<key>etime_female</key>
-					<string>58.781</string>
+					<string>0:58.781</string>
 					<key>img</key>
 					<string>symbol_SH</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>eɪ,ʒ,ə</string>
 					<key>similar_yb_name</key>
 					<string></string>
 					<key>similar_slow_read</key>
@@ -2804,7 +2804,7 @@
 					<key>similar_read</key>
 					<string></string>
 					<key>examples_read</key>
-					<string></string>
+					<string>11:51.248,0.583,3:28.249,0.625</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
@@ -2812,93 +2812,93 @@
 					<key>examples_yb</key>
 					<string></string>
 					<key>similar_count</key>
-					<string></string>
+					<string>0</string>
 					<key>similar</key>
 					<string></string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>Asia</string>
 					<key>name</key>
-					<string></string>
+					<string>ʒ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3,4</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>让舌头整体接近口腔上方的拱形部分，舌前部几乎嵌入拱形区域。&amp;&amp;在此状态下，从舌与口腔上方的拱形部分之间，用力将气息喷至上面牙龈的里侧。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。&amp;&amp;同时嘴唇向各个方向外扩。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>4</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后加上日语「イ」的话，听起来像日语的「ジ」。只是，这个音的舌位比日语「ジ」更靠近口腔深处，所以比较低沉。（日语「ジ」不伴有圆唇以及突出嘴唇的动作，所以音色听起来比英语更高亢轻盈）</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>ʒ1,ʒ2,ʒ3,ʒ4,ʒ5,ʒ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>ʒ1,ʒ2,ʒ3,ʒ4,ʒ5,ʒ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.391</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:18.644</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:18.253</string>
 					<key>long_female</key>
 					<string>0.437</string>
 					<key>stime_female</key>
-					<string>59.252</string>
+					<string>0:59.252</string>
 					<key>etime_female</key>
-					<string>59.689</string>
+					<string>0:59.689</string>
 					<key>img</key>
 					<string>symbol_ZH</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>h,ɪ,z</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>h,ɪ,z&amp;&amp;ɪ,z</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>14:22.248,0.787,5:59.248,0.615&amp;&amp;14:35.248,0.657,6:12.248,0.496</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>14:22.248,0.787,5:59.248,0.615</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>h,ɪ,z&amp;&amp;ɪ z</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>h,ɪ,z</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>his,is</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>his</string>
 					<key>name</key>
-					<string></string>
+					<string>h</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>无需思考唇舌动作。&amp;&amp;让气息从喉咙内涌出，就像在向冻僵的手呼气。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后面加上日语的「ア・エ・オ」听起来很像「ハ・ヘ・ホ」。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>h1,h2,h3,h4,h5,h6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>h1,h2,h3,h4,h5,h6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.345</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:19.594</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:19.249</string>
 					<key>long_female</key>
 					<string>0.638</string>
 					<key>stime_female</key>
-					<string>60.250</string>
+					<string>1:00.250</string>
 					<key>etime_female</key>
-					<string>60.889</string>
+					<string>1:00.889</string>
 					<key>img</key>
 					<string>symbol_HH</string>
 				</dict>
@@ -2913,165 +2913,165 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>m,eɪ</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>m,eɪ&amp;&amp;p,eɪ</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>15:12.248,0.612,6:49.251,0.479&amp;&amp;15:51.248,0.513,7:28.248,0.434</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>15:12.248,0.612,6:49.251,0.479</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>m,eɪ&amp;&amp;p,eɪ</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>m,eɪ</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>may,pay</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>may</string>
 					<key>name</key>
-					<string></string>
+					<string>m</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>闭上嘴。&amp;&amp;用唇节流气息并发出声音。此时、因为嘴唇呈闭合状态，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后面加上「ア・イ・ウ・エ・オ」的话，会变成日语「マ・ミ・ム・メ・モ」。日语中，两唇音前的、「ン」发音的后部、也会被同化为/m/音。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>m1,m2,m3,m4,m5,m6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>m1,m2,m3,m4,m5,m6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.379</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:20.642</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:20.262</string>
 					<key>long_female</key>
 					<string>0.428</string>
 					<key>stime_female</key>
-					<string>61.286</string>
+					<string>1:01.286</string>
 					<key>etime_female</key>
-					<string>61.724</string>
+					<string>1:01.714</string>
 					<key>img</key>
 					<string>symbol_M</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>θ,ɪ,n</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>θ,ɪ,n&amp;&amp;θ,ɪ,ŋ</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>17:45.241,0.548,9:22.248,0.605&amp;&amp;17:46.243,0.485,9:23.248,0.633</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>17:45.241,0.548,9:22.248,0.605</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>θ,ɪ,n&amp;&amp;θ,ɪ,ŋ</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>θ,ɪ,n</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>thin,thing</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>thin</string>
 					<key>name</key>
-					<string></string>
+					<string>n</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>让舌尖贴上门牙后的牙龈&amp;&amp;用舌尖节流气息并发声。此时、因为用舌尖节流气息，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般使用「ナ・ニ・ヌ・ネ・ノ」代替，但日语的这些发音是用舌尖接触门牙来发音的，所以有所不同。另外，日语的「ン」等等呢，因为本来就不会统一规定舌尖位置，所以也是不同的，英语国家的人有时会把这个日语发音听成/ŋ/。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>n1,n2,n3,n4,n5,n6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>n1,n2,n3,n4,n5,n6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.433</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:21.712</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:21.279</string>
 					<key>long_female</key>
 					<string>0.463</string>
 					<key>stime_female</key>
-					<string>62.251</string>
+					<string>1:02.251</string>
 					<key>etime_female</key>
-					<string>62.715</string>
+					<string>1:02.715</string>
 					<key>img</key>
-					<string>symbol_N</string>
+					<string>symbol_NG</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>θ,ɪ,ŋ</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>θ,ɪ,ŋ&amp;&amp;θ,ɪ,n</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>17:46.243,0.485,9:23.248,0.633&amp;&amp;17:45.241,0.548,9:22.248,0.605</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>17:46.243,0.485,9:23.248,0.633</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>θ,ɪ,ŋ,&amp;&amp;θ,ɪ,n</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>θ,ɪ,ŋ</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>thing,thin</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>thing</string>
 					<key>name</key>
-					<string></string>
+					<string>ŋ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>舌根抬起，贴上口腔后部柔软的软腭。&amp;&amp;用舌节流气息并发声。此时、因为用舌节流气息，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>2</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在日语里，这个音一般会用「ンガ・ンギ・ング・ンゲ・ンゴ」代替，但是这些日语发音会伴随破裂音，所以经常被英语国家的人听成/ŋ/+/g/</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>ŋ1,ŋ2,ŋ3,ŋ4,ŋ5,ŋ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>ŋ1,ŋ2,ŋ3,ŋ4,ŋ5,ŋ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.543</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:22.794</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:22.250</string>
 					<key>long_female</key>
 					<string>0.450</string>
 					<key>stime_female</key>
-					<string>63.274</string>
+					<string>1:03.274</string>
 					<key>etime_female</key>
-					<string>63.724</string>
+					<string>1:03.724</string>
 					<key>img</key>
-					<string>symbol_NG</string>
+					<string>symbol_LH</string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -3084,61 +3084,61 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>l,i:,d</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>l,i:,d&amp;&amp;n,i:,d</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>14:50.248,0.555,6:27.248,0.542&amp;&amp;15:25.249,0.565,7:02.248,0.527</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>14:50.248,0.555,6:27.248,0.542</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>l,i:,d&amp;&amp;n,i:,d</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>l,i:,d</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>lead,need</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>lead</string>
 					<key>name</key>
-					<string></string>
+					<string>l</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>舌尖触碰门牙后的牙龈。&amp;&amp;在此状态下，从舌的两侧挤出气息。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>日式英语：在这个音后面加上「ア・イ・ウ・エ・オ」的话，听起来像「ラ・リ・ル・レ・ロ」。可是，英语/l/舌尖贴在牙龈上的时间、会比说日语的「ラ・リ・ル・レ・ロ」更长，且舌的位置更靠前。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>l1,l2,l3,l4,l5,l6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>l1,l2,l3,l4,l5,l6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.460</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:23.713</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:23.252</string>
 					<key>long_female</key>
 					<string>0.627</string>
 					<key>stime_female</key>
-					<string>64.251</string>
+					<string>1:04.251</string>
 					<key>etime_female</key>
-					<string>64.879</string>
+					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_L</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>w,ɪ,ɫ</string>
 					<key>similar_yb_name</key>
 					<string></string>
 					<key>similar_slow_read</key>
@@ -3146,47 +3146,47 @@
 					<key>similar_read</key>
 					<string></string>
 					<key>examples_read</key>
-					<string></string>
+					<string>18:17.248,0.537,9:54.24,0.317</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
 					<string></string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>w,ɪ,ɫ</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>0</string>
 					<key>similar</key>
 					<string></string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>will</string>
 					<key>name</key>
-					<string></string>
+					<string>ɫ</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>舌尖接近门牙后的牙龈，舌根略微抬起。&amp;&amp;在此状态下，从舌的两侧挤出气息。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>和日语的对比ɫ“Dark L” 当/l/出现在单词结尾或辅音前时，发/ɫ/。因为这个音舌根部分略微抬起，所以听起来有些像日语「ウ」。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>ɫ1,ɫ2,ɫ3,ɫ4,ɫ5,ɫ6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>ɫ1,ɫ2,ɫ3,ɫ4,ɫ5,ɫ6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.460</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:23.713</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:23.252</string>
 					<key>long_female</key>
 					<string>0.627</string>
 					<key>stime_female</key>
-					<string>64.251</string>
+					<string>1:04.251</string>
 					<key>etime_female</key>
-					<string>64.879</string>
+					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_LH</string>
 				</dict>
@@ -3201,109 +3201,109 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>r,æ,p</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>r,æ,p&amp;&amp;l,æ,p</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>18:25.248,0.517,10:02.248,0.515&amp;&amp;14:45.248,0.552,6:22.248,0.600</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>18:25.248,0.517,10:02.248,0.515</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>r,æ,p&amp;&amp;l,æ,p</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>r,æ,p</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>wrap,lap</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>wrap</string>
 					<key>name</key>
-					<string></string>
+					<string>r</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>向后拉高舌根。此时舌两侧须接触槽牙内侧。&amp;&amp;舌根紧张用力、同时发声。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>在日语里这个音一般用「ラ・リ・ル・レ・ロ」代替。但是，英语/r/发音舌尖不会接触牙龈，而日语的「ラ・リ・ル・レ・ロ」则舌尖接触牙龈。假如采用日式发音，这个音就很难与英语中的/l/、/t/区分开来。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>r1,r2,r3,r4,r5,r6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>r1,r2,r3,r4,r5,r6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.431</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:24.695</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:24.263</string>
 					<key>long_female</key>
-					<string>0.530</string>
+					<string>0.627</string>
 					<key>stime_female</key>
-					<string>65.257</string>
+					<string>1:04.251</string>
 					<key>etime_female</key>
-					<string>65.788</string>
+					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_R</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>j,ε,t</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>j,ε,t&amp;&amp;dʒ,ε,t</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>18:27.248,0.505,10:04.248,0.525&amp;&amp;14:36.243,0.515,6:13.248,0.503</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>18:27.248,0.505,10:04.248,0.525</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>j,ε,t&amp;&amp;dʒ,ε,t</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>j,ε,t</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>yet,jet</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>yet</string>
 					<key>name</key>
-					<string></string>
+					<string>j</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>大幅度横向咧开嘴。&amp;&amp;整个舌头紧张用力，靠近口腔上方的拱形部分、同时发声。&amp;&amp;保持发声状态、并快速发出跟在它后面的元音。这个音是通过唇舌的移动来实现的。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>在这个音后面加上「ア・ウ・オ」的话，会变为「ヤ・ユ・ヨ」。只是，在英语里，不像日语那样只连接三个元音，而是可以连接所有元音。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>j1,j2,j3,j4,j5,j6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>j1,j2,j3,j4,j5,j6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.422</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:25.677</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:25.255</string>
 					<key>long_female</key>
 					<string>0.556</string>
 					<key>stime_female</key>
-					<string>66.266</string>
+					<string>1:06.266</string>
 					<key>etime_female</key>
-					<string>66.822</string>
+					<string>1:06.822</string>
 					<key>img</key>
 					<string>symbol_Y</string>
 				</dict>
@@ -3353,11 +3353,11 @@
 					<key>stime_male</key>
 					<string></string>
 					<key>long_female</key>
-					<string>0.532</string>
+					<string>0.240</string>
 					<key>stime_female</key>
-					<string>67.258</string>
+					<string>70.257</string>
 					<key>etime_female</key>
-					<string>67.790</string>
+					<string>70.498</string>
 					<key>img</key>
 					<string>symbol_W</string>
 				</dict>
@@ -3372,109 +3372,109 @@
 			<array>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>r,æ,p</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>r,æ,p&amp;&amp;l,æ,p</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>18:25.248,0.517,10:02.248,0.515&amp;&amp;14:45.248,0.552,6:22.248,0.600</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>18:25.248,0.517,10:02.248,0.515</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>r æ p,l æ p</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>r æ p</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>wrap,lap</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>wrap</string>
 					<key>name</key>
-					<string></string>
+					<string>r</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>向后拉高舌根。此时舌两侧须接触槽牙内侧。&amp;&amp;舌根紧张用力、同时发声。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>在日语里这个音一般用「ラ・リ・ル・レ・ロ」代替。但是，英语/r/发音舌尖不会接触牙龈，而日语的「ラ・リ・ル・レ・ロ」则舌尖接触牙龈。假如采用日式发音，这个音就很难与英语中的/l/、/t/区分开来。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>r1,r2,r3,r4,r5,r6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>r1,r2,r3,r4,r5,r6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.431</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:24.695</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:24.263</string>
 					<key>long_female</key>
-					<string>0.577</string>
+					<string>0.627</string>
 					<key>stime_female</key>
-					<string>68.285</string>
+					<string>1:04.251</string>
 					<key>etime_female</key>
-					<string>68.862</string>
+					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_AA</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
-					<string></string>
+					<string>j,ε,t</string>
 					<key>similar_yb_name</key>
-					<string></string>
+					<string>j,ε,t&amp;&amp;dʒ,ε,t</string>
 					<key>similar_slow_read</key>
 					<string></string>
 					<key>similar_read</key>
-					<string></string>
+					<string>18:27.248,0.505,10:04.248,0.525&amp;&amp;14:36.243,0.515,6:13.248,0.503</string>
 					<key>examples_read</key>
-					<string></string>
+					<string>18:27.248,0.505,10:04.248,0.525</string>
 					<key>examples_slow_read</key>
 					<string></string>
 					<key>similar_yb</key>
-					<string></string>
+					<string>j ε t,dʒ ε t</string>
 					<key>examples_yb</key>
-					<string></string>
+					<string>j ε t</string>
 					<key>similar_count</key>
-					<string></string>
+					<string>2</string>
 					<key>similar</key>
-					<string></string>
+					<string>yet,jet</string>
 					<key>examples_count</key>
-					<string></string>
+					<string>1</string>
 					<key>examples</key>
-					<string></string>
+					<string>yet</string>
 					<key>name</key>
-					<string></string>
+					<string>j</string>
 					<key>step_types</key>
-					<string></string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
-					<string></string>
+					<string>大幅度横向咧开嘴。&amp;&amp;整个舌头紧张用力，靠近口腔上方的拱形部分、同时发声。&amp;&amp;保持发声状态、并快速发出跟在它后面的元音。这个音是通过唇舌的移动来实现的。</string>
 					<key>step_count</key>
-					<string></string>
+					<string>3</string>
 					<key>describe</key>
-					<string></string>
+					<string>在这个音后面加上「ア・ウ・オ」的话，会变为「ヤ・ユ・ヨ」。只是，在英语里，不像日语那样只连接三个元音，而是可以连接所有元音。</string>
 					<key>pics_side</key>
-					<string></string>
+					<string>j1,j2,j3,j4,j5,j6</string>
 					<key>pics_front</key>
-					<string></string>
+					<string>j1,j2,j3,j4,j5,j6</string>
 					<key>long_male</key>
-					<string></string>
+					<string>0.422</string>
 					<key>etime_male</key>
-					<string></string>
+					<string>0:25.677</string>
 					<key>stime_male</key>
-					<string></string>
+					<string>0:25.255</string>
 					<key>long_female</key>
-					<string>0.530</string>
+					<string>0.556</string>
 					<key>stime_female</key>
-					<string>69.267</string>
+					<string>1:06.266</string>
 					<key>etime_female</key>
-					<string>69.797</string>
+					<string>1:06.822</string>
 					<key>img</key>
 					<string>symbol_AH</string>
 				</dict>
