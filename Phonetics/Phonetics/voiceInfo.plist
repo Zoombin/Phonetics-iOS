@@ -60,6 +60,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -114,6 +118,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -168,6 +176,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -222,6 +234,10 @@
 					<string>55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -276,6 +292,10 @@
 					<string>56.784</string>
 					<key>img</key>
 					<string>symbol_S</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -330,6 +350,10 @@
 					<string>57.779</string>
 					<key>img</key>
 					<string>symbol_Z</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -393,6 +417,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -447,6 +475,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -501,6 +533,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -555,6 +591,10 @@
 					<string>55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -609,6 +649,10 @@
 					<string>56.784</string>
 					<key>img</key>
 					<string>symbol_S</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -663,6 +707,10 @@
 					<string>57.779</string>
 					<key>img</key>
 					<string>symbol_Z</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -717,6 +765,10 @@
 					<string>58.781</string>
 					<key>img</key>
 					<string>symbol_SH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -771,6 +823,10 @@
 					<string>59.689</string>
 					<key>img</key>
 					<string>symbol_ZH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -825,6 +881,10 @@
 					<string>60.889</string>
 					<key>img</key>
 					<string>symbol_HH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -888,6 +948,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -942,6 +1006,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -996,6 +1064,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1050,6 +1122,10 @@
 					<string>55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1104,6 +1180,10 @@
 					<string>56.784</string>
 					<key>img</key>
 					<string>symbol_S</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1158,6 +1238,10 @@
 					<string>57.779</string>
 					<key>img</key>
 					<string>symbol_Z</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -1221,6 +1305,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1275,6 +1363,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -1338,6 +1430,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1392,6 +1488,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1446,6 +1546,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -1509,6 +1613,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1563,6 +1671,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1617,6 +1729,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1671,6 +1787,10 @@
 					<string>55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1725,6 +1845,10 @@
 					<string>59.689</string>
 					<key>img</key>
 					<string>symbol_ZH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1779,6 +1903,10 @@
 					<string>60.889</string>
 					<key>img</key>
 					<string>symbol_HH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -1842,6 +1970,10 @@
 					<string>52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1896,6 +2028,10 @@
 					<string>53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -1950,6 +2086,10 @@
 					<string>54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -1958,12 +2098,540 @@
 			<string>指较随便的对话中出现的省略发音的现象。</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.666</string>
+					<key>stime_female</key>
+					<string>54.266</string>
+					<key>etime_female</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.666</string>
+					<key>stime_female</key>
+					<string>54.266</string>
+					<key>etime_female</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.666</string>
+					<key>stime_female</key>
+					<string>54.266</string>
+					<key>etime_female</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.378</string>
+					<key>stime_female</key>
+					<string>52.248</string>
+					<key>etime_female</key>
+					<string>52.626</string>
+					<key>img</key>
+					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.341</string>
+					<key>stime_female</key>
+					<string>53.264</string>
+					<key>etime_female</key>
+					<string>53.606</string>
+					<key>img</key>
+					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.666</string>
+					<key>stime_female</key>
+					<string>54.266</string>
+					<key>etime_female</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>弱化</string>
 			<key>describe</key>
 			<string>指功能语（介词/助动词等）发音变得较弱等现象。</string>
 		</dict>
 		<dict>
+			<key>voices</key>
+			<array>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.378</string>
+					<key>stime_female</key>
+					<string>52.248</string>
+					<key>etime_female</key>
+					<string>52.626</string>
+					<key>img</key>
+					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.341</string>
+					<key>stime_female</key>
+					<string>53.264</string>
+					<key>etime_female</key>
+					<string>53.606</string>
+					<key>img</key>
+					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>examples_yb_name</key>
+					<string></string>
+					<key>similar_yb_name</key>
+					<string></string>
+					<key>similar_slow_read</key>
+					<string></string>
+					<key>similar_read</key>
+					<string></string>
+					<key>examples_read</key>
+					<string></string>
+					<key>examples_slow_read</key>
+					<string></string>
+					<key>similar_yb</key>
+					<string></string>
+					<key>examples_yb</key>
+					<string></string>
+					<key>similar_count</key>
+					<string></string>
+					<key>similar</key>
+					<string></string>
+					<key>examples_count</key>
+					<string></string>
+					<key>examples</key>
+					<string></string>
+					<key>name</key>
+					<string></string>
+					<key>step_types</key>
+					<string></string>
+					<key>step_describes</key>
+					<string></string>
+					<key>step_count</key>
+					<string></string>
+					<key>describe</key>
+					<string></string>
+					<key>pics_side</key>
+					<string></string>
+					<key>pics_front</key>
+					<string></string>
+					<key>long_male</key>
+					<string></string>
+					<key>etime_male</key>
+					<string></string>
+					<key>stime_male</key>
+					<string></string>
+					<key>long_female</key>
+					<string>0.666</string>
+					<key>stime_female</key>
+					<string>54.266</string>
+					<key>etime_female</key>
+					<string>54.933</string>
+					<key>img</key>
+					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
+				</dict>
+			</array>
 			<key>title</key>
 			<string>气音</string>
 			<key>describe</key>
@@ -2028,6 +2696,10 @@
 					<string>0:44.711</string>
 					<key>img</key>
 					<string>symbol_P</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2082,6 +2754,10 @@
 					<string>0:45.469</string>
 					<key>img</key>
 					<string>symbol_B</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2136,6 +2812,10 @@
 					<string>0:46.520</string>
 					<key>img</key>
 					<string>symbol_T</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2190,6 +2870,10 @@
 					<string>0:47.466</string>
 					<key>img</key>
 					<string>symbol_D</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2244,6 +2928,10 @@
 					<string>0:48.471</string>
 					<key>img</key>
 					<string>symbol_K</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2298,6 +2986,10 @@
 					<string>0:49.516</string>
 					<key>img</key>
 					<string>symbol_G</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2352,6 +3044,10 @@
 					<string>0:50.487</string>
 					<key>img</key>
 					<string>symbol_CH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2406,6 +3102,10 @@
 					<string>0:51.514</string>
 					<key>img</key>
 					<string>symbol_JH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -2469,6 +3169,10 @@
 					<string>0:52.626</string>
 					<key>img</key>
 					<string>symbol_F</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2523,6 +3227,10 @@
 					<string>0:53.606</string>
 					<key>img</key>
 					<string>symbol_V</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2577,6 +3285,10 @@
 					<string>0:54.933</string>
 					<key>img</key>
 					<string>symbol_TH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2631,6 +3343,10 @@
 					<string>0:55.779</string>
 					<key>img</key>
 					<string>symbol_DH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2685,6 +3401,10 @@
 					<string>0:56.784</string>
 					<key>img</key>
 					<string>symbol_S</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2739,6 +3459,10 @@
 					<string>0:57.779</string>
 					<key>img</key>
 					<string>symbol_Z</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2793,6 +3517,10 @@
 					<string>0:58.781</string>
 					<key>img</key>
 					<string>symbol_SH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2847,6 +3575,10 @@
 					<string>0:59.689</string>
 					<key>img</key>
 					<string>symbol_ZH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -2901,6 +3633,10 @@
 					<string>1:00.889</string>
 					<key>img</key>
 					<string>symbol_HH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -2964,6 +3700,10 @@
 					<string>1:01.714</string>
 					<key>img</key>
 					<string>symbol_M</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3018,6 +3758,10 @@
 					<string>1:02.715</string>
 					<key>img</key>
 					<string>symbol_NG</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3072,6 +3816,10 @@
 					<string>1:03.724</string>
 					<key>img</key>
 					<string>symbol_LH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -3135,6 +3883,10 @@
 					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_L</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3189,6 +3941,10 @@
 					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_LH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -3252,6 +4008,10 @@
 					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_R</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3306,6 +4066,10 @@
 					<string>1:06.822</string>
 					<key>img</key>
 					<string>symbol_Y</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3360,6 +4124,10 @@
 					<string>70.498</string>
 					<key>img</key>
 					<string>symbol_W</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -3423,6 +4191,10 @@
 					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_AA</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3477,6 +4249,10 @@
 					<string>1:06.822</string>
 					<key>img</key>
 					<string>symbol_AH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3531,6 +4307,10 @@
 					<string>70.498</string>
 					<key>img</key>
 					<string>symbol_AH0</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3585,6 +4365,10 @@
 					<string>71.729</string>
 					<key>img</key>
 					<string>symbol_AE</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3639,6 +4423,10 @@
 					<string>72.702</string>
 					<key>img</key>
 					<string>symbol_IH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3693,6 +4481,10 @@
 					<string>73.667</string>
 					<key>img</key>
 					<string>symbol_UH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3747,6 +4539,10 @@
 					<string>74.734</string>
 					<key>img</key>
 					<string>symbol_EH</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -3810,6 +4606,10 @@
 					<string>75.788</string>
 					<key>img</key>
 					<string>symbol_ER</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3864,6 +4664,10 @@
 					<string>76.828</string>
 					<key>img</key>
 					<string>symbol_IY</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3918,6 +4722,10 @@
 					<string>77.787</string>
 					<key>img</key>
 					<string>symbol_UW</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -3972,6 +4780,10 @@
 					<string>78.811</string>
 					<key>img</key>
 					<string>symbol_AO</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -4035,6 +4847,10 @@
 					<string>79.747</string>
 					<key>img</key>
 					<string>symbol_AY</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4089,6 +4905,10 @@
 					<string>80.827</string>
 					<key>img</key>
 					<string>symbol_AW</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4143,6 +4963,10 @@
 					<string>81.804</string>
 					<key>img</key>
 					<string>symbol_EY</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4197,6 +5021,10 @@
 					<string>82.776</string>
 					<key>img</key>
 					<string>symbol_OY</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4251,6 +5079,10 @@
 					<string>83.714</string>
 					<key>img</key>
 					<string>symbol_OW</string>
+					<key>step_voices</key>
+					<string></string>
+					<key>step_pics</key>
+					<string></string>
 				</dict>
 			</array>
 			<key>title</key>
