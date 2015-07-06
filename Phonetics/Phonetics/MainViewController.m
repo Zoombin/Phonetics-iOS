@@ -130,10 +130,10 @@
             //欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com
             //构造分享内容
             id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
-                                               defaultContent:@"欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com"
+                                               defaultContent:@"金版发音图谱，每日点击广告1次（连击无效）、单月累计点击广告30次的用户朋友可以凭含“广告计数页面的截图”和“微信朋友圈分享此活动内容的截图”参与每月的“返20元大抽奖”，每人每月有一次机会。参与者可将上述截图和领奖微信号发至：hanakagumi@outlook.com"
                                                         image:nil
                                                         title:@"花华组日语"
-                                                          url:@"http://www,baidu.com"
+                                                          url:@"http://www.baidu.com"
                                                   description:@"分享信息"
                                                     mediaType:SSPublishContentMediaTypeNews];
             //创建弹出菜单容器
