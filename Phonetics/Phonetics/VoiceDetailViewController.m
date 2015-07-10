@@ -54,6 +54,15 @@
     [self loadExampleInfo];
     [self loadSimilarInfo];
     // Do any additional setup after loading the view from its nib.
+    [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)valueChanged {
+    if (_segmentedControl.selectedSegmentIndex == 0) {
+        NSLog(@"正面");
+    } else {
+        NSLog(@"侧面");
+    }
 }
 
 - (void)loadStepInfo {
@@ -404,6 +413,8 @@
         [self showYBView];
         [_exampleTableView reloadData];
         [self read:indexPath.row isSlow:NO];
+    } else if (tableView == _stepTableView) {
+        
     }
 }
 

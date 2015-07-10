@@ -14,6 +14,7 @@
                 <outlet property="gifImageView" destination="53M-3Z-N4w" id="f2r-Zv-FUc"/>
                 <outlet property="headerView" destination="iWL-kU-Ngc" id="zQP-ZW-eGI"/>
                 <outlet property="liView" destination="D0C-7O-JjE" id="anl-Xp-r4o"/>
+                <outlet property="segmentedControl" destination="tPh-9s-L7D" id="dPF-Mh-mtH"/>
                 <outlet property="selectMaleOrFemaleBtn" destination="cbX-7J-OeK" id="PyL-yR-tBq"/>
                 <outlet property="stepTableView" destination="x5o-cT-nfs" id="pRw-Cw-dTx"/>
                 <outlet property="stepView" destination="HGh-pk-68j" id="O28-YS-y74"/>
@@ -145,6 +146,15 @@
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="tPh-9s-L7D">
+                    <rect key="frame" x="189" y="175" width="123" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="正面"/>
+                        <segment title="侧面"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="223" y="374"/>

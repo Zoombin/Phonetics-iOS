@@ -29,10 +29,10 @@
 
 @property (nonatomic, weak) IBOutlet UIView *describeView;
 @property (nonatomic, weak) IBOutlet UIView *stepView;
-@property (nonatomic, weak) IBOutlet UIView *simView;
 @property (nonatomic, weak) IBOutlet UIView *liView;
 @property (nonatomic, weak) IBOutlet UIView *headerView;
 @property (nonatomic, weak) IBOutlet UILabel *voiceLabel;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
 - (IBAction)voiceButtonClick:(id)sender;
 - (IBAction)backButtonClick:(id)sender;
 - (IBAction)maleOrFemaleBtnClicked:(id)sender;
