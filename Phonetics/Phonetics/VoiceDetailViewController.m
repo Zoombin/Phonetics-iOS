@@ -60,8 +60,16 @@
 - (void)valueChanged {
     if (_segmentedControl.selectedSegmentIndex == 0) {
         NSLog(@"正面");
+        NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView.image = [UIImage imageNamed:imageName[0]];
+        }
     } else {
         NSLog(@"侧面");
+        NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@", imageName[0]]];
+        }
     }
 }
 
@@ -233,9 +241,10 @@
 - (void)changeImageView:(VoiceItem *)item andLong:(float)vLong
 {
     NSArray *imageName = [item.picsFront componentsSeparatedByString:@","];
+    BOOL isSide = _segmentedControl.selectedSegmentIndex == 1;
     NSMutableArray *imgArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < [imageName count]; i++) {
-        UIImage *img = [UIImage imageNamed:imageName[i]];
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", isSide ? @"c" : @"", imageName[i]]];
         [imgArray addObject:img];
     }
     if ([imgArray count] == 0) {
