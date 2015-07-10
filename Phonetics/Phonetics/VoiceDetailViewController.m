@@ -424,6 +424,39 @@
         [self read:indexPath.row isSlow:NO];
     } else if (tableView == _stepTableView) {
         
+//        float stime = 0.0f;
+//        float vLong = 0.0f;
+//        if (!_selectMaleOrFemaleBtn.selected) {
+//            stime = [TimeUtil getPlayTime:item.startFemaleTime];
+//            vLong = [TimeUtil getPlayTime:item.voiceFemaleLong];
+//        } else {
+//            stime = [TimeUtil getPlayTime:item.startMaleTime];
+//            vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
+//        }
+//        [self playVoice:<#(VoiceItem *)#>]
+        
+       
+        
+        NSArray *stepPics = [_item.stepPics componentsSeparatedByString:@"&&"];
+        NSString *currentPics = stepPics[indexPath.row];
+        
+        NSArray *voices = [_item.stepVoices componentsSeparatedByString:@"&&"];
+        NSString *currentVoics = voices[indexPath.row];
+         NSArray *wordsReadArr = [currentVoics componentsSeparatedByString:@","];
+        
+        VoiceItem *item = [[VoiceItem alloc] init];
+        item.startFemaleTime = @"";
+        item.voiceFemaleLong = @"";
+        item.startMaleTime = @"";
+        item.voiceMaleLong = @"";
+        item.picsFront = currentPics;
+        if ([wordsReadArr count] == 4) {
+            item.startFemaleTime = wordsReadArr[0];
+            item.voiceFemaleLong = wordsReadArr[1];
+            item.startMaleTime = wordsReadArr[2];
+            item.voiceMaleLong = wordsReadArr[3];
+        }
+        [self playVoice:item];
     }
 }
 

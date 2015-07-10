@@ -27,6 +27,8 @@
         self.stepCount = dict[@"step_count"];
         self.stepDescribes = dict[@"step_describes"];
         self.stepTypes = dict[@"step_types"];
+        self.stepVoices = dict[@"step_voices"];
+        self.stepPics = dict[@"step_pics"];
         self.similar = dict[@"similar"];
         self.similarCount = dict[@"similar_count"];
         self.examples = dict[@"examples"];

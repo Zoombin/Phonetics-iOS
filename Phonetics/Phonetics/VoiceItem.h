@@ -23,6 +23,8 @@
 @property (nonatomic, strong) NSString *stepDescribes;
 @property (nonatomic, strong) NSString *stepTypes;
 @property (nonatomic, strong) NSString *stepCount;
+@property (nonatomic, strong) NSString *stepVoices;
+@property (nonatomic, strong) NSString *stepPics;
 @property (nonatomic, strong) NSString *examples;
 @property (nonatomic, strong) NSString *examplesSlowRead;
 @property (nonatomic, strong) NSString *examplesRead;

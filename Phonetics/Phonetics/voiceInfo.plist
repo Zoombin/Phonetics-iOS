@@ -4174,9 +4174,9 @@
 					<key>describe</key>
 					<string>日式英语：在日语里，这个音一般用「オ」来代替，但实际是比「ア」更阴沉憋闷的一个元音。嘴张得比「ア」大，且舌的位置靠后下方。</string>
 					<key>pics_side</key>
-					<string>ɑ1,ɑ2,ɑ3,ɑ4,ɑ5,ɑ6</string>
+					<string>α1,α2,α3,α4,α5,α6</string>
 					<key>pics_front</key>
-					<string>ɑ1,ɑ2,ɑ3,ɑ4,ɑ5,ɑ6</string>
+					<string>α1,α2,α3,α4,α5,α6</string>
 					<key>long_male</key>
 					<string>0.362</string>
 					<key>etime_male</key>
@@ -4194,7 +4194,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;2:41.296,1.175,1:51.266,1.190</string>
 					<key>step_pics</key>
-					<string>ɑ1,ɑ2,ɑ3&amp;&amp;ɑ4,ɑ5,ɑ6</string>
+					<string>α1,α2,α3&amp;&amp;α4,α5,α6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
