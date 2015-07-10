@@ -408,7 +408,8 @@
 }
 
 - (void)playVoice:(float)startTime andLong:(float)vLong isSlow:(BOOL)isSlow{
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
+    NSString *slow = @"sy3.1";
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:isSlow ? slow : @"bgmusic" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:musicUrl];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
                    ];
