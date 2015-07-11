@@ -31,10 +31,44 @@
     isEdit = NO;
     compares = [[NSMutableArray alloc] init];
     currentIndex = 0;
+     [_segmentedControl1 addTarget:self action:@selector(valueChanged1) forControlEvents:UIControlEventValueChanged];
+     [_segmentedControl2 addTarget:self action:@selector(valueChanged2) forControlEvents:UIControlEventValueChanged];
     [self changeViewAndView2Size];
     [self initData];
-    // Do any additional setup after loading the view from its nib.
 }
+
+- (void)valueChanged1 {
+    if (_segmentedControl1.selectedSegmentIndex == 0) {
+        NSLog(@"正面");
+        NSArray *imageName = [item1.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView1.image = [UIImage imageNamed:imageName[0]];
+        }
+    } else {
+        NSLog(@"侧面");
+        NSArray *imageName = [item1.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@", imageName[0]]];
+        }
+    }
+}
+
+- (void)valueChanged2 {
+    if (_segmentedControl2.selectedSegmentIndex == 0) {
+        NSLog(@"正面");
+        NSArray *imageName = [item2.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView2.image = [UIImage imageNamed:imageName[0]];
+        }
+    } else {
+        NSLog(@"侧面");
+        NSArray *imageName = [item2.picsFront componentsSeparatedByString:@","];
+        if ([imageName count] > 0) {
+            _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@", imageName[0]]];
+        }
+    }
+}
+
 
 - (void)initData {
     NSString *values = [UserDefaultManager getUserSaveValues];
@@ -103,6 +137,8 @@
     if (currentIndex < 0) {
         currentIndex = 0;
     }
+    _segmentedControl1.selectedSegmentIndex = 0;
+    _segmentedControl2.selectedSegmentIndex = 0;
     NSLog(@"%d", currentIndex);
     if (isEdit) {
         if (item1 && item2) {
@@ -131,6 +167,8 @@
         NSLog(@"还没选完");
         return;
     }
+    _segmentedControl1.selectedSegmentIndex = 0;
+    _segmentedControl2.selectedSegmentIndex = 0;
     currentIndex++;
     NSLog(@"%d", currentIndex);
     if ([compares count] > currentIndex) {
@@ -267,10 +305,15 @@
     if (item.picsFront.length == 0) {
         return;
     }
+
+    BOOL isSide = _segmentedControl2.selectedSegmentIndex == 1;
+    if (isUp) {
+        isSide = _segmentedControl1.selectedSegmentIndex == 1;
+    }
     NSArray *imageName = [item.picsFront componentsSeparatedByString:@","];
     NSMutableArray *imgArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < [imageName count]; i++) {
-        UIImage *img = [UIImage imageNamed:imageName[i]];
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", isSide ? @"c" : @"", imageName[i]]];
         [imgArray addObject:img];
     }
     if ([imgArray count] == 0) {

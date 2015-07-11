@@ -19,6 +19,8 @@
 @property (nonatomic, weak) IBOutlet UIButton *selectMOrFBtn2;
 @property (nonatomic, weak) IBOutlet UIImageView *gifImageView1;
 @property (nonatomic, weak) IBOutlet UIImageView *gifImageView2;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl1;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl2;
 @property (nonatomic, strong) NSArray *basicArray;
 
 - (IBAction)backBtnClicked:(id)sender;
