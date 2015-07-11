@@ -127,13 +127,13 @@
             [self.navigationController pushViewController:compareViewController animated:YES];
         } else if (indexPath.row == 1) {
             NSLog(@"分享到朋友圈");
-            //欢迎关注花华组日语公共号，App下载地址:http://www,baidu.com
             //构造分享内容
+//            金版发音图谱，每日点击广告1次（连击无效）、单月累计点击广告30次的用户朋友可以凭含“广告计数页面的截图”和“微信朋友圈分享此活动内容的截图”参与每月的“返20元大抽奖”，每人每月有一次机会。参与者可将上述截图和领奖微信号发至：hanakagumi@outlook.com
             id<ISSContent> publishContent = [ShareSDK content:@"分享内容"
-                                               defaultContent:@"金版发音图谱，每日点击广告1次（连击无效）、单月累计点击广告30次的用户朋友可以凭含“广告计数页面的截图”和“微信朋友圈分享此活动内容的截图”参与每月的“返20元大抽奖”，每人每月有一次机会。参与者可将上述截图和领奖微信号发至：hanakagumi@outlook.com"
+                                               defaultContent:@"推荐：花华组基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。关注官方公众号：hanakagumi 花华组主页：hanaka.5858.com，金版音标图谱下载地址："
                                                         image:nil
-                                                        title:@"花华组日语"
-                                                          url:@"http://www.baidu.com"
+                                                        title:@"金版音标图谱"
+                                                          url:@"http://hanaka.5858.com"
                                                   description:@"分享信息"
                                                     mediaType:SSPublishContentMediaTypeNews];
             //创建弹出菜单容器

@@ -86,7 +86,11 @@
 - (void)loadExampleInfo {
     if (_item.examplesCount) {
         exampleCount =  [_item.examplesCount integerValue];
-        [self showYBView];
+        if (_isBasic) {
+            [self showYBView];
+        } else {
+            [_exampleTableView setTableHeaderView:nil];
+        }
         [_exampleTableView reloadData];
     }
 }
@@ -138,6 +142,7 @@
     NSArray *names = @[@"描述", @"基础", @"举列", @"相似"];
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
+        _segmentedControl.hidden = YES;
     }
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
     CGFloat buttonHeight = _bottomView.frame.size.height / 2;
@@ -167,7 +172,16 @@
             _describeView.hidden = NO;
             break;
         case 1:
-            _stepView.hidden = NO;
+            if (_isBasic) {
+               _stepView.hidden = NO;
+            } else {
+                _liView.hidden = NO;
+                currentIndex = 0;
+                isExample = YES;
+//                [self showHeader];
+//                [self showYBView];
+                [_exampleTableView reloadData];
+            }
             break;
         case 2:
             _liView.hidden = NO;
@@ -267,7 +281,9 @@
 }
 
 - (IBAction)voiceButtonClick:(id)sender {
-    [self playVoice:_item];
+    if (_isBasic) {
+        [self playVoice:_item];
+    }
 }
 
 - (void)playStop {
@@ -423,20 +439,6 @@
         [_exampleTableView reloadData];
         [self read:indexPath.row isSlow:NO];
     } else if (tableView == _stepTableView) {
-        
-//        float stime = 0.0f;
-//        float vLong = 0.0f;
-//        if (!_selectMaleOrFemaleBtn.selected) {
-//            stime = [TimeUtil getPlayTime:item.startFemaleTime];
-//            vLong = [TimeUtil getPlayTime:item.voiceFemaleLong];
-//        } else {
-//            stime = [TimeUtil getPlayTime:item.startMaleTime];
-//            vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
-//        }
-//        [self playVoice:<#(VoiceItem *)#>]
-        
-       
-        
         NSArray *stepPics = [_item.stepPics componentsSeparatedByString:@"&&"];
         NSString *currentPics = stepPics[indexPath.row];
         
