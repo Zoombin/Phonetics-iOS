@@ -144,6 +144,9 @@
         names = @[@"描述", @"举例"];
         _segmentedControl.hidden = YES;
     }
+    if ([_item.similar length] == 0) {
+        names = @[@"描述", @"基础", @"举列"];
+    }
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
     CGFloat buttonHeight = _bottomView.frame.size.height / 2;
     

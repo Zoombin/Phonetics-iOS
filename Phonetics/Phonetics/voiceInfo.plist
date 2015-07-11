@@ -4575,7 +4575,7 @@
 					<key>similar</key>
 					<string>stir,star</string>
 					<key>examples_count</key>
-					<string>2</string>
+					<string>1</string>
 					<key>examples</key>
 					<string>stir</string>
 					<key>name</key>
@@ -4589,9 +4589,9 @@
 					<key>describe</key>
 					<string>日式英语：这个音和日语「ア」「ウ」「オ」等有很大差别，日本人无法用它们来代用这个音。我们也需要通过不断重复练习、来发好这个独特的、闷声闷气的英语发音。</string>
 					<key>pics_side</key>
-					<string>ɚ:1,ɚ:2,ɚ:3,ɚ:4,ɚ:5,ɚ:6</string>
+					<string>ɚchang1,ɚchang2,ɚchang3,ɚchang4,ɚchang5,ɚchang6</string>
 					<key>pics_front</key>
-					<string>ɚ:1,ɚ:2,ɚ:3,ɚ:4,ɚ:5,ɚ:6</string>
+					<string>ɚchang1,ɚchang2,ɚchang3,ɚchang4,ɚchang5,ɚchang6</string>
 					<key>long_male</key>
 					<string>0.425</string>
 					<key>etime_male</key>
@@ -4609,7 +4609,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;2:55.251,1.323, 2:05.260,1.293</string>
 					<key>step_pics</key>
-					<string>ɚ:1,ɚ:2,ɚ:3&amp;&amp;ɚ:4,ɚ:5,ɚ:6</string>
+					<string>ɚchang1,ɚchang2,ɚchang3&amp;&amp;ɚchang4,ɚchang5,ɚchang6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4647,9 +4647,9 @@
 					<key>describe</key>
 					<string>日式英语：日本人常用不同音质的「イ」来代替这个发音。因为发音舌位和英语类似，所以把/i/清晰地发成日语「イ」也不难懂。</string>
 					<key>pics_side</key>
-					<string>i:1,i:2,i:3,i:4,i:5,i:6</string>
+					<string>ichang1,ichang2,ichang3,ichang4,ichang5,ichang6</string>
 					<key>pics_front</key>
-					<string>i:1,i:2,i:3,i:4,i:5,i:6</string>
+					<string>ichang1,ichang2,ichang3,ichang4,ichang5,ichang6</string>
 					<key>long_male</key>
 					<string>0.438</string>
 					<key>etime_male</key>
@@ -4667,7 +4667,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;2:57.297,1.167,2:07.252,1.294</string>
 					<key>step_pics</key>
-					<string>i:1,i:2,i:3&amp;&amp;i:4,i:5,i:6</string>
+					<string>ichang1,ichang2,ichang3&amp;&amp;ichang4,ichang5,ichang6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4695,7 +4695,7 @@
 					<key>examples</key>
 					<string>fool</string>
 					<key>name</key>
-					<string>u:</string>
+					<string>uː</string>
 					<key>step_types</key>
 					<string>1,2</string>
 					<key>step_describes</key>
@@ -4705,9 +4705,9 @@
 					<key>describe</key>
 					<string>日式英语：日本人会容易把它听成「ウ」，日语的「ウ」不是大幅缩拢嘴唇，而是主要靠上下唇互相接近来发音，听起来会比这个音透亮一些。</string>
 					<key>pics_side</key>
-					<string>u:1,u:2,u:3,u:4,u:5,u:6</string>
+					<string>uchang1,uchang2,uchang3,uchang4,uchang5,uchang6</string>
 					<key>pics_front</key>
-					<string>u:1,u:2,u:3,u:4,u:5,u:6</string>
+					<string>uchang1,uchang2,uchang3,uchang4,uchang5,uchang6</string>
 					<key>long_male</key>
 					<string>0.387</string>
 					<key>etime_male</key>
@@ -4725,7 +4725,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;2:59.262,1.287,2:09.275,1.266</string>
 					<key>step_pics</key>
-					<string>u:1,u:2,u:3&amp;&amp;u:4,u:5,u:6</string>
+					<string>uchang1,uchang2,uchang3&amp;&amp;uchang4,uchang5,uchang6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -4763,9 +4763,9 @@
 					<key>describe</key>
 					<string>日式英语：发音类似日语「オ」。舌位较「オ」低，因它张口度较大，所以有时也被听成「ア」。发音动作就像打哈欠。</string>
 					<key>pics_side</key>
-					<string>ɔ:1,ɔ:2,ɔ:3,ɔ:4,ɔ:5,ɔ:6</string>
+					<string>ɔchang1,ɔchang2,ɔchang3,ɔchang4,ɔchang5,ɔchang6</string>
 					<key>pics_front</key>
-					<string>ɔ:1,ɔ:2,ɔ:3,ɔ:4,ɔ:5,ɔ:6</string>
+					<string>ɔchang1,ɔchang2,ɔchang3,ɔchang4,ɔchang5,ɔchang6</string>
 					<key>long_male</key>
 					<string>0:00.536</string>
 					<key>etime_male</key>
@@ -4783,7 +4783,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;3:01.326,1.265,2:11.273,1.268</string>
 					<key>step_pics</key>
-					<string>ɔ:1,ɔ:2,ɔ:3&amp;&amp;ɔ:4,ɔ:5,ɔ:6</string>
+					<string>ɔchang1,ɔchang2,ɔchang3&amp;&amp;ɔchang4,ɔchang5,ɔchang6</string>
 				</dict>
 			</array>
 			<key>title</key>
@@ -4878,7 +4878,7 @@
 					<key>examples</key>
 					<string>out</string>
 					<key>name</key>
-					<string>aυ</string>
+					<string>aʊ</string>
 					<key>step_types</key>
 					<string>1,2,3</string>
 					<key>step_describes</key>
