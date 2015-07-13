@@ -99,7 +99,7 @@
                 </view>
                 <view contentMode="scaleToFill" id="HGh-pk-68j">
                     <rect key="frame" x="0.0" y="220" width="320" height="208"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="x5o-cT-nfs">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
@@ -115,7 +115,7 @@
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" id="ZFK-zz-8Hh">
                     <rect key="frame" x="0.0" y="220" width="320" height="208"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="siI-mh-e27">
                             <rect key="frame" x="22" y="62" width="277" height="126"/>
@@ -133,7 +133,7 @@
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" id="D0C-7O-JjE">
                     <rect key="frame" x="0.0" y="220" width="320" height="208"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q2g-dL-NWG">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
