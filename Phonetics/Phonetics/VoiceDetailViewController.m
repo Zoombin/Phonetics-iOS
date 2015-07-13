@@ -44,7 +44,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
-        _gifImageView.image = [UIImage imageNamed:imageName[0]];
+        _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[0]]];
     }
     _describeIcon.image = [UIImage imageNamed:_item.imgName];
     _describeTextView.text = _item.describeText;
@@ -62,13 +62,13 @@
         NSLog(@"正面");
         NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
         if ([imageName count] > 0) {
-            _gifImageView.image = [UIImage imageNamed:imageName[0]];
+            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[0]]];
         }
     } else {
         NSLog(@"侧面");
         NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
         if ([imageName count] > 0) {
-            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@", imageName[0]]];
+            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[0]]];
         }
     }
 }
@@ -261,7 +261,7 @@
     BOOL isSide = _segmentedControl.selectedSegmentIndex == 1;
     NSMutableArray *imgArray = [[NSMutableArray alloc] init];
     for (int i = 0; i < [imageName count]; i++) {
-        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@", isSide ? @"c" : @"", imageName[i]]];
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.jpg", isSide ? @"c" : @"", imageName[i]]];
         [imgArray addObject:img];
     }
     if ([imgArray count] == 0) {
