@@ -44,7 +44,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
-        _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[0]]];
+        _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
     _describeIcon.image = [UIImage imageNamed:_item.imgName];
     _describeTextView.text = _item.describeText;

@@ -145,8 +145,8 @@
         isFirst = YES;
         currentIndex = 0;
     }
-    _segmentedControl1.selectedSegmentIndex = 0;
-    _segmentedControl2.selectedSegmentIndex = 0;
+    _segmentedControl1.selectedSegmentIndex = 1;
+    _segmentedControl2.selectedSegmentIndex = 1;
     NSLog(@"%d", currentIndex);
     if (isEdit) {
         if (item1 && item2) {
@@ -183,8 +183,8 @@
         NSLog(@"还没选完");
         return;
     }
-    _segmentedControl1.selectedSegmentIndex = 0;
-    _segmentedControl2.selectedSegmentIndex = 0;
+    _segmentedControl1.selectedSegmentIndex = 1;
+    _segmentedControl2.selectedSegmentIndex = 1;
     currentIndex++;
     NSLog(@"%d", currentIndex);
     if ([compares count] > currentIndex) {
@@ -236,7 +236,7 @@
 - (void)loadUpData {
     NSArray *imageNames = [item1.picsFront componentsSeparatedByString:@","];
     if ([imageNames count] > 0) {
-        _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageNames[0]]];
+        _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
     [_voiceButton1 setBackgroundImage:[UIImage imageNamed:item1.imgName] forState:UIControlStateNormal];
 }
@@ -244,7 +244,7 @@
 - (void)loadDownData {
     NSArray *imageNames = [item2.picsFront componentsSeparatedByString:@","];
     if ([imageNames count] > 0) {
-        _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageNames[0]]];
+        _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
     [_voiceButton2 setBackgroundImage:[UIImage imageNamed:item2.imgName] forState:UIControlStateNormal];
 }

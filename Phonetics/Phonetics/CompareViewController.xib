@@ -67,7 +67,7 @@
                                 <action selector="selectVoiceUpBtnClicked:" destination="-1" eventType="touchUpInside" id="PQU-uT-z2g"/>
                             </connections>
                         </button>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="5ea-bD-ynj">
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="5ea-bD-ynj">
                             <rect key="frame" x="185" y="166" width="123" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -121,7 +121,7 @@
                                 <action selector="selectVoiceDownBtnClicked:" destination="-1" eventType="touchUpInside" id="P0d-m0-jvr"/>
                             </connections>
                         </button>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="DAb-Fc-qzO">
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="DAb-Fc-qzO">
                             <rect key="frame" x="185" y="166" width="123" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             <segments>
