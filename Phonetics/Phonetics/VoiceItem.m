@@ -37,6 +37,7 @@
         self.similarYB = dict[@"similar_yb"];
         self.examplesRead = dict[@"examples_read"];
         self.examplesSlowRead = dict[@"examples_slow_read"];
+        self.examplesPics = dict[@"examples_pics"];
         self.similarRead = dict[@"similar_read"];
         self.similarSlowRead = dict[@"similar_slow_read"];
         self.similarYBName = dict[@"similar_yb_name"];

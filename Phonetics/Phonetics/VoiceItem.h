@@ -30,6 +30,7 @@
 @property (nonatomic, strong) NSString *examplesRead;
 @property (nonatomic, strong) NSString *examplesYB;
 @property (nonatomic, strong) NSString *examplesCount;
+@property (nonatomic, strong) NSString *examplesPics;
 @property (nonatomic, strong) NSString *similar;
 @property (nonatomic, strong) NSString *similarRead;
 @property (nonatomic, strong) NSString *similarSlowRead;
@@ -38,6 +39,7 @@
 @property (nonatomic, strong) NSString *similarYBName;
 @property (nonatomic, strong) NSString *examplesYBName;
 @property (nonatomic, strong) NSString *name;
+
 
 - (id)initWithAttribte:(NSDictionary *)dict;
 + (NSArray *)createWithArray:(NSArray *)arr;
