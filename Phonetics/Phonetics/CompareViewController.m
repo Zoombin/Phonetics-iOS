@@ -115,10 +115,16 @@
 }
 
 - (IBAction)backBtnClicked:(id)sender {
+    //编辑状态，并且上下都有值，就保存～
     if (isEdit && item1 && item2) {
         NSLog(@"保存");
-        NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
-        [compares addObject:value];
+        if (currentIndex <= [compares count] - 1) {
+            NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
+            [compares replaceObjectAtIndex:currentIndex withObject:value];
+        } else {
+            NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
+            [compares addObject:value];
+        }
     }
     if ([compares count] > 0) {
         NSMutableString *str = [@"" mutableCopy];
@@ -133,8 +139,10 @@
 }
 
 - (IBAction)preBtnClicked:(id)sender {
+    BOOL isFirst = NO;
     currentIndex--;
     if (currentIndex < 0) {
+        isFirst = YES;
         currentIndex = 0;
     }
     _segmentedControl1.selectedSegmentIndex = 0;
@@ -142,9 +150,17 @@
     NSLog(@"%d", currentIndex);
     if (isEdit) {
         if (item1 && item2) {
-            NSLog(@"保存");
-            NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
-            [compares addObject:value];
+            if (isFirst) {
+                [self saveCurrent:0];
+            } else {
+                if (currentIndex + 1 <= [compares count] - 1) {
+                    [self saveCurrent:currentIndex + 1];
+                } else {
+                    NSLog(@"保存");
+                    NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
+                    [compares addObject:value];
+                }
+            }
         }
         if ([compares count] != 0) {
             isEdit = NO;
@@ -173,13 +189,20 @@
     NSLog(@"%d", currentIndex);
     if ([compares count] > currentIndex) {
         NSLog(@"下一个");
+        if (currentIndex - 1 <= [compares count] - 1 && isEdit) {
+            [self saveCurrent:currentIndex - 1];
+        }
         [self clearAll];
         [self loadLocalData];
     } else {
         if (isEdit) {
-            NSLog(@"保存");
-            NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
-            [compares addObject:value];
+            if (currentIndex - 1 <= [compares count] - 1) {
+                [self saveCurrent:currentIndex - 1];
+            } else {
+                NSLog(@"保存");
+                NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
+                [compares addObject:value];
+            }
             [self clearAll];
             return;
         }
@@ -228,6 +251,7 @@
 
 - (void)voiceSelected:(VoiceItem *)item andIsUp:(BOOL)isUp {
     NSLog(@"%@", item.name);
+    isEdit = YES;
     if (isUp) {
         item1 = item;
         [self loadUpData];
@@ -238,9 +262,9 @@
 }
 
 - (IBAction)selectVoiceUpBtnClicked:(id)sender {
-    if (!isEdit) {
-        return;
-    }
+//    if (!isEdit) {
+//        return;
+//    }
     VoiceSelectViewController *selectViewController = [VoiceSelectViewController new];
     selectViewController.delegate = self;
     selectViewController.isUp = YES;
@@ -249,9 +273,9 @@
 }
 
 - (IBAction)selectVoiceDownBtnClicked:(id)sender {
-    if (!isEdit) {
-        return;
-    }
+//    if (!isEdit) {
+//        return;
+//    }
     VoiceSelectViewController *selectViewController = [VoiceSelectViewController new];
     selectViewController.delegate = self;
     selectViewController.isUp = NO;
@@ -338,17 +362,26 @@
 }
 
 - (VoiceItem *)searchVoiceByName:(NSString *)voice {
-    NSLog(@"starting find...");
     for (VoiceInfo *info in _basicArray) {
         for (VoiceItem *item in info.voices) {
             if ([item.name isEqualToString:voice]) {
-                NSLog(@"got it！");
                 return item;
             }
         }
     }
-    NSLog(@"has not found！");
     return nil;
+}
+
+- (void)saveCurrent:(NSInteger)index {
+     NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
+    if ([compares count] == 0) {
+        NSLog(@"保存");
+        [compares addObject:value];
+    } else {
+        NSLog(@"替换");
+        [compares replaceObjectAtIndex:index withObject:value];
+    }
+    isEdit = NO;
 }
 
 @end
