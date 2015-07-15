@@ -139,13 +139,13 @@
 }
 
 - (void)initBottomButton {
-    NSArray *names = @[@"描述", @"基础", @"举例", @"相似"];
+    NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
         _segmentedControl.hidden = YES;
     }
     if ([_item.similar length] == 0) {
-        names = @[@"描述", @"基础", @"举例"];
+        names = @[@"基础", @"日式", @"举例"];
     }
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
     CGFloat buttonHeight = _bottomView.frame.size.height / 2;
@@ -172,19 +172,17 @@
     button.selected = !button.selected;
     switch ([sender tag]) {
         case 0:
-            _describeView.hidden = NO;
-            break;
-        case 1:
             if (_isBasic) {
-               _stepView.hidden = NO;
+                _stepView.hidden = NO;
             } else {
                 _liView.hidden = NO;
                 currentIndex = 0;
                 isExample = YES;
-//                [self showHeader];
-//                [self showYBView];
                 [_exampleTableView reloadData];
             }
+            break;
+        case 1:
+            _describeView.hidden = NO;
             break;
         case 2:
             _liView.hidden = NO;
