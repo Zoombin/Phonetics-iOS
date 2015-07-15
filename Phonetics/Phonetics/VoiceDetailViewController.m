@@ -483,16 +483,13 @@
 }
 
 - (VoiceItem *)searchVoiceByName:(NSString *)voice {
-    NSLog(@"starting find...");
     for (VoiceInfo *info in _voiceArray) {
         for (VoiceItem *item in info.voices) {
             if ([item.name isEqualToString:voice]) {
-                NSLog(@"got it！");
                 return item;
             }
         }
     }
-     NSLog(@"has not found！");
     return nil;
 }
 
