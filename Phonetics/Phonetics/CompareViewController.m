@@ -187,6 +187,8 @@
     _segmentedControl2.selectedSegmentIndex = 1;
     currentIndex++;
     NSLog(@"%d", currentIndex);
+    [_voiceButton1 setTitle:@"点击此处" forState:UIControlStateNormal];
+    [_voiceButton2 setTitle:@"点击此处" forState:UIControlStateNormal];
     if ([compares count] > currentIndex) {
         NSLog(@"下一个");
         if (currentIndex - 1 <= [compares count] - 1 && isEdit) {
@@ -236,6 +238,7 @@
 - (void)loadUpData {
     NSArray *imageNames = [item1.picsFront componentsSeparatedByString:@","];
     if ([imageNames count] > 0) {
+        [_voiceButton1 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
     [_voiceButton1 setBackgroundImage:[UIImage imageNamed:item1.imgName] forState:UIControlStateNormal];
@@ -244,6 +247,8 @@
 - (void)loadDownData {
     NSArray *imageNames = [item2.picsFront componentsSeparatedByString:@","];
     if ([imageNames count] > 0) {
+        [_voiceButton2
+         setTitle:@"" forState:UIControlStateNormal];
         _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
     [_voiceButton2 setBackgroundImage:[UIImage imageNamed:item2.imgName] forState:UIControlStateNormal];
@@ -253,9 +258,11 @@
     NSLog(@"%@", item.name);
     isEdit = YES;
     if (isUp) {
+        [_voiceButton1 setTitle:@"" forState:UIControlStateNormal];
         item1 = item;
         [self loadUpData];
     } else {
+        [_voiceButton2 setTitle:@"" forState:UIControlStateNormal];
         item2 = item;
         [self loadDownData];
     }
