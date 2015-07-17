@@ -3179,7 +3179,7 @@
 					<key>name</key>
 					<string>dʒ</string>
 					<key>step_types</key>
-					<string>3</string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
 					<string>抬高舌头，让舌头整体接近口腔上方的拱形部分，用这个姿势让舌尖贴上牙龈。&amp;&amp;用舌尖截流气息后，放开舌头用力让气息喷出来。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
