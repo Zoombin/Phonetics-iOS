@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "VoiceCell.h"
 
-@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, VoiceCellDelegate>
+@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, VoiceCellDelegate, UIAlertViewDelegate>
 
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;

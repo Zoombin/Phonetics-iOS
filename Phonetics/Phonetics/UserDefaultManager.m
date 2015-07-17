@@ -26,4 +26,21 @@
         [userDefaults synchronize];
     }
 }
+
++ (BOOL)hasShareWeChat {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *hasShare = [userDefaults objectForKey:HAS_SHARE];
+    if (hasShare) {
+        return [hasShare boolValue];
+    }
+    return NO;
+}
+
++ (void)saveHasShare:(BOOL)hasShare {
+    if (hasShare) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:@"1" forKey:HAS_SHARE];
+        [userDefaults synchronize];
+    }
+}
 @end
