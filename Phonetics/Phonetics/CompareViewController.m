@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"音标对比";
+    [self loadJPVoices];
     isEdit = NO;
     compares = [[NSMutableArray alloc] init];
     currentIndex = 0;
@@ -241,17 +242,26 @@
         [_voiceButton1 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
-    [_voiceButton1 setBackgroundImage:[UIImage imageNamed:item1.imgName] forState:UIControlStateNormal];
+    if ([item1.imgName containsString:@"JP"]) {
+        [_voiceButton1 setBackgroundImage:nil forState:UIControlStateNormal];
+        [_voiceButton1 setTitle:item1.name forState:UIControlStateNormal];
+    } else {
+       [_voiceButton1 setBackgroundImage:[UIImage imageNamed:item1.imgName] forState:UIControlStateNormal];
+    }
 }
 
 - (void)loadDownData {
     NSArray *imageNames = [item2.picsFront componentsSeparatedByString:@","];
     if ([imageNames count] > 0) {
-        [_voiceButton2
-         setTitle:@"" forState:UIControlStateNormal];
+        [_voiceButton2 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
-    [_voiceButton2 setBackgroundImage:[UIImage imageNamed:item2.imgName] forState:UIControlStateNormal];
+    if ([item2.imgName containsString:@"JP"]) {
+        [_voiceButton2 setBackgroundImage:nil forState:UIControlStateNormal];
+        [_voiceButton2 setTitle:item2.name forState:UIControlStateNormal];
+    } else {
+        [_voiceButton2 setBackgroundImage:[UIImage imageNamed:item2.imgName] forState:UIControlStateNormal];
+    }
 }
 
 - (void)voiceSelected:(VoiceItem *)item andIsUp:(BOOL)isUp {
@@ -391,4 +401,33 @@
     isEdit = NO;
 }
 
+- (void)loadJPVoices {
+    VoiceInfo *info = [[VoiceInfo alloc] init];
+    info.title = @"日语发音";
+    NSMutableArray *voice = [[NSMutableArray alloc] init];
+    NSArray *jpNames = @[@"ア", @"イ", @"ウ", @"エ", @"オ"];
+    NSArray *ybNames = @[@"ɑ", @"j", @"ʊ", @"æ", @"ʊ"];
+    for (int i = 0; i < [ybNames count]; i++) {
+        NSString *yb = ybNames[i];
+        VoiceItem *tmpItem = [self searchVoiceByName:yb];
+        if (tmpItem) {
+            VoiceItem *item = [[VoiceItem alloc] init];
+            item.name = jpNames[i];
+            item.startFemaleTime = tmpItem.startFemaleTime;
+            item.startMaleTime = tmpItem.startMaleTime;
+            item.endFemaleTime = tmpItem.endFemaleTime;
+            item.endMaleTime = tmpItem.endMaleTime;
+            item.voiceFemaleLong = tmpItem.voiceFemaleLong;
+            item.voiceMaleLong = tmpItem.voiceMaleLong;
+            item.imgName = [NSString stringWithFormat:@"JP%@", jpNames];
+            item.picsFront = tmpItem.picsFront;
+            item.picsSides = tmpItem.picsSides;
+            [voice addObject:item];
+        }
+    }
+    info.voices = voice;
+    NSMutableArray *allArray = [[NSMutableArray alloc] initWithArray:_basicArray];
+    [allArray addObject:info];
+    _basicArray = allArray;
+}
 @end

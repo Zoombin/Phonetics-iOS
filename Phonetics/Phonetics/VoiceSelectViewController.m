@@ -13,7 +13,7 @@
 @end
 
 @implementation VoiceSelectViewController {
-
+    
 }
 
 - (void)viewDidLoad {
@@ -30,10 +30,6 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)loadBasicVoices {
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,5 +76,18 @@
         [self.navigationController popViewControllerAnimated:NO];
     }
 }
+
+- (VoiceItem *)searchVoiceByName:(NSString *)voice {
+    for (VoiceInfo *info in _basicArray) {
+        for (VoiceItem *item in info.voices) {
+            if ([item.name isEqualToString:voice]) {
+                NSLog(@"got it!");
+                return item;
+            }
+        }
+    }
+    return nil;
+}
+
 
 @end
