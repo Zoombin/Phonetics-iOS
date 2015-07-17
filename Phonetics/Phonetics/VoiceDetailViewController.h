@@ -33,6 +33,11 @@
 @property (nonatomic, weak) IBOutlet UIView *headerView;
 @property (nonatomic, weak) IBOutlet UILabel *voiceLabel;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
+
+@property (nonatomic, weak) IBOutlet UIButton *preButton;
+@property (nonatomic, weak) IBOutlet UIButton *nextButton;
+- (IBAction)nextBtnClicked:(id)sender;
+- (IBAction)preBtnClicked:(id)sender;
 - (IBAction)voiceButtonClick:(id)sender;
 - (IBAction)backButtonClick:(id)sender;
 - (IBAction)maleOrFemaleBtnClicked:(id)sender;

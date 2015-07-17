@@ -25,11 +25,13 @@
     NSInteger exampleCount;
     NSInteger similarCount;
     NSInteger currentIndex;
+    NSMutableArray *allItems;
     BOOL isExample;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    allItems = [[NSMutableArray alloc] init];
     count = 0;
     exampleCount = 0;
     currentIndex = 0;
@@ -46,8 +48,14 @@
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self getAllItems];
+}
+
 //初始化数据
 - (void)initData {
+    _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
@@ -145,6 +153,13 @@
 }
 
 - (void)initBottomButton {
+    [bottomButtons removeAllObjects];
+    for (UIView *v in _bottomView.subviews) {
+        if (![v isKindOfClass:[ADBannerView class]]) {
+           [v removeFromSuperview];
+        }
+    }
+    
     NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
     if ([_item.similar length] == 0) {
         names = @[@"基础", @"日式", @"举例"];
@@ -499,4 +514,40 @@
     return nil;
 }
 
+- (void)getAllItems {
+    for (VoiceInfo *info in _voiceArray) {
+        for (VoiceItem *item in info.voices) {
+            [allItems addObject:item];
+        }
+    }
+    NSInteger index = [allItems indexOfObject:_item];
+    if (index == 0) {
+        _preButton.hidden = YES;
+    }
+    if (index == [allItems count] - 1) {
+        _nextButton.hidden = YES;
+    }
+}
+
+- (IBAction)nextBtnClicked:(id)sender {
+    NSInteger index = [allItems indexOfObject:_item];
+    index++;
+    _preButton.hidden = NO;
+    if (index == [allItems count] - 1) {
+        _nextButton.hidden = YES;
+    }
+    _item = allItems[index];
+    [self initData];
+}
+
+- (IBAction)preBtnClicked:(id)sender {
+    NSInteger index = [allItems indexOfObject:_item];
+    index--;
+    _nextButton.hidden = NO;
+    if (index == 0) {
+        _preButton.hidden = YES;
+    }
+    _item = allItems[index];
+    [self initData];
+}
 @end

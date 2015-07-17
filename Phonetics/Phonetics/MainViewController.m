@@ -70,6 +70,7 @@
 - (void)loadVoiceInfo {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"voiceInfo" ofType:@"plist"];
     NSDictionary *info = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
     if (info) {
         basicsArr = [VoiceInfo createWithArray:info[@"basics"]];
         advancedArr = [VoiceInfo createWithArray:info[@"advanced"]];

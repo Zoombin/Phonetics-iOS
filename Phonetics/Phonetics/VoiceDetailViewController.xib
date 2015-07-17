@@ -15,6 +15,8 @@
                 <outlet property="gifImageView" destination="53M-3Z-N4w" id="f2r-Zv-FUc"/>
                 <outlet property="headerView" destination="iWL-kU-Ngc" id="zQP-ZW-eGI"/>
                 <outlet property="liView" destination="D0C-7O-JjE" id="anl-Xp-r4o"/>
+                <outlet property="nextButton" destination="JeS-kL-Ikl" id="7Dj-ux-9Ng"/>
+                <outlet property="preButton" destination="99K-f4-0YB" id="x0I-VR-ff2"/>
                 <outlet property="segmentedControl" destination="tPh-9s-L7D" id="dPF-Mh-mtH"/>
                 <outlet property="selectMaleOrFemaleBtn" destination="cbX-7J-OeK" id="PyL-yR-tBq"/>
                 <outlet property="stepTableView" destination="x5o-cT-nfs" id="pRw-Cw-dTx"/>
@@ -71,12 +73,25 @@
                                 <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="QvX-Q1-kyh"/>
                             </connections>
                         </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="odX-Oj-dgw">
-                            <rect key="frame" x="290" y="5" width="30" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="99K-f4-0YB">
+                            <rect key="frame" x="229" y="5" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="menu_icon_back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="preBtnClicked:" destination="-1" eventType="touchUpInside" id="w4k-Jf-10e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JeS-kL-Ikl">
+                            <rect key="frame" x="283" y="5" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="menu_icon_forward">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="nextBtnClicked:" destination="-1" eventType="touchUpInside" id="NnD-cm-d4U"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,6 +196,7 @@
     <resources>
         <image name="btn_icon_female" width="128" height="128"/>
         <image name="btn_icon_male" width="128" height="128"/>
+        <image name="menu_icon_back" width="56" height="56"/>
         <image name="menu_icon_forward" width="56" height="56"/>
         <image name="menu_icon_home" width="56" height="56"/>
     </resources>
