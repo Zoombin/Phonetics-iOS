@@ -3059,7 +3059,7 @@
 					<key>name</key>
 					<string>g</string>
 					<key>step_types</key>
-					<string>3</string>
+					<string>1,2,3</string>
 					<key>step_describes</key>
 					<string>抬起舌头的后部、使其接触到软腭（上牙堂后面较软的部位），用舌根截流气息。&amp;&amp;放开舌头用力让气息喷出来。&amp;&amp;发这个音时要出声，振动喉咙。我们发音时可以手轻触喉头、判断它是否震动。</string>
 					<key>step_count</key>
