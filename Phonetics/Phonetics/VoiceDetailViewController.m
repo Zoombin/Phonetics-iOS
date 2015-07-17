@@ -40,6 +40,14 @@
     bannerView.delegate = self;
     [_bottomView addSubview:bannerView];
     
+    [self initData];
+    
+    // Do any additional setup after loading the view from its nib.
+    [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
+}
+
+//初始化数据
+- (void)initData {
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
@@ -53,8 +61,6 @@
     [self loadStepInfo];
     [self loadExampleInfo];
     [self loadSimilarInfo];
-    // Do any additional setup after loading the view from its nib.
-    [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)valueChanged {
