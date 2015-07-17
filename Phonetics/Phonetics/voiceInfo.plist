@@ -1878,7 +1878,7 @@
 					<key>examples</key>
 					<string>these shirts</string>
 					<key>name</key>
-					<string></string>
+					<string>z</string>
 					<key>step_types</key>
 					<string></string>
 					<key>step_describes</key>
@@ -1904,7 +1904,7 @@
 					<key>etime_female</key>
 					<string>59.689</string>
 					<key>img</key>
-					<string>symbol_L</string>
+					<string>symbol_Z</string>
 					<key>step_voices</key>
 					<string></string>
 					<key>step_pics</key>
