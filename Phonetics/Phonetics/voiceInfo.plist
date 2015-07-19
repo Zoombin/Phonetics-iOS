@@ -185,7 +185,7 @@
 					<key>step_pics</key>
 					<string></string>
 					<key>examples_pics</key>
-					<string>w1,w2,w3,w4,1ʌ,2ʌ,3ʌ,4ʌ,t1,t2,t3,t4,s1,s2,s3,s4,s5,s6</string>
+					<string>w1,w2,w3,w4,ʌ1,ʌ2,ʌ3,ʌ4,t1,t2,t3,t4,s1,s2,s3,s4,s5,s6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>
@@ -794,7 +794,7 @@
 					<key>step_pics</key>
 					<string></string>
 					<key>examples_pics</key>
-					<string>dʒ1,dʒ2,dʒ3,dʒ4,ɑ1,ɑ2,ɑ3,ɑ4,p1,p2,p3,p4,p5,p6</string>
+					<string>dʒ1,dʒ2,dʒ3,dʒ4,α1,α2,α3,α4,p1,p2,p3,p4,p5,p6</string>
 				</dict>
 				<dict>
 					<key>examples_yb_name</key>

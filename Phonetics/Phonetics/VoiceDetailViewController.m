@@ -166,7 +166,7 @@
     }
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
-        _segmentedControl.hidden = YES;
+//        _segmentedControl.hidden = YES;
     }
    
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
@@ -432,10 +432,13 @@
     float startTime = 0.0f;
     float vLong = 0.0f;
     NSString *readStr = nil;
+    NSString *ybStr = nil;
     if (isExample) {
         readStr = isSlow ? _item.examplesSlowRead : _item.examplesRead;
+        ybStr = _item.examplesYBName;
     } else {
         readStr = isSlow ? _item.similarSlowRead : _item.similarRead;
+        ybStr = _item.similarYBName;
     }
     NSArray *voices = [readStr componentsSeparatedByString:@"&&"];
     NSString *wordsStr = voices[index];
@@ -454,7 +457,43 @@
             [self playVoice:startTime andLong:vLong isSlow:isSlow];
         }
     }
-
+    if (!_isBasic) {
+        VoiceItem *tmpItem = [[VoiceItem alloc] init];
+        tmpItem.picsFront = _item.examplesPics;
+        tmpItem.picsSides = _item.examplesPics;
+        [self changeImageView:tmpItem andLong:vLong];
+    } else {
+        NSArray *ybsArray = [ybStr componentsSeparatedByString:@"&&"];
+        NSArray *wordsYBS = [ybsArray[index] componentsSeparatedByString:@","];
+        if ([ybStr length] != 0) {
+            NSMutableString *pics = [@"" mutableCopy];
+            for (int i = 0; i < [wordsYBS count]; i++) {
+                NSString *yb = wordsYBS[i];
+                VoiceItem *item = [self searchVoiceByName:yb];
+                if (item) {
+                    NSArray *ybs = [item.picsFront componentsSeparatedByString:@","];
+                    for (int j = 0; j < [ybs count]; j++) {
+                        if (j == 0 && i != 0) {
+                            [pics appendString:@","];
+                        }
+                        if (i != [wordsYBS count] - 1) {
+                            if (j == 3) {
+                                [pics appendFormat:@"%@", ybs[j]];
+                                break;
+                            }
+                            [pics appendFormat:@"%@,", ybs[j]];
+                        } else {
+                            [pics appendFormat:@"%@%@", ybs[j], j == [ybs count] - 1 ? @"" : @","];
+                        }
+                    }
+                }
+            }
+            VoiceItem *tmpItem = [[VoiceItem alloc] init];
+            tmpItem.picsFront = pics;
+            tmpItem.picsSides = pics;
+            [self changeImageView:tmpItem andLong:vLong];
+        }
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -514,6 +553,7 @@
     return nil;
 }
 
+//前一个和后一个
 - (void)getAllItems {
     for (VoiceInfo *info in _voiceArray) {
         for (VoiceItem *item in info.voices) {
@@ -550,4 +590,6 @@
     _item = allItems[index];
     [self initData];
 }
+
+
 @end
