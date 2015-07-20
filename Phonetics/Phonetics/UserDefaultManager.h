@@ -10,6 +10,7 @@
 
 #define COMPARE_VALUES  @"compare_values"
 #define HAS_SHARE @"has_share"
+#define CHECK_IN @"check_in"
 
 @interface UserDefaultManager : NSObject
 

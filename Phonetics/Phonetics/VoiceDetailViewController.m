@@ -13,6 +13,7 @@
 #import "VoiceButton.h"
 #import <AVFoundation/AVFoundation.h>
 #import "TimeUtil.h"
+#import "UserDefaultManager.h"
 
 @interface VoiceDetailViewController ()
 
@@ -336,6 +337,7 @@
 
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner {
     NSLog(@"Ad did finish");
+    [UserDefaultManager saveCheckInDate:[NSDate date]];
 }
 
 

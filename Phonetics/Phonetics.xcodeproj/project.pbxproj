@@ -46,6 +46,7 @@
 		5839D5041B5CDAA700B0D96B /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5839D5031B5CDAA700B0D96B /* libBaiduMobStat.a */; };
 		5839D5081B5CDDD400B0D96B /* PhoneticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5839D5071B5CDDD400B0D96B /* PhoneticsUtils.m */; };
 		5839D50A1B5CDE2700B0D96B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5839D5091B5CDE2700B0D96B /* CoreLocation.framework */; };
+		5839D50F1B5CF49000B0D96B /* CheckInInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5839D50E1B5CF49000B0D96B /* CheckInInfo.m */; };
 		58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58605C2A1B2F36920035ACA3 /* VoiceButton.m */; };
 		58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58635FEF1B39BAE700A757C4 /* CompareViewController.m */; };
 		58635FF21B39BAE700A757C4 /* CompareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58635FF01B39BAE700A757C4 /* CompareViewController.xib */; };
@@ -129,6 +130,8 @@
 		5839D5061B5CDDD400B0D96B /* PhoneticsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneticsUtils.h; sourceTree = "<group>"; };
 		5839D5071B5CDDD400B0D96B /* PhoneticsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneticsUtils.m; sourceTree = "<group>"; };
 		5839D5091B5CDE2700B0D96B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5839D50D1B5CF49000B0D96B /* CheckInInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInInfo.h; sourceTree = "<group>"; };
+		5839D50E1B5CF49000B0D96B /* CheckInInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckInInfo.m; sourceTree = "<group>"; };
 		58605C291B2F36920035ACA3 /* VoiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceButton.h; sourceTree = "<group>"; };
 		58605C2A1B2F36920035ACA3 /* VoiceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceButton.m; sourceTree = "<group>"; };
 		58635FEE1B39BAE700A757C4 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
@@ -410,6 +413,8 @@
 				58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */,
 				186F57CF1B248DCD00774A2F /* VoiceItem.h */,
 				186F57D01B248DCD00774A2F /* VoiceItem.m */,
+				5839D50D1B5CF49000B0D96B /* CheckInInfo.h */,
+				5839D50E1B5CF49000B0D96B /* CheckInInfo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */,
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
 				58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */,
+				5839D50F1B5CF49000B0D96B /* CheckInInfo.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
