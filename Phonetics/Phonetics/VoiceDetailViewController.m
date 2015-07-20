@@ -27,10 +27,12 @@
     NSInteger currentIndex;
     NSMutableArray *allItems;
     BOOL isExample;
+    BOOL shouldDG;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    shouldDG = NO;
     allItems = [[NSMutableArray alloc] init];
     count = 0;
     exampleCount = 0;
@@ -288,6 +290,12 @@
     if ([imgArray count] == 0) {
         return;
     }
+    if (shouldDG) {
+        shouldDG = NO;
+        _gifImageView.image = imgArray.lastObject;
+    } else {
+        [self valueChanged];
+    }
     //imageView的动画图片是数组images
     _gifImageView.animationImages = imgArray;
     //按照原始比例缩放图片，保持纵横比
@@ -520,6 +528,9 @@
             item.voiceFemaleLong = wordsReadArr[1];
             item.startMaleTime = wordsReadArr[2];
             item.voiceMaleLong = wordsReadArr[3];
+        }
+        if (indexPath.row == 0) {
+            shouldDG = YES;
         }
         [self playVoice:item];
     }
