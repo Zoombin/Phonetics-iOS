@@ -23,7 +23,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *voiceBkgBtn;
 @property (nonatomic, weak) IBOutlet UIImageView *gifImageView;
 @property (nonatomic, weak) IBOutlet UITextView *describeTextView;
-@property (nonatomic, weak) IBOutlet UIImageView *describeIcon;
+//@property (nonatomic, weak) IBOutlet UIImageView *describeIcon;
 @property (nonatomic, weak) IBOutlet UITableView *stepTableView;
 @property (nonatomic, weak) IBOutlet UITableView *exampleTableView;
 

@@ -64,7 +64,7 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-    _describeIcon.image = [UIImage imageNamed:_item.imgName];
+//    _describeIcon.image = [UIImage imageNamed:_item.imgName];
     _describeTextView.text = _item.describeText;
     [_exampleTableView setTableHeaderView:_headerView];
     [self initBottomButton];

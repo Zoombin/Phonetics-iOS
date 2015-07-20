@@ -43,4 +43,13 @@
         [userDefaults synchronize];
     }
 }
+
++ (void)saveCheckInDate:(NSDate *)date {
+    
+}
+
++ (NSString *)lastCheckInDate {
+    return @"";
+}
+
 @end
