@@ -15,9 +15,12 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic, weak) IBOutlet UIView *menuView;
+@property (nonatomic, weak) IBOutlet UIView *bkgView;
 @property (nonatomic, weak) IBOutlet UITableView *menuTableView;
 @property (nonatomic, weak) IBOutlet UIButton *bkgButton;
 @property (nonatomic, weak) IBOutlet UILabel *versionsLabel;
+@property (nonatomic, weak) IBOutlet UILabel *checkInLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *iconImageView;
 - (IBAction)menuButtonClicked:(id)sender;
 @end
 

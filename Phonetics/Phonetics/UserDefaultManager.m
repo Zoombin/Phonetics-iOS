@@ -93,7 +93,7 @@
     if (dict) {
         return dict[@"times"];
     }
-    return @"0";
+    return @"";
 }
 
 @end

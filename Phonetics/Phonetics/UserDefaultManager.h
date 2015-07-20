@@ -23,6 +23,6 @@
 + (void)saveHasShare:(BOOL)hasShare;
 
 + (void)saveCheckInDate:(NSDate *)date;
-+ (NSString *)lastCheckInDate;
++ (NSString *)checkInTimes;
 
 @end

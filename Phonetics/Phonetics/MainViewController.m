@@ -14,6 +14,7 @@
 #import <ShareSDK/ShareSDK.h>
 #import "UserDefaultManager.h"
 #import "PhoneticsUtils.h"
+#import "UserDefaultManager.h"
 
 
 @interface MainViewController ()
@@ -27,6 +28,11 @@
     
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    _checkInLabel.text = [UserDefaultManager checkInTimes];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     voiceArray = [[NSMutableArray alloc] init];
@@ -36,6 +42,8 @@
     [_bkgButton addTarget:self action:@selector(menuButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
     
+    _checkInLabel.center = CGPointMake(CGRectGetMaxX(_iconImageView.frame), CGRectGetMinY(_iconImageView.frame));
+    [_bkgView bringSubviewToFront:_checkInLabel];
     _versionsLabel.text = [PhoneticsUtils getVersion];
 }
 
