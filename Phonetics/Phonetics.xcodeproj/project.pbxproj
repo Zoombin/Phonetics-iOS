@@ -43,6 +43,9 @@
 		580D536B1B3C0F880092E408 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 580D536A1B3C0F880092E408 /* libicucore.dylib */; };
 		580D536D1B3C0F980092E408 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 580D536C1B3C0F980092E408 /* libz.1.2.5.dylib */; };
 		580D536F1B3C0F9E0092E408 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580D536E1B3C0F9E0092E408 /* Security.framework */; };
+		5839D5041B5CDAA700B0D96B /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5839D5031B5CDAA700B0D96B /* libBaiduMobStat.a */; };
+		5839D5081B5CDDD400B0D96B /* PhoneticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5839D5071B5CDDD400B0D96B /* PhoneticsUtils.m */; };
+		5839D50A1B5CDE2700B0D96B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5839D5091B5CDE2700B0D96B /* CoreLocation.framework */; };
 		58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58605C2A1B2F36920035ACA3 /* VoiceButton.m */; };
 		58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58635FEF1B39BAE700A757C4 /* CompareViewController.m */; };
 		58635FF21B39BAE700A757C4 /* CompareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58635FF01B39BAE700A757C4 /* CompareViewController.xib */; };
@@ -121,6 +124,11 @@
 		580D536A1B3C0F880092E408 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		580D536C1B3C0F980092E408 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		580D536E1B3C0F9E0092E408 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5839D5031B5CDAA700B0D96B /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
+		5839D5051B5CDBFB00B0D96B /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
+		5839D5061B5CDDD400B0D96B /* PhoneticsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneticsUtils.h; sourceTree = "<group>"; };
+		5839D5071B5CDDD400B0D96B /* PhoneticsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneticsUtils.m; sourceTree = "<group>"; };
+		5839D5091B5CDE2700B0D96B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		58605C291B2F36920035ACA3 /* VoiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceButton.h; sourceTree = "<group>"; };
 		58605C2A1B2F36920035ACA3 /* VoiceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceButton.m; sourceTree = "<group>"; };
 		58635FEE1B39BAE700A757C4 /* CompareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompareViewController.h; sourceTree = "<group>"; };
@@ -147,12 +155,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5839D50A1B5CDE2700B0D96B /* CoreLocation.framework in Frameworks */,
 				580D536F1B3C0F9E0092E408 /* Security.framework in Frameworks */,
 				580D536D1B3C0F980092E408 /* libz.1.2.5.dylib in Frameworks */,
 				580D536B1B3C0F880092E408 /* libicucore.dylib in Frameworks */,
 				580D53691B3C0F770092E408 /* CoreTelephony.framework in Frameworks */,
 				580D53671B3C0F6F0092E408 /* QuartzCore.framework in Frameworks */,
 				580D53601B3C0F140092E408 /* ShareSDKCoreService.framework in Frameworks */,
+				5839D5041B5CDAA700B0D96B /* libBaiduMobStat.a in Frameworks */,
 				58029B931B3C082E0081113D /* libc++.dylib in Frameworks */,
 				58029B911B3C078F0081113D /* libsqlite3.0.dylib in Frameworks */,
 				580D53621B3C0F140092E408 /* ShareSDK.framework in Frameworks */,
@@ -186,6 +196,8 @@
 				58029B821B3BD94A0081113D /* UserDefaultManager.m */,
 				587288431B3CF4BB0088BF00 /* TimeUtil.h */,
 				587288441B3CF4BB0088BF00 /* TimeUtil.m */,
+				5839D5061B5CDDD400B0D96B /* PhoneticsUtils.h */,
+				5839D5071B5CDDD400B0D96B /* PhoneticsUtils.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 		58029B841B3C05E50081113D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5839D5021B5CDAA700B0D96B /* BaiduMob */,
 				580D53461B3C0F140092E408 /* ShareSDK */,
 				58029B851B3C05F30081113D /* WeChatSDK_1.5 */,
 			);
@@ -213,6 +226,7 @@
 		5808F3051B1EDFA700ED3377 = {
 			isa = PBXGroup;
 			children = (
+				5839D5091B5CDE2700B0D96B /* CoreLocation.framework */,
 				5808F3101B1EDFA700ED3377 /* Phonetics */,
 				5808F32A1B1EDFA700ED3377 /* PhoneticsTests */,
 				5808F30F1B1EDFA700ED3377 /* Products */,
@@ -380,6 +394,15 @@
 			name = FrameWork;
 			sourceTree = "<group>";
 		};
+		5839D5021B5CDAA700B0D96B /* BaiduMob */ = {
+			isa = PBXGroup;
+			children = (
+				5839D5051B5CDBFB00B0D96B /* BaiduMobStat.h */,
+				5839D5031B5CDAA700B0D96B /* libBaiduMobStat.a */,
+			);
+			path = BaiduMob;
+			sourceTree = "<group>";
+		};
 		58FCDF2A1B202D7700A12529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +541,7 @@
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
 				5808F3141B1EDFA700ED3377 /* main.m in Sources */,
 				186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */,
+				5839D5081B5CDDD400B0D96B /* PhoneticsUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +672,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -673,6 +698,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
+					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

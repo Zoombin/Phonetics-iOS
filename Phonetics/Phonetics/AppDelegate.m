@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import <ShareSDK/ShareSDK.h>
 #import "MainViewController.h"
+#import "BaiduMobStat.h"
+#import "PhoneticsUtils.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initBaiduMod];
+    
     [ShareSDK registerApp:@"85a37bae0a21"];
     [ShareSDK connectWeChatWithAppId:@"wxf1ce482aa1ad2023"
                            appSecret:@"1af038971efee027911b4c2e622eab74"
@@ -31,6 +35,19 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)initBaiduMod {
+    BaiduMobStat *statTracker = [BaiduMobStat defaultStat];
+    statTracker.enableExceptionLog = YES;
+    statTracker.channelId = @"App Store";
+    statTracker.logStrategy = BaiduMobStatLogStrategyCustom;
+    statTracker.logSendInterval = 1;
+    statTracker.logSendWifiOnly = YES;
+    statTracker.sessionResumeInterval = 10;
+    statTracker.shortAppVersion  = [PhoneticsUtils getVersion];
+    [statTracker startWithAppId:@"c11110105c"];
+
 }
 
 - (BOOL)application:(UIApplication *)application

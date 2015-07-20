@@ -81,7 +81,6 @@
     for (VoiceInfo *info in _basicArray) {
         for (VoiceItem *item in info.voices) {
             if ([item.name isEqualToString:voice]) {
-                NSLog(@"got it!");
                 return item;
             }
         }

@@ -13,6 +13,7 @@
 #import "VoiceInfo.h"
 #import <ShareSDK/ShareSDK.h>
 #import "UserDefaultManager.h"
+#import "PhoneticsUtils.h"
 
 
 @interface MainViewController ()
@@ -34,6 +35,8 @@
     [self loadVoiceInfo];
     [_bkgButton addTarget:self action:@selector(menuButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_segmentedControl addTarget:self action:@selector(valueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    _versionsLabel.text = [PhoneticsUtils getVersion];
 }
 
 - (void)valueChanged:(id)sender {
@@ -144,7 +147,6 @@
     if (tableView == _menuTableView) {
         if (indexPath.row == 0) {
             //音标对比
-            NSLog(@"音标对比");
             CompareViewController *compareViewController = [CompareViewController new];
             compareViewController.basicArray = basicsArr;
             [self.navigationController pushViewController:compareViewController animated:YES];
@@ -155,7 +157,6 @@
 }
 
 - (void)showShareActionSheet {
-    NSLog(@"分享到朋友圈");
     id<ISSContent> publishContent = [ShareSDK content:@"推荐：花华组基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
                                      "关注官方公众号：hanakagumi"
                                      "花华组主页：hanaka.5858.com"
@@ -181,13 +182,11 @@
                                 
                                 if (state == SSResponseStateSuccess)
                                 {
-                                    NSLog(NSLocalizedString(@"TEXT_ShARE_SUC", @"分享成功"));
                                     [self showAlert:@"分享成功"];
                                     [UserDefaultManager saveHasShare:YES];
                                 }
                                 else if (state == SSResponseStateFail)
                                 {
-                                    NSLog(NSLocalizedString(@"TEXT_ShARE_FAI", @"分享失败,错误码:%d,错误描述:%@"), [error errorCode], [error errorDescription]);
                                     [self showAlert:@"分享失败"];
                                 }
                             }];

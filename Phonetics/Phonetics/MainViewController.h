@@ -17,6 +17,7 @@
 @property (nonatomic, weak) IBOutlet UIView *menuView;
 @property (nonatomic, weak) IBOutlet UITableView *menuTableView;
 @property (nonatomic, weak) IBOutlet UIButton *bkgButton;
+@property (nonatomic, weak) IBOutlet UILabel *versionsLabel;
 - (IBAction)menuButtonClicked:(id)sender;
 @end
 
