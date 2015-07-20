@@ -83,7 +83,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _menuTableView) {
-        return 2;
+        return 3;
     }
     return [voiceArray count];
 }
@@ -108,6 +108,9 @@
         } else if (indexPath.row == 1) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
             cell.textLabel.text = @"分享到朋友圈";
+        } else if (indexPath.row == 2) {
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.textLabel.text = @"新手说明";
         }
         return cell;
     } else {
@@ -152,6 +155,8 @@
             [self.navigationController pushViewController:compareViewController animated:YES];
         } else if (indexPath.row == 1) {
             [self showShareActionSheet];
+        } else {
+            NSLog(@"新手说明");
         }
     }
 }
