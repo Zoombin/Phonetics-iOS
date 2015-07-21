@@ -31,6 +31,8 @@
         [voiceBtn setFrame:CGRectMake(5 * (i + 1) + (50 * i), 5, 50, 50)];
         [voiceBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         voiceBtn.tag = i;
+        [voiceBtn.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+        [voiceBtn.layer setBorderWidth:1.0];
         [voiceBtn setBackgroundColor:[UIColor lightGrayColor]];
         [voiceBtn setBackgroundImage:[UIImage imageNamed:item.imgName] forState:UIControlStateNormal];
         [_voicesScrollView addSubview:voiceBtn];

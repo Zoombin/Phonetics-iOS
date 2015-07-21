@@ -136,6 +136,8 @@
             VoiceItem *item = [self searchVoiceByName:ybs[i]];
             VoiceButton *button = [VoiceButton buttonWithType:UIButtonTypeCustom];
             [button setBackgroundColor:[UIColor lightGrayColor]];
+            [button.layer setBorderWidth:1.0];
+            [button.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
             [button setFrame:CGRectMake(startX + (buttonWidth * i) + i * buttonOffSet, startY + 5, buttonWidth, buttonHeight)];
             if (item != nil) {
                 [button addTarget:self action:@selector(loadYB:) forControlEvents:UIControlEventTouchUpInside];

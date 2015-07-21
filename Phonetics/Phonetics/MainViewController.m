@@ -35,8 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    voiceArray = [[NSMutableArray alloc] init];
-    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
+    voiceArray = [[NSMutableArray alloc] init];;
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
     [_bkgButton addTarget:self action:@selector(menuButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
