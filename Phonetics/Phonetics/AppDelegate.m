@@ -47,7 +47,6 @@
     statTracker.sessionResumeInterval = 10;
     statTracker.shortAppVersion  = [PhoneticsUtils getVersion];
     [statTracker startWithAppId:@"c11110105c"];
-
 }
 
 - (BOOL)application:(UIApplication *)application

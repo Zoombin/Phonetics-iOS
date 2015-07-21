@@ -264,9 +264,6 @@
 }
 
 - (IBAction)selectVoiceUpBtnClicked:(id)sender {
-//    if (!isEdit) {
-//        return;
-//    }
     VoiceSelectViewController *selectViewController = [VoiceSelectViewController new];
     selectViewController.delegate = self;
     selectViewController.isUp = YES;
@@ -275,9 +272,6 @@
 }
 
 - (IBAction)selectVoiceDownBtnClicked:(id)sender {
-//    if (!isEdit) {
-//        return;
-//    }
     VoiceSelectViewController *selectViewController = [VoiceSelectViewController new];
     selectViewController.delegate = self;
     selectViewController.isUp = NO;

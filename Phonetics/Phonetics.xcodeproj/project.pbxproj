@@ -248,14 +248,14 @@
 		5808F3101B1EDFA700ED3377 /* Phonetics */ = {
 			isa = PBXGroup;
 			children = (
-				58029B841B3C05E50081113D /* Library */,
-				58029B801B3BD8C20081113D /* Utils */,
-				58FCDF2A1B202D7700A12529 /* Model */,
-				5808F3391B1EE38300ED3377 /* UI */,
 				5808F3151B1EDFA700ED3377 /* AppDelegate.h */,
 				5808F3161B1EDFA700ED3377 /* AppDelegate.m */,
 				5808F31E1B1EDFA700ED3377 /* Images.xcassets */,
+				58029B841B3C05E50081113D /* Library */,
+				58FCDF2A1B202D7700A12529 /* Model */,
 				5808F3111B1EDFA700ED3377 /* Supporting Files */,
+				5808F3391B1EE38300ED3377 /* UI */,
+				58029B801B3BD8C20081113D /* Utils */,
 			);
 			path = Phonetics;
 			sourceTree = "<group>";
