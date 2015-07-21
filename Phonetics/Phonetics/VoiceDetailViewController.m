@@ -58,6 +58,8 @@
 
 //初始化数据
 - (void)initData {
+    currentIndex = 0;
+    
     _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
@@ -65,7 +67,9 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-//    _describeIcon.image = [UIImage imageNamed:_item.imgName];
+    if (!_isBasic) {
+        [self showLastImg];
+    }
     _describeTextView.text = _item.describeText;
     [_exampleTableView setTableHeaderView:_headerView];
     [self initBottomButton];
@@ -74,16 +78,34 @@
     [self loadSimilarInfo];
 }
 
+- (void)showLastImg {
+    NSArray *imgNames = [_item.examplesPics componentsSeparatedByString:@"&&"];
+    NSArray *wordsPics = [imgNames[currentIndex] componentsSeparatedByString:@","];
+    
+    BOOL isSide = _segmentedControl.selectedSegmentIndex == 1;
+    
+    NSMutableArray *imgArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [wordsPics count]; i++) {
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@.jpg", isSide ? @"c" : @"", wordsPics[i]]];
+        [imgArray addObject:img];
+    }
+    _gifImageView.image = imgArray.lastObject;
+}
+
 - (void)valueChanged {
-    if (_segmentedControl.selectedSegmentIndex == 0) {
-        NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[0]]];
-        }
+    if (!_isBasic) {
+        [self showLastImg];
     } else {
-        NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[0]]];
+        if (_segmentedControl.selectedSegmentIndex == 0) {
+            NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
+            if ([imageName count] > 0) {
+                _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",imageName[0]]];
+            }
+        } else {
+            NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
+            if ([imageName count] > 0) {
+                _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[0]]];
+            }
         }
     }
 }
@@ -158,7 +180,7 @@
     [bottomButtons removeAllObjects];
     for (UIView *v in _bottomView.subviews) {
         if (![v isKindOfClass:[ADBannerView class]]) {
-           [v removeFromSuperview];
+            [v removeFromSuperview];
         }
     }
     
@@ -168,9 +190,9 @@
     }
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
-//        _segmentedControl.hidden = YES;
+        //        _segmentedControl.hidden = YES;
     }
-   
+    
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
     CGFloat buttonHeight = _bottomView.frame.size.height / 2;
     
@@ -299,6 +321,9 @@
     } else {
         [self valueChanged];
     }
+    if (!_isBasic) {
+        _gifImageView.image = imgArray.lastObject;
+    }
     //imageView的动画图片是数组images
     _gifImageView.animationImages = imgArray;
     //按照原始比例缩放图片，保持纵横比
@@ -318,6 +343,10 @@
 - (IBAction)voiceButtonClick:(id)sender {
     if (_isBasic) {
         [self playVoice:_item];
+    } else {
+        [self showHeader];
+        [self showYBView];
+        [self read:currentIndex isSlow:NO];
     }
 }
 
@@ -519,7 +548,7 @@
         
         NSArray *voices = [_item.stepVoices componentsSeparatedByString:@"&&"];
         NSString *currentVoics = voices[indexPath.row];
-         NSArray *wordsReadArr = [currentVoics componentsSeparatedByString:@","];
+        NSArray *wordsReadArr = [currentVoics componentsSeparatedByString:@","];
         
         VoiceItem *item = [[VoiceItem alloc] init];
         item.startFemaleTime = @"";
