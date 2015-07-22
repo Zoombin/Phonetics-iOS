@@ -303,7 +303,7 @@
         stime = [TimeUtil getPlayTime:item.startMaleTime];
         vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"bgmusic" ofType:@"mp3"];
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"sy3.1" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:musicUrl];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
                    ];

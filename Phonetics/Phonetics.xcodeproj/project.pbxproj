@@ -60,7 +60,6 @@
 		58B77E601B5F446600D9C116 /* TutorialFirstStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E5E1B5F446600D9C116 /* TutorialFirstStepViewController.xib */; };
 		58B77E691B5F4AAA00D9C116 /* TutorialSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */; };
 		58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */; };
-		58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */; };
 		58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */; };
 		58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */; };
 		58FD81D41B296FBD00BA1264 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD81D31B296FBD00BA1264 /* iAd.framework */; };
@@ -156,7 +155,6 @@
 		58B77E661B5F4AAA00D9C116 /* TutorialSecondStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialSecondStepViewController.h; sourceTree = "<group>"; };
 		58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialSecondStepViewController.m; sourceTree = "<group>"; };
 		58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSecondStepViewController.xib; sourceTree = "<group>"; };
-		58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInfo.h; sourceTree = "<group>"; };
 		58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceInfo.m; sourceTree = "<group>"; };
 		58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voiceInfo.plist; sourceTree = "<group>"; };
@@ -276,7 +274,6 @@
 			children = (
 				58A5985C1B4F5736005542C5 /* sy3.1.mp3 */,
 				580D53701B3C0FB70092E408 /* FrameWork */,
-				58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */,
 				5808F3121B1EDFA700ED3377 /* Info.plist */,
 				5808F3131B1EDFA700ED3377 /* main.m */,
 				58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */,
@@ -540,7 +537,6 @@
 				58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */,
 				58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */,
 				580D535F1B3C0F140092E408 /* Resource.bundle in Resources */,
-				58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

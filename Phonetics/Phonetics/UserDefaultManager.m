@@ -33,7 +33,7 @@
     if (hasShare) {
         return [hasShare boolValue];
     }
-    return YES;
+    return NO;
 }
 
 + (void)saveHasShare:(BOOL)hasShare {

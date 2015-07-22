@@ -4004,11 +4004,11 @@
 					<key>stime_male</key>
 					<string>0:23.252</string>
 					<key>long_female</key>
-					<string>0.530</string>
+					<string>0.627</string>
 					<key>stime_female</key>
-					<string>1:05.257</string>
+					<string>1:04.251</string>
 					<key>etime_female</key>
-					<string>1:05.788</string>
+					<string>1:04.879</string>
 					<key>img</key>
 					<string>symbol_L</string>
 					<key>step_voices</key>
@@ -4133,11 +4133,11 @@
 					<key>stime_male</key>
 					<string>0:24.263</string>
 					<key>long_female</key>
-					<string>0.627</string>
+					<string>0.530</string>
 					<key>stime_female</key>
-					<string>1:04.251</string>
+					<string>1:05.257</string>
 					<key>etime_female</key>
-					<string>1:04.879</string>
+					<string>1:05.788</string>
 					<key>img</key>
 					<string>symbol_R</string>
 					<key>step_voices</key>
