@@ -15,6 +15,7 @@
 #import "UserDefaultManager.h"
 #import "PhoneticsUtils.h"
 #import "UserDefaultManager.h"
+#import "TutorialFirstStepViewController.h"
 
 
 @interface MainViewController ()
@@ -164,6 +165,9 @@
             [self showShareActionSheet];
         } else {
             NSLog(@"新手说明");
+            [self menuButtonClicked:nil];
+            TutorialFirstStepViewController *firstStepViewController = [TutorialFirstStepViewController new];
+            [self.navigationController pushViewController:firstStepViewController animated:NO];
         }
     }
 }

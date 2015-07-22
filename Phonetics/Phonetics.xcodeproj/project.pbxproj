@@ -56,6 +56,10 @@
 		586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586B27311B2EC7650000A91E /* ExampleCell.xib */; };
 		587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 587288441B3CF4BB0088BF00 /* TimeUtil.m */; };
 		58A5985D1B4F5736005542C5 /* sy3.1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58A5985C1B4F5736005542C5 /* sy3.1.mp3 */; };
+		58B77E5F1B5F446600D9C116 /* TutorialFirstStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B77E5D1B5F446600D9C116 /* TutorialFirstStepViewController.m */; };
+		58B77E601B5F446600D9C116 /* TutorialFirstStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E5E1B5F446600D9C116 /* TutorialFirstStepViewController.xib */; };
+		58B77E691B5F4AAA00D9C116 /* TutorialSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */; };
+		58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */; };
 		58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */; };
 		58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */; };
 		58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */; };
@@ -146,6 +150,12 @@
 		587288431B3CF4BB0088BF00 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		587288441B3CF4BB0088BF00 /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
 		58A5985C1B4F5736005542C5 /* sy3.1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sy3.1.mp3; sourceTree = "<group>"; };
+		58B77E5C1B5F446600D9C116 /* TutorialFirstStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialFirstStepViewController.h; sourceTree = "<group>"; };
+		58B77E5D1B5F446600D9C116 /* TutorialFirstStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialFirstStepViewController.m; sourceTree = "<group>"; };
+		58B77E5E1B5F446600D9C116 /* TutorialFirstStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialFirstStepViewController.xib; sourceTree = "<group>"; };
+		58B77E661B5F4AAA00D9C116 /* TutorialSecondStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialSecondStepViewController.h; sourceTree = "<group>"; };
+		58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialSecondStepViewController.m; sourceTree = "<group>"; };
+		58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSecondStepViewController.xib; sourceTree = "<group>"; };
 		58F7E73F1B21726C0069F5D6 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInfo.h; sourceTree = "<group>"; };
 		58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceInfo.m; sourceTree = "<group>"; };
@@ -254,6 +264,7 @@
 				58029B841B3C05E50081113D /* Library */,
 				58FCDF2A1B202D7700A12529 /* Model */,
 				5808F3111B1EDFA700ED3377 /* Supporting Files */,
+				58B77E5B1B5F441400D9C116 /* Totorial */,
 				5808F3391B1EE38300ED3377 /* UI */,
 				58029B801B3BD8C20081113D /* Utils */,
 			);
@@ -406,6 +417,19 @@
 			path = BaiduMob;
 			sourceTree = "<group>";
 		};
+		58B77E5B1B5F441400D9C116 /* Totorial */ = {
+			isa = PBXGroup;
+			children = (
+				58B77E5C1B5F446600D9C116 /* TutorialFirstStepViewController.h */,
+				58B77E5D1B5F446600D9C116 /* TutorialFirstStepViewController.m */,
+				58B77E5E1B5F446600D9C116 /* TutorialFirstStepViewController.xib */,
+				58B77E661B5F4AAA00D9C116 /* TutorialSecondStepViewController.h */,
+				58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */,
+				58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */,
+			);
+			name = Totorial;
+			sourceTree = "<group>";
+		};
 		58FCDF2A1B202D7700A12529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +527,7 @@
 				5808F3431B1EE40F00ED3377 /* VoiceCell.xib in Resources */,
 				58A5985D1B4F5736005542C5 /* sy3.1.mp3 in Resources */,
 				58635FF71B39C32200A757C4 /* VoiceSelectViewController.xib in Resources */,
+				58B77E601B5F446600D9C116 /* TutorialFirstStepViewController.xib in Resources */,
 				580D53631B3C0F140092E408 /* ShareSDKFlatShareViewUI.bundle in Resources */,
 				58635FF21B39BAE700A757C4 /* CompareViewController.xib in Resources */,
 				5808F31F1B1EDFA700ED3377 /* Images.xcassets in Resources */,
@@ -513,6 +538,7 @@
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
 				58029B8B1B3C05F30081113D /* read_me.txt in Resources */,
 				58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */,
+				58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */,
 				580D535F1B3C0F140092E408 /* Resource.bundle in Resources */,
 				58F7E7401B21726C0069F5D6 /* bgmusic.mp3 in Resources */,
 			);
@@ -541,10 +567,12 @@
 				58605C2B1B2F36920035ACA3 /* VoiceButton.m in Sources */,
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
 				58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */,
+				58B77E5F1B5F446600D9C116 /* TutorialFirstStepViewController.m in Sources */,
 				5839D50F1B5CF49000B0D96B /* CheckInInfo.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */,
 				58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */,
+				58B77E691B5F4AAA00D9C116 /* TutorialSecondStepViewController.m in Sources */,
 				5808F3141B1EDFA700ED3377 /* main.m in Sources */,
 				186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */,
 				5839D5081B5CDDD400B0D96B /* PhoneticsUtils.m in Sources */,
