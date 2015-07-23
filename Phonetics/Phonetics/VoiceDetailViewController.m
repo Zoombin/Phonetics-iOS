@@ -46,6 +46,8 @@
     bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
     bannerView.delegate = self;
     [_bottomView addSubview:bannerView];
+    [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceButton.layer setBorderWidth:1.0];
     
     [self initData];
     

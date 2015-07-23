@@ -169,6 +169,9 @@
     currentStep = 0;
     [self nextStep];
     //#####新手教程相关代码#####
+    [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceButton.layer setBorderWidth:1.0];
+    
     shouldDG = NO;
     allItems = [[NSMutableArray alloc] init];
     count = 0;

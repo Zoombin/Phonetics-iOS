@@ -33,6 +33,12 @@
     isEdit = NO;
     compares = [[NSMutableArray alloc] init];
     currentIndex = 0;
+    [_voiceButton1.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceButton1.layer setBorderWidth:1.0];
+    
+    [_voiceButton2.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceButton2.layer setBorderWidth:1.0];
+    
      [_segmentedControl1 addTarget:self action:@selector(valueChanged1) forControlEvents:UIControlEventValueChanged];
      [_segmentedControl2 addTarget:self action:@selector(valueChanged2) forControlEvents:UIControlEventValueChanged];
     [self changeViewAndView2Size];
