@@ -175,34 +175,77 @@
 - (void)showShareActionSheet {
     id<ISSContent> publishContent = [ShareSDK content:@"推荐：花华组基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
                                      "关注官方公众号：hanakagumi"
-                                     "花华组主页：hanaka.5858.com"
-                                     "金版音标图谱下载地址：http://hanaka.5858.com"
+                                     "花华组主页：http://hanaka.5858.com"
+                                     "官方贴吧地址：http://url.cn/e1QPcQ"
+                                     "金版音标图谱下载地址：http://t.cn/RLirgVF"
                                        defaultContent:@"微信"
                                                 image:nil
                                                 title:@"金版音标图谱"
                                                   url:@"http://hanaka.5858.com"
                                           description:@"分享信息"
                                             mediaType:SSPublishContentMediaTypeText];
+    
+    id<ISSShareActionSheetItem> weChatTimeLineItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiTimeline]
+                                                                                icon:[ShareSDK getClientIconWithType:ShareTypeWeixiTimeline]
+                                                                        clickHandler:^{
+                                                                            [ShareSDK shareContent:publishContent
+                                                                                              type:ShareTypeWeixiTimeline
+                                                                                       authOptions:nil
+                                                                                     statusBarTips:NO
+                                                                                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                                                                if (state == SSResponseStateSuccess)
+                                                                                {
+                                                                                    [self showAlert:@"分享成功"];
+                                                                                    [UserDefaultManager saveHasShare:YES];
+                                                                                }
+                                                                                else if (state == SSResponseStateFail)
+                                                                                {
+                                                                                    [self showAlert:@"分享失败"];
+                                                                                }
+
+                                                                            }];
+                                                                        }];
+    
+    id<ISSShareActionSheetItem> weChatSessionItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiSession]
+                                                                                        icon:[ShareSDK getClientIconWithType:ShareTypeWeixiSession]
+                                                                               clickHandler:^{
+                                                                                   [ShareSDK shareContent:publishContent
+                                                                                                     type:ShareTypeWeixiSession
+                                                                                              authOptions:nil
+                                                                                            statusBarTips:NO
+                                                                                                   result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                                                                       if (state == SSResponseStateSuccess)
+                                                                                       {
+                                                                                           [self showAlert:@"分享成功"];
+                                                                                           [UserDefaultManager saveHasShare:YES];
+                                                                                       }
+                                                                                       else if (state == SSResponseStateFail)
+                                                                                       {
+                                                                                           [self showAlert:@"分享失败"];
+                                                                                       }
+                                                                                       
+                                                                                   }];
+                                                                               }];
+    
+    NSArray *shareList = [ShareSDK customShareListWithType:weChatTimeLineItem, weChatSessionItem, nil];
+    
     //创建弹出菜单容器
     id<ISSContainer> container = [ShareSDK container];
     [container setIPadContainerWithView:self.view arrowDirect:UIPopoverArrowDirectionUp];
     
     //弹出分享菜单
     [ShareSDK showShareActionSheet:container
-                         shareList:nil
+                         shareList:shareList
                            content:publishContent
                      statusBarTips:YES
                        authOptions:nil
                       shareOptions:nil
                             result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
-                                
-                                if (state == SSResponseStateSuccess)
-                                {
+                                if (state == SSResponseStateSuccess) {
                                     [self showAlert:@"分享成功"];
                                     [UserDefaultManager saveHasShare:YES];
                                 }
-                                else if (state == SSResponseStateFail)
-                                {
+                                else if (state == SSResponseStateFail){
                                     [self showAlert:@"分享失败"];
                                 }
                             }];
