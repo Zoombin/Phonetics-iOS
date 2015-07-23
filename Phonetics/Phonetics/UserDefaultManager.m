@@ -33,7 +33,7 @@
     if (hasShare) {
         return [hasShare boolValue];
     }
-    //TODO:这边改成NO的话，就不需要分享就能点进阶了。
+    //TODO:这边改成YES的话，就不需要分享就能点进阶了。
     return YES;
 }
 
@@ -61,22 +61,22 @@
         NSString *lastdateStr = dict[@"lastdate"];
         if ([monthStr isEqualToString:month]) {
             if ([lastdateStr isEqualToString:currentdate]) {
-                NSLog(@"今天已经签到过了");
+                //今天已经签到过了
                 return;
             } else {
-                NSLog(@"今天还没签到");
+                //今天还没签到
                 NSInteger times = [timesStr integerValue] + 1;
                 dict[@"times"] = [NSString stringWithFormat:@"%ld", times];
                 dict[@"lastdate"] = currentdate;
             }
         } else {
-            NSLog(@"新到一个月开始啦");
+            //新的一个月开始啦
             dict[@"times"] = @"1";
             dict[@"lastdate"] = currentdate;
             dict[@"month"] = month;
         }
     } else {
-        NSLog(@"还没签到过");
+        //还没签到过
         NSMutableDictionary *checkInDict = [[NSMutableDictionary alloc] init];
         checkInDict[@"times"] = @"1";
         checkInDict[@"month"] = month;
@@ -93,6 +93,21 @@
         return dict[@"times"];
     }
     return @"";
+}
+
++ (BOOL)isFirstLaunch {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *firstLaunch = [userDefaults objectForKey:FIRST_LAUNCH];
+    if (firstLaunch) {
+        return [firstLaunch boolValue];
+    }
+    return NO;
+}
+
++ (void)saveFirstLaunch {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:@"1" forKey:FIRST_LAUNCH];
+    [userDefaults synchronize];
 }
 
 @end

@@ -26,11 +26,15 @@
     NSMutableArray *voiceArray;
     NSArray *basicsArr;
     NSArray *advancedArr;
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    if (![UserDefaultManager isFirstLaunch]) {
+        [UserDefaultManager saveFirstLaunch];
+        TutorialFirstStepViewController *firstStepViewController = [TutorialFirstStepViewController new];
+        [self.navigationController pushViewController:firstStepViewController animated:NO];
+    }
     _checkInLabel.text = [UserDefaultManager checkInTimes];
 }
 
@@ -165,7 +169,6 @@
         } else if (indexPath.row == 1) {
             [self showShareActionSheet];
         } else {
-            NSLog(@"新手说明");
             [self menuButtonClicked:nil];
             TutorialFirstStepViewController *firstStepViewController = [TutorialFirstStepViewController new];
             [self.navigationController pushViewController:firstStepViewController animated:NO];

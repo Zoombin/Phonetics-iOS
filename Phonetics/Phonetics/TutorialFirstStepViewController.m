@@ -43,7 +43,6 @@
 }
 
 - (IBAction)voiceButtonClicked:(id)sender {
-    NSLog(@"%@", basicsArr);
     if ([basicsArr count] == 0) {
         return;
     }

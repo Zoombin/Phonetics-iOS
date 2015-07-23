@@ -11,6 +11,7 @@
 #define COMPARE_VALUES  @"compare_values"
 #define HAS_SHARE @"has_share"
 #define CHECK_IN @"check_in"
+#define FIRST_LAUNCH @"first_launch"
 
 @interface UserDefaultManager : NSObject
 
@@ -24,5 +25,8 @@
 
 + (void)saveCheckInDate:(NSDate *)date;
 + (NSString *)checkInTimes;
+
++ (BOOL)isFirstLaunch;
++ (void)saveFirstLaunch;
 
 @end
