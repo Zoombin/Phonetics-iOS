@@ -127,6 +127,7 @@
         if (cell == nil) {
             NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"VoiceCell" owner:nil options:nil];
             cell = [nibs lastObject];
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
             cell.backgroundColor = [UIColor clearColor];
         }
         VoiceInfo *info = voiceArray[indexPath.row];
