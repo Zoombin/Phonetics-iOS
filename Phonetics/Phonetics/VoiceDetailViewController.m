@@ -29,11 +29,13 @@
     NSMutableArray *allItems;
     BOOL isExample;
     BOOL shouldDG;
+    BOOL isReading;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     shouldDG = NO;
+    isReading = NO;
     allItems = [[NSMutableArray alloc] init];
     count = 0;
     exampleCount = 0;
@@ -281,6 +283,9 @@
 }
 
 - (void)playVoice:(VoiceItem *)item {
+    if (isReading) {
+        return;
+    }
     float stime = 0.0f;
     float vLong = 0.0f;
     if (!_selectMaleOrFemaleBtn.selected) {
@@ -299,6 +304,7 @@
     audioPlayer.currentTime = stime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];
+    isReading = YES;
     [self changeImageView:item andLong:vLong];
     [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
 }
@@ -352,6 +358,7 @@
 
 - (void)playStop {
     [audioPlayer stop];
+    isReading = NO;
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
@@ -467,6 +474,9 @@
 }
 
 - (void)read:(NSInteger)index isSlow:(BOOL)isSlow {
+    if (isReading) {
+        return;
+    }
     float startTime = 0.0f;
     float vLong = 0.0f;
     NSString *readStr = nil;
@@ -579,6 +589,7 @@
     audioPlayer.currentTime = startTime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];
+    isReading = YES;
     [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
 }
 

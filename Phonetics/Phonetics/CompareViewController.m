@@ -23,6 +23,7 @@
     VoiceItem *item1;
     VoiceItem *item2;
     BOOL isEdit;
+    BOOL isReading;
 }
 
 - (void)viewDidLoad {
@@ -292,6 +293,9 @@
 }
 
 - (void)playVoice:(VoiceItem *)item isUp:(BOOL)isUp{
+    if (isReading) {
+        return;
+    }
     float stime = 0.0f;
     float vLong = 0.0f;
     UIButton *maleOrFemaleBtn = nil;
@@ -316,12 +320,14 @@
     audioPlayer.currentTime = stime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];
+    isReading = YES;
     [self changeImageView:item andLong:vLong isUp:isUp];
     [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
 }
 
 - (void)playStop {
     [audioPlayer stop];
+    isReading = NO;
 }
 
 - (void)changeImageView:(VoiceItem *)item andLong:(float)vLong isUp:(BOOL)isUp
