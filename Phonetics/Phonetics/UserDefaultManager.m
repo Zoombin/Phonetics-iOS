@@ -33,7 +33,8 @@
     if (hasShare) {
         return [hasShare boolValue];
     }
-    return NO;
+    //TODO:这边改成NO的话，就不需要分享就能点进阶了。
+    return YES;
 }
 
 + (void)saveHasShare:(BOOL)hasShare {
@@ -50,12 +51,10 @@
     NSDateFormatter *formatter1 = [[NSDateFormatter alloc] init];
     [formatter1 setDateFormat:@"yyyy-MM"];
     NSString *month = [formatter1 stringFromDate:date];
-    NSLog(@"%@", month);
     
     NSDateFormatter *formatter2 = [[NSDateFormatter alloc] init];
     [formatter2 setDateFormat:@"yyyy-MM-dd"];
     NSString *currentdate = [formatter2 stringFromDate:date];
-    NSLog(@"%@", currentdate);
     if (dict) {
         NSString *timesStr = dict[@"times"];
         NSString *monthStr = dict[@"month"];
