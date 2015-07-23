@@ -116,7 +116,11 @@
     if (isEdit && item1 && item2) {
         if (currentIndex <= [compares count] - 1) {
             NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
-            [compares replaceObjectAtIndex:currentIndex withObject:value];
+            if ([compares count] > 0) {
+                [compares replaceObjectAtIndex:currentIndex withObject:value];
+            } else {
+                [compares addObject:value];
+            }
         } else {
             NSString *value = [NSString stringWithFormat:@"%@,%@", item1.name, item2.name];
             [compares addObject:value];
