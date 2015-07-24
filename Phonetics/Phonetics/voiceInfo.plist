@@ -3215,7 +3215,7 @@
 			<key>title</key>
 			<string>闭锁音</string>
 			<key>describe</key>
-			<string>指用舌、唇等节流气息后，随后张开闭锁位置而产生等声音。</string>
+			<string>指用舌、唇等截流气息后，随后张开闭锁位置而产生等声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -3799,7 +3799,7 @@
 					<key>step_types</key>
 					<string>1,2</string>
 					<key>step_describes</key>
-					<string>闭上嘴。&amp;&amp;用唇节流气息并发出声音。此时、因为嘴唇呈闭合状态，所以声音将从鼻腔发出。</string>
+					<string>闭上嘴。&amp;&amp;用唇截流气息并发出声音。此时、因为嘴唇呈闭合状态，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
 					<string>2</string>
 					<key>describe</key>
@@ -3859,7 +3859,7 @@
 					<key>step_types</key>
 					<string>1,2</string>
 					<key>step_describes</key>
-					<string>让舌尖贴上门牙后的牙龈&amp;&amp;用舌尖节流气息并发声。此时、因为用舌尖节流气息，所以声音将从鼻腔发出。</string>
+					<string>让舌尖贴上门牙后的牙龈&amp;&amp;用舌尖截流气息并发声。此时、因为用舌尖截流气息，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
 					<string>2</string>
 					<key>describe</key>
@@ -3919,7 +3919,7 @@
 					<key>step_types</key>
 					<string>1,2</string>
 					<key>step_describes</key>
-					<string>舌根抬起，贴上口腔后部柔软的软腭。&amp;&amp;用舌节流气息并发声。此时、因为用舌节流气息，所以声音将从鼻腔发出。</string>
+					<string>舌根抬起，贴上口腔后部柔软的软腭。&amp;&amp;用舌截流气息并发声。此时、因为用舌截流气息，所以声音将从鼻腔发出。</string>
 					<key>step_count</key>
 					<string>2</string>
 					<key>describe</key>
