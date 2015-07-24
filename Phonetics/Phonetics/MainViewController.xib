@@ -68,7 +68,6 @@
                         <segment title="基础技巧"/>
                         <segment title="高级技巧"/>
                     </segments>
-                    <color key="tintColor" red="1" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </segmentedControl>
                 <view hidden="YES" contentMode="scaleToFill" id="ne7-uB-XYK">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>

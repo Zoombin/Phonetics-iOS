@@ -489,6 +489,7 @@
 				TargetAttributes = {
 					5808F30D1B1EDFA700ED3377 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 7C7ZC2D6D2;
 					};
 					5808F3261B1EDFA700ED3377 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -688,6 +689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Connection",
@@ -705,6 +707,7 @@
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -713,7 +716,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Connection",
@@ -731,6 +735,7 @@
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

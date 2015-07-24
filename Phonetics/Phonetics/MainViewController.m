@@ -210,28 +210,28 @@
                                                                             }];
                                                                         }];
     
-    id<ISSShareActionSheetItem> weChatSessionItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiSession]
-                                                                                        icon:[ShareSDK getClientIconWithType:ShareTypeWeixiSession]
-                                                                               clickHandler:^{
-                                                                                   [ShareSDK shareContent:publishContent
-                                                                                                     type:ShareTypeWeixiSession
-                                                                                              authOptions:nil
-                                                                                            statusBarTips:NO
-                                                                                                   result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
-                                                                                       if (state == SSResponseStateSuccess)
-                                                                                       {
-                                                                                           [self showAlert:@"分享成功"];
-                                                                                           [UserDefaultManager saveHasShare:YES];
-                                                                                       }
-                                                                                       else if (state == SSResponseStateFail)
-                                                                                       {
-                                                                                           [self showAlert:@"分享失败"];
-                                                                                       }
-                                                                                       
-                                                                                   }];
-                                                                               }];
+//    id<ISSShareActionSheetItem> weChatSessionItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiSession]
+//                                                                                        icon:[ShareSDK getClientIconWithType:ShareTypeWeixiSession]
+//                                                                               clickHandler:^{
+//                                                                                   [ShareSDK shareContent:publishContent
+//                                                                                                     type:ShareTypeWeixiSession
+//                                                                                              authOptions:nil
+//                                                                                            statusBarTips:NO
+//                                                                                                   result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+//                                                                                       if (state == SSResponseStateSuccess)
+//                                                                                       {
+//                                                                                           [self showAlert:@"分享成功"];
+//                                                                                           [UserDefaultManager saveHasShare:YES];
+//                                                                                       }
+//                                                                                       else if (state == SSResponseStateFail)
+//                                                                                       {
+//                                                                                           [self showAlert:@"分享失败"];
+//                                                                                       }
+//                                                                                       
+//                                                                                   }];
+//                                                                               }];
     
-    NSArray *shareList = [ShareSDK customShareListWithType:weChatTimeLineItem, weChatSessionItem, nil];
+    NSArray *shareList = [ShareSDK customShareListWithType:weChatTimeLineItem, nil];
     
     //创建弹出菜单容器
     id<ISSContainer> container = [ShareSDK container];

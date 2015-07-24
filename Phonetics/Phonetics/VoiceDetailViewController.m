@@ -623,6 +623,9 @@
 }
 
 - (IBAction)nextBtnClicked:(id)sender {
+    if (isReading) {
+        return;
+    }
     NSInteger index = [allItems indexOfObject:_item];
     index++;
     _preButton.hidden = NO;
@@ -634,6 +637,9 @@
 }
 
 - (IBAction)preBtnClicked:(id)sender {
+    if (isReading) {
+        return;
+    }
     NSInteger index = [allItems indexOfObject:_item];
     index--;
     _nextButton.hidden = NO;
