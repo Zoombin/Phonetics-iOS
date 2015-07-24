@@ -1289,7 +1289,7 @@
 			<key>title</key>
 			<string>省略张开</string>
 			<key>describe</key>
-			<string>指两虚出现两个闭锁音时，省略张开吐气动作的现象。</string>
+			<string>指连续出现两个闭锁音时，省略张开吐气动作的现象。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
