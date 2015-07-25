@@ -1976,7 +1976,7 @@
 			<key>title</key>
 			<string>同化</string>
 			<key>describe</key>
-			<string>指连续出现两个发音时，其中一个发言变得像另外一个的现象。</string>
+			<string>指连续出现两个发音时，其中一个发音变得像另外一个的现象。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -2534,7 +2534,7 @@
 			<key>title</key>
 			<string>弱化</string>
 			<key>describe</key>
-			<string>指功能语（介词/助动词等）发音变得较弱等现象。</string>
+			<string>指功能语（介词/助动词等）发音变得较弱的现象。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -2723,7 +2723,7 @@
 			<key>title</key>
 			<string>气音</string>
 			<key>describe</key>
-			<string>指无声闭锁音变成元音前，产生强烈气息声等现象。</string>
+			<string>指无声闭锁音变成元音前，产生强烈气息声的现象。</string>
 		</dict>
 	</array>
 	<key>basics</key>
@@ -3215,7 +3215,7 @@
 			<key>title</key>
 			<string>闭锁音</string>
 			<key>describe</key>
-			<string>指用舌、唇等截流气息后，随后张开闭锁位置而产生等声音。</string>
+			<string>指用舌、唇等截流气息后，随后张开闭锁位置而产生的声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -3764,7 +3764,7 @@
 			<key>title</key>
 			<string>摩擦音</string>
 			<key>describe</key>
-			<string>指在唇、舌等之间留出缝隙，并让气息通过该缝隙，由此产生等声音。</string>
+			<string>指在唇、舌等之间留出缝隙，并让气息通过该缝隙，由此产生的声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -3953,7 +3953,7 @@
 			<key>title</key>
 			<string>鼻音</string>
 			<key>describe</key>
-			<string>指用舌、唇等将气流截流后，用鼻子哼出等声音。</string>
+			<string>指用舌、唇等将气流截流后，用鼻子哼出的声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
@@ -4082,7 +4082,7 @@
 			<key>title</key>
 			<string>侧音</string>
 			<key>describe</key>
-			<string>指用舌顶住等同时，从舌等左右两侧溢出气息而产生等声音。</string>
+			<string>指用舌顶住等同时，从舌等左右两侧溢出气息而产生的声音。</string>
 		</dict>
 		<dict>
 			<key>voices</key>
