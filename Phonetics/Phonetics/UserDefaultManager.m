@@ -34,7 +34,7 @@
         return [hasShare boolValue];
     }
     //TODO:这边改成YES的话，就不需要分享就能点进阶了。
-    return YES;
+    return NO;
 }
 
 + (void)saveHasShare:(BOOL)hasShare {
