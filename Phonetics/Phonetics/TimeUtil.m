@@ -12,7 +12,7 @@
 
 + (float)getPlayTime:(NSString *)playTime {
     NSMutableString *minStr = [@"" mutableCopy];
-    if ([playTime containsString:@":"]) {
+    if ([playTime rangeOfString:@":"].location != NSNotFound) {
         for (int i = 0; playTime.length; i++) {
             NSString *c = [NSString stringWithFormat:@"%c", [playTime characterAtIndex:i]];
              [minStr appendString:c];

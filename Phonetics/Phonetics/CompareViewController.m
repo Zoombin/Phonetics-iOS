@@ -249,7 +249,7 @@
         [_voiceButton1 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
-    if ([item1.imgName containsString:@"JP"]) {
+    if ([item1.imgName rangeOfString:@"JP"].location != NSNotFound) {
         [_voiceButton1 setBackgroundImage:nil forState:UIControlStateNormal];
         [_voiceButton1 setTitle:item1.name forState:UIControlStateNormal];
     } else {
@@ -263,7 +263,7 @@
         [_voiceButton2 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
     }
-    if ([item2.imgName containsString:@"JP"]) {
+    if ([item1.imgName rangeOfString:@"JP"].location != NSNotFound) {
         [_voiceButton2 setBackgroundImage:nil forState:UIControlStateNormal];
         [_voiceButton2 setTitle:item2.name forState:UIControlStateNormal];
     } else {
