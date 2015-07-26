@@ -29,6 +29,11 @@
     voiceArray = [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
+    [_stepButton startAnimation];
+}
+
+- (void)dealloc {
+    [_stepButton stop];
 }
 
 - (void)loadVoiceInfo {

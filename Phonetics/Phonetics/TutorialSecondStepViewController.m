@@ -162,6 +162,15 @@
     [_stepView11.layer setMasksToBounds:YES];
 }
 
+- (void)dealloc {
+    [_clickButton4 stop];
+    [_clickButton5 stop];
+    [_clickButton6 stop];
+    [_clickButton7 stop];
+    [_clickButton8 stop];
+    [_clickButton9 stop];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //#####新手教程相关代码#####
@@ -189,6 +198,17 @@
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
     [_segmentedControl6 addTarget:self action:@selector(valueChanged6) forControlEvents:UIControlEventValueChanged];
+    
+    [self startAnimation];
+}
+
+- (void)startAnimation {
+    [_clickButton4 startAnimation];
+    [_clickButton5 startAnimation];
+    [_clickButton6 startAnimation];
+    [_clickButton7 startAnimation];
+    [_clickButton8 startAnimation];
+    [_clickButton9 startAnimation];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

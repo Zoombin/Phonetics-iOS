@@ -10,6 +10,7 @@
 		186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F57D01B248DCD00774A2F /* VoiceItem.m */; };
 		18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18877ED11B2DCBFF00B11029 /* StepCell.m */; };
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
+		18F9FB051B648531007BCF0E /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9FB041B648531007BCF0E /* AnimationButton.m */; };
 		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
 		58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B861B3C05F30081113D /* libWeChatSDK.a */; };
 		58029B8B1B3C05F30081113D /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58029B871B3C05F30081113D /* read_me.txt */; };
@@ -81,6 +82,8 @@
 		18877ED01B2DCBFF00B11029 /* StepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCell.h; sourceTree = "<group>"; };
 		18877ED11B2DCBFF00B11029 /* StepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCell.m; sourceTree = "<group>"; };
 		18877ED21B2DCBFF00B11029 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		18F9FB031B648531007BCF0E /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
+		18F9FB041B648531007BCF0E /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
 		58029B821B3BD94A0081113D /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		58029B861B3C05F30081113D /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
@@ -423,6 +426,8 @@
 				58B77E661B5F4AAA00D9C116 /* TutorialSecondStepViewController.h */,
 				58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */,
 				58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */,
+				18F9FB031B648531007BCF0E /* AnimationButton.h */,
+				18F9FB041B648531007BCF0E /* AnimationButton.m */,
 			);
 			name = Totorial;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 			files = (
 				5808F3421B1EE40F00ED3377 /* VoiceCell.m in Sources */,
 				18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */,
+				18F9FB051B648531007BCF0E /* AnimationButton.m in Sources */,
 				58635FF11B39BAE700A757C4 /* CompareViewController.m in Sources */,
 				586B27321B2EC7650000A91E /* ExampleCell.m in Sources */,
 				58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */,

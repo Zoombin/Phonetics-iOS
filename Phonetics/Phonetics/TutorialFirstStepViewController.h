@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AnimationButton.h"
 
 @interface TutorialFirstStepViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic, weak) IBOutlet UIView *stepView;
+@property (nonatomic, weak) IBOutlet AnimationButton *stepButton;
 - (IBAction)voiceButtonClicked:(id)sender;
 - (IBAction)closeButtonClicked:(id)sender;
 @end

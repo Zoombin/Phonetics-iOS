@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
+#import "AnimationButton.h"
 #import <iAd/iAd.h>
 
 @interface TutorialSecondStepViewController : UIViewController <ADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
@@ -52,12 +53,12 @@
 @property (nonatomic, weak) IBOutlet UIView *stepView9;
 @property (nonatomic, weak) IBOutlet UIView *stepView10;
 @property (nonatomic, weak) IBOutlet UIView *stepView11;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton4;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton5;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton6;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton7;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton8;
-@property (nonatomic, weak) IBOutlet UIButton *clickButton9;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton4;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton5;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton6;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton7;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton8;
+@property (nonatomic, weak) IBOutlet AnimationButton *clickButton9;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl6;
 - (IBAction)clickButtonClicked:(id)sender;
 - (IBAction)nextStepButtonClicked:(id)sender;
