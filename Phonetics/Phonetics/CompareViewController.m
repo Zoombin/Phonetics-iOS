@@ -26,8 +26,18 @@
     BOOL isReading;
 }
 
+- (void)initAudio {
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"sy3.1" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:musicUrl];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
+                   ];
+    audioPlayer.numberOfLoops = -1;
+    audioPlayer.volume = 1;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initAudio];
     self.title = @"音标对比";
     [self loadJPVoices];
     isEdit = NO;
@@ -317,12 +327,6 @@
         stime = [TimeUtil getPlayTime:item.startMaleTime];
         vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"sy3.1" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:musicUrl];
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
-                   ];
-    audioPlayer.numberOfLoops = -1;
-    audioPlayer.volume = 1;
     audioPlayer.currentTime = stime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];

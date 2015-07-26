@@ -34,6 +34,16 @@
     NSInteger currentStep;
 }
 
+- (void)initAudio {
+    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"sy3.1" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:musicUrl];
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
+                   ];
+    audioPlayer.numberOfLoops = -1;
+    audioPlayer.volume = 1;
+}
+
+
 - (void)allHidden {
     _stepView2.hidden = YES;
     _stepView3.hidden = YES;
@@ -173,6 +183,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initAudio];
     //#####新手教程相关代码#####
     [self initStepView];
     currentStep = 0;
@@ -450,12 +461,6 @@
         stime = [TimeUtil getPlayTime:item.startMaleTime];
         vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:@"sy3.1" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:musicUrl];
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
-                   ];
-    audioPlayer.numberOfLoops = -1;
-    audioPlayer.volume = 1;
     audioPlayer.currentTime = stime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];
@@ -730,13 +735,6 @@
 }
 
 - (void)playVoice:(float)startTime andLong:(float)vLong isSlow:(BOOL)isSlow{
-    NSString *slow = @"sy3.1";
-    NSString *musicUrl = [[NSBundle mainBundle] pathForResource:isSlow ? slow : @"sy3.1" ofType:@"mp3"];
-    NSURL *url = [NSURL fileURLWithPath:musicUrl];
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil
-                   ];
-    audioPlayer.numberOfLoops = -1;
-    audioPlayer.volume = 1;
     audioPlayer.currentTime = startTime;
     [audioPlayer prepareToPlay];
     [audioPlayer play];
