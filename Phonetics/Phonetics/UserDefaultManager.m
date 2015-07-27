@@ -8,6 +8,9 @@
 
 #import "UserDefaultManager.h"
 
+//如果是debug点话，就改为YES,这样点话，就不需要分享或者评分，就能使用全部功能了～
+#define IS_DEBUG    NO
+
 @implementation UserDefaultManager
 
 + (NSString *)getUserSaveValues {
@@ -34,13 +37,32 @@
         return [hasShare boolValue];
     }
     //TODO:这边改成YES的话，就不需要分享就能点进阶了。
-    return NO;
+    return IS_DEBUG;
 }
 
 + (void)saveHasShare:(BOOL)hasShare {
     if (hasShare) {
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setObject:@"1" forKey:HAS_SHARE];
+        [userDefaults synchronize];
+    }
+}
+
+//是否已经评分过了
++ (BOOL)hasScoreAlready {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *hasScore = [userDefaults objectForKey:HAS_SCORE];
+    if (hasScore) {
+        return [hasScore boolValue];
+    }
+    //TODO:这边改成YES的话，就不需要评价就能点对比了。
+    return IS_DEBUG;
+}
+
++ (void)saveHasScore:(BOOL)hasScore {
+    if (hasScore) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:@"1" forKey:HAS_SCORE];
         [userDefaults synchronize];
     }
 }

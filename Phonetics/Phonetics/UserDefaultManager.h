@@ -12,6 +12,7 @@
 #define HAS_SHARE @"has_share"
 #define CHECK_IN @"check_in"
 #define FIRST_LAUNCH @"first_launch"
+#define HAS_SCORE @"has_score"
 
 @interface UserDefaultManager : NSObject
 
@@ -22,6 +23,10 @@
 //是否已经分享了微信（不分享不能用哦）
 + (BOOL)hasShareWeChat;
 + (void)saveHasShare:(BOOL)hasShare;
+
+//是否已经评分过了
++ (BOOL)hasScoreAlready;
++ (void)saveHasScore:(BOOL)hasScore;
 
 + (void)saveCheckInDate:(NSDate *)date;
 + (NSString *)checkInTimes;

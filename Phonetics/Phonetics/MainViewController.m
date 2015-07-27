@@ -22,6 +22,9 @@
 
 @end
 
+#define SHARE_ALERT 1001
+#define SCORE_ALERT 1002
+
 @implementation MainViewController {
     NSMutableArray *voiceArray;
     NSArray *basicsArr;
@@ -73,13 +76,35 @@
                                                        delegate:self
                                               cancelButtonTitle:@"分享"
                                               otherButtonTitles:nil];
+    alertView.tag = SHARE_ALERT;
+    [alertView show];
+}
+
+- (void)showScoreAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                       message:@"对比功能需要评分后才能使用哦"
+                                                      delegate:self
+                                             cancelButtonTitle:@"取消"
+                                             otherButtonTitles:@"去评分", nil];
+    alertView.tag = SCORE_ALERT;
     [alertView show];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (alertView.cancelButtonIndex == buttonIndex) {
-        [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:0.5];
+    if (alertView.tag == SHARE_ALERT) {
+        if (alertView.cancelButtonIndex == buttonIndex) {
+            [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:0.5];
+        }
+    } else if (alertView.tag == SCORE_ALERT) {
+        if (alertView.cancelButtonIndex != buttonIndex) {
+            [UserDefaultManager saveHasScore:YES];
+            [self scoreApp];
+        }
     }
+}
+
+- (void)scoreApp {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id1020531456"]];
 }
 
 - (void)loadVoiceInfo {
@@ -162,10 +187,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == _menuTableView) {
         if (indexPath.row == 0) {
-            //音标对比
-            CompareViewController *compareViewController = [CompareViewController new];
-            compareViewController.basicArray = basicsArr;
-            [self.navigationController pushViewController:compareViewController animated:YES];
+            if ([UserDefaultManager hasScoreAlready]) {
+                //音标对比
+                CompareViewController *compareViewController = [CompareViewController new];
+                compareViewController.basicArray = basicsArr;
+                [self.navigationController pushViewController:compareViewController animated:YES];
+            } else {
+                [self showScoreAlert];
+            }
         } else if (indexPath.row == 1) {
             [self showShareActionSheet];
         } else {
@@ -175,6 +204,7 @@
         }
     }
 }
+
 
 - (void)showShareActionSheet {
     id<ISSContent> publishContent = [ShareSDK content:@"推荐：花华组基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
@@ -210,27 +240,7 @@
                                                                             }];
                                                                         }];
     
-//    id<ISSShareActionSheetItem> weChatSessionItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiSession]
-//                                                                                        icon:[ShareSDK getClientIconWithType:ShareTypeWeixiSession]
-//                                                                               clickHandler:^{
-//                                                                                   [ShareSDK shareContent:publishContent
-//                                                                                                     type:ShareTypeWeixiSession
-//                                                                                              authOptions:nil
-//                                                                                            statusBarTips:NO
-//                                                                                                   result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
-//                                                                                       if (state == SSResponseStateSuccess)
-//                                                                                       {
-//                                                                                           [self showAlert:@"分享成功"];
-//                                                                                           [UserDefaultManager saveHasShare:YES];
-//                                                                                       }
-//                                                                                       else if (state == SSResponseStateFail)
-//                                                                                       {
-//                                                                                           [self showAlert:@"分享失败"];
-//                                                                                       }
-//                                                                                       
-//                                                                                   }];
-//                                                                               }];
-    
+
     NSArray *shareList = [ShareSDK customShareListWithType:weChatTimeLineItem, nil];
     
     //创建弹出菜单容器
