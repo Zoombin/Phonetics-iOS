@@ -81,7 +81,6 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-    NSLog(@"%f %f", _gifImageView.frame.size.width, _gifImageView.frame.size.height);
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = 220;
     
