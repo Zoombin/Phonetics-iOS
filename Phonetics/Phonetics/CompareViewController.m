@@ -16,6 +16,7 @@
 
 @end
 
+
 @implementation CompareViewController {
     AVAudioPlayer *audioPlayer;
     NSMutableArray *compares;
@@ -33,6 +34,31 @@
                    ];
     audioPlayer.numberOfLoops = -1;
     audioPlayer.volume = 1;
+}
+
+- (void)addGod {
+    CGFloat width = _voiceView1.frame.size.width;
+    CGFloat height = _voiceView1.frame.size.height;
+    
+    CGFloat photoWidth = 960;
+    CGFloat photoHeight = 744;
+    
+    CGFloat newWidth = width;
+    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
+    if (newHeight > height) {
+        newWidth = (photoWidth * height) / photoHeight;
+        newHeight = height;
+    }
+    
+    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
+    _gifImageView1.frame = CGRectMake(startX, 0, newWidth, newHeight);
+    [_voiceView1.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceView1.layer setBorderWidth:1.0];
+    
+    
+    _gifImageView2.frame = CGRectMake(startX, 0, newWidth, newHeight);
+    [_voiceView2.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
+    [_voiceView2.layer setBorderWidth:1.0];
 }
 
 - (void)viewDidLoad {
@@ -126,6 +152,7 @@
     CGFloat viewHeight = (screenHeight - 40) / 2;
     _voiceView1.frame = CGRectMake(0, 0, screenWidth, viewHeight);
     _voiceView2.frame = CGRectMake(0, CGRectGetMaxY(_voiceView1.frame), screenWidth, viewHeight);
+    [self addGod];
 }
 
 - (IBAction)backBtnClicked:(id)sender {
