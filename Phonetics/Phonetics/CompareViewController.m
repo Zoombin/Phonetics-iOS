@@ -84,13 +84,13 @@
 - (void)valueChanged1 {
     if (_segmentedControl1.selectedSegmentIndex == 0) {
         NSArray *imageName = [item1.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageName[0]]];
+        if ([imageName count] >= 4) {
+            _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageName[3]]];
         }
     } else {
         NSArray *imageName = [item1.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[0]]];
+        if ([imageName count] >= 4) {
+            _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[3]]];
         }
     }
 }
@@ -98,13 +98,13 @@
 - (void)valueChanged2 {
     if (_segmentedControl2.selectedSegmentIndex == 0) {
         NSArray *imageName = [item2.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageName[0]]];
+        if ([imageName count] >= 4) {
+            _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", imageName[3]]];
         }
     } else {
         NSArray *imageName = [item2.picsFront componentsSeparatedByString:@","];
-        if ([imageName count] > 0) {
-            _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[0]]];
+        if ([imageName count] >= 4) {
+            _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageName[3]]];
         }
     }
 }
@@ -272,9 +272,9 @@
 
 - (void)loadUpData {
     NSArray *imageNames = [item1.picsFront componentsSeparatedByString:@","];
-    if ([imageNames count] > 0) {
+    if ([imageNames count] >= 4) {
         [_voiceButton1 setTitle:@"" forState:UIControlStateNormal];
-        _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
+        _gifImageView1.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[3]]];
     }
     if ([item1.imgName rangeOfString:@"JP"].location != NSNotFound) {
         [_voiceButton1 setBackgroundImage:nil forState:UIControlStateNormal];
@@ -286,9 +286,9 @@
 
 - (void)loadDownData {
     NSArray *imageNames = [item2.picsFront componentsSeparatedByString:@","];
-    if ([imageNames count] > 0) {
+    if ([imageNames count] >= 4) {
         [_voiceButton2 setTitle:@"" forState:UIControlStateNormal];
-        _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[0]]];
+        _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[3]]];
     }
     if ([item1.imgName rangeOfString:@"JP"].location != NSNotFound) {
         [_voiceButton2 setBackgroundImage:nil forState:UIControlStateNormal];
