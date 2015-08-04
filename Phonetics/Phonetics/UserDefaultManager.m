@@ -9,7 +9,7 @@
 #import "UserDefaultManager.h"
 
 //如果是debug点话，就改为YES,这样点话，就不需要分享或者评分，就能使用全部功能了～
-#define IS_DEBUG    NO
+#define IS_DEBUG    YES
 
 @implementation UserDefaultManager
 

@@ -129,10 +129,6 @@
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewDidLoad];
-}
-
 - (void)loadLocalData {
     if ([compares count] == 0) {
         return;

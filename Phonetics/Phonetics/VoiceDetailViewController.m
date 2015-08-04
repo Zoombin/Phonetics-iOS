@@ -609,11 +609,9 @@
 }
 
 - (VoiceItem *)searchVoiceByName:(NSString *)voice {
-    for (VoiceInfo *info in _voiceArray) {
-        for (VoiceItem *item in info.voices) {
-            if ([item.name isEqualToString:voice]) {
-                return item;
-            }
+    for (VoiceItem *item in allItems) {
+        if ([item.name isEqualToString:voice]) {
+            return item;
         }
     }
     return nil;

@@ -11,6 +11,7 @@
 #import "MainViewController.h"
 #import "BaiduMobStat.h"
 #import "PhoneticsUtils.h"
+#import "Constant.h"
 
 @interface AppDelegate ()
 
@@ -23,9 +24,9 @@
     // Override point for customization after application launch.
     [self initBaiduMod];
     
-    [ShareSDK registerApp:@"85a37bae0a21"];
-    [ShareSDK connectWeChatWithAppId:@"wxf1ce482aa1ad2023"
-                           appSecret:@"1af038971efee027911b4c2e622eab74"
+    [ShareSDK registerApp:ShareSDKAppKey];
+    [ShareSDK connectWeChatWithAppId:WeChatAppKey
+                           appSecret:WeChatSercert
                            wechatCls:[WXApi class]];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -46,7 +47,7 @@
     statTracker.logSendWifiOnly = YES;
     statTracker.sessionResumeInterval = 10;
     statTracker.shortAppVersion  = [PhoneticsUtils getVersion];
-    [statTracker startWithAppId:@"c11110105c"];
+    [statTracker startWithAppId:BaiduMobAppKey];
 }
 
 - (BOOL)application:(UIApplication *)application
