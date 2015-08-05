@@ -286,7 +286,7 @@
         [_voiceButton2 setTitle:@"" forState:UIControlStateNormal];
         _gifImageView2.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg", imageNames[3]]];
     }
-    if ([item1.imgName rangeOfString:@"JP"].location != NSNotFound) {
+    if ([item2.imgName rangeOfString:@"JP"].location != NSNotFound) {
         [_voiceButton2 setBackgroundImage:nil forState:UIControlStateNormal];
         [_voiceButton2 setTitle:item2.name forState:UIControlStateNormal];
     } else {
@@ -350,9 +350,11 @@
         stime = [TimeUtil getPlayTime:item.startMaleTime];
         vLong = [TimeUtil getPlayTime:item.voiceMaleLong];
     }
-    audioPlayer.currentTime = stime;
-    [audioPlayer prepareToPlay];
-    [audioPlayer play];
+    if (![self checkIsJapan:item.name]) {
+        audioPlayer.currentTime = stime;
+        [audioPlayer prepareToPlay];
+        [audioPlayer play];
+    }
     isReading = YES;
     [self changeImageView:item andLong:vLong isUp:isUp];
     [self performSelector:@selector(playStop) withObject:nil afterDelay:vLong];
@@ -419,6 +421,17 @@
         [compares replaceObjectAtIndex:index withObject:value];
     }
     isEdit = NO;
+}
+
+- (BOOL)checkIsJapan:(NSString *)ybName {
+    NSArray *jpNames = @[@"ア", @"イ", @"ウ", @"エ", @"オ"];
+    for (int i = 0; i < [jpNames count]; i++) {
+        NSString *name = jpNames[i];
+        if ([name isEqualToString:ybName]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (void)loadJPVoices {
