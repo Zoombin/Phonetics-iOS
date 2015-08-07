@@ -67,6 +67,7 @@
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
     [_voiceButton.layer setBorderWidth:1.0];
     
+    [self getAllItems];
     [self initData];
     
     // Do any additional setup after loading the view from its nib.
@@ -75,7 +76,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self getAllItems];
+    
     checkInLabel.text = [UserDefaultManager checkInTimes];
 }
 
@@ -83,6 +84,7 @@
 - (void)initData {
     currentIndex = 0;
     
+    [self getTmpItem];
     _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
     self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
@@ -535,41 +537,78 @@
             [self playVoice:startTime andLong:vLong isSlow:isSlow];
         }
     }
-    if (!_isBasic) {
-        VoiceItem *tmpItem = [[VoiceItem alloc] init];
-        tmpItem.picsFront = _item.examplesPics;
-        tmpItem.picsSides = _item.examplesPics;
-        [self changeImageView:tmpItem andLong:vLong];
+    if (isExample) {
+        NSArray *examplesPics = [_item.examplesPics componentsSeparatedByString:@"&&"];
+        if (index < [examplesPics count]) {
+            VoiceItem *tmpItem = [[VoiceItem alloc] init];
+            tmpItem.picsFront = examplesPics[index];
+            tmpItem.picsSides = examplesPics[index];
+            [self changeImageView:tmpItem andLong:vLong];
+        }
     } else {
-        NSArray *ybsArray = [ybStr componentsSeparatedByString:@"&&"];
-        NSArray *wordsYBS = [ybsArray[index] componentsSeparatedByString:@","];
-        if ([ybStr length] != 0) {
-            NSMutableString *pics = [@"" mutableCopy];
-            for (int i = 0; i < [wordsYBS count]; i++) {
-                NSString *yb = wordsYBS[i];
-                VoiceItem *item = [self searchVoiceByName:yb];
-                if (item) {
-                    NSArray *ybs = [item.picsFront componentsSeparatedByString:@","];
-                    for (int j = 0; j < [ybs count]; j++) {
-                        if (j == 0 && i != 0) {
-                            [pics appendString:@","];
+        NSArray *similarPics = [_item.similarPics componentsSeparatedByString:@"&&"];
+        if (index < [similarPics count]) {
+            VoiceItem *tmpItem = [[VoiceItem alloc] init];
+            tmpItem.picsFront = similarPics[index];
+            tmpItem.picsSides = similarPics[index];
+            [self changeImageView:tmpItem andLong:vLong];
+        }
+    }
+}
+
+- (void)getTmpItem {
+    if (!_isBasic) {
+        return;
+    }
+    [self initPics:YES];
+    [self initPics:NO];
+}
+
+- (void)initPics:(BOOL)isExp {
+    NSString *ybStr = nil;
+    if (isExp) {
+        ybStr = _item.examplesYBName;
+    } else {
+        ybStr = _item.similarYBName;
+    }
+    
+    NSArray *ybsArray = [ybStr componentsSeparatedByString:@"&&"];
+    for (int i = 0; i < [ybsArray count]; i++) {
+        NSArray *wordsYBS = [ybsArray[i] componentsSeparatedByString:@","];
+        NSMutableString *pics = [@"" mutableCopy];
+        for (int i = 0; i < [wordsYBS count]; i++) {
+            NSString *yb = wordsYBS[i];
+            VoiceItem *item = [self searchVoiceByName:yb];
+            if (item) {
+                NSArray *ybs = [item.picsFront componentsSeparatedByString:@","];
+                for (int j = 0; j < [ybs count]; j++) {
+                    if (j == 0 && i != 0) {
+                        [pics appendString:@","];
+                    }
+                    if (i != [wordsYBS count] - 1) {
+                        if (j == 3) {
+                            [pics appendFormat:@"%@", ybs[j]];
+                            break;
                         }
-                        if (i != [wordsYBS count] - 1) {
-                            if (j == 3) {
-                                [pics appendFormat:@"%@", ybs[j]];
-                                break;
-                            }
-                            [pics appendFormat:@"%@,", ybs[j]];
-                        } else {
-                            [pics appendFormat:@"%@%@", ybs[j], j == [ybs count] - 1 ? @"" : @","];
-                        }
+                        [pics appendFormat:@"%@,", ybs[j]];
+                    } else {
+                        [pics appendFormat:@"%@%@", ybs[j], j == [ybs count] - 1 ? @"" : @","];
                     }
                 }
             }
-            VoiceItem *tmpItem = [[VoiceItem alloc] init];
-            tmpItem.picsFront = pics;
-            tmpItem.picsSides = pics;
-            [self changeImageView:tmpItem andLong:vLong];
+            if (i != 0) {
+                if (isExp) {
+                    _item.examplesPics = [NSString stringWithFormat:@"%@&&%@", _item.examplesPics,pics];
+                } else {
+                    _item.similarPics = [NSString stringWithFormat:@"%@&&%@", _item.similarPics,pics];
+                }
+            } else {
+                if (isExp) {
+                    _item.examplesPics = pics;
+                } else {
+                    _item.similarPics = pics;
+                }
+            }
         }
     }
 }
@@ -577,12 +616,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == _exampleTableView) {
+        if (isReading) {
+            return;
+        }
         currentIndex = indexPath.row;
         [self showHeader];
         [self showYBView];
         [_exampleTableView reloadData];
         [self read:indexPath.row isSlow:NO];
     } else if (tableView == _stepTableView) {
+        if (isReading) {
+            return;
+        }
         NSArray *stepPics = [_item.stepPics componentsSeparatedByString:@"&&"];
         NSString *currentPics = stepPics[indexPath.row];
         

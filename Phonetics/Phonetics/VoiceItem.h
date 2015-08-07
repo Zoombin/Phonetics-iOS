@@ -37,6 +37,7 @@
 @property (nonatomic, strong) NSString *similarYB;
 @property (nonatomic, strong) NSString *similarCount;
 @property (nonatomic, strong) NSString *similarYBName;
+@property (nonatomic, strong) NSString *similarPics; //相似音的图片
 @property (nonatomic, strong) NSString *examplesYBName;
 @property (nonatomic, strong) NSString *name;
 
