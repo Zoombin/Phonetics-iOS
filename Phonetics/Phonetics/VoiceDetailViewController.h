@@ -12,6 +12,7 @@
 
 @interface VoiceDetailViewController : UIViewController <ADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
     ADBannerView *bannerView;
+    UILabel *checkInLabel;
 }
 
 @property (nonatomic, strong) VoiceItem *item;

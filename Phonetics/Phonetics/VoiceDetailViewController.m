@@ -41,6 +41,13 @@
     audioPlayer.volume = 1;
 }
 
+- (void)initCheckLabel {
+    checkInLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bannerView.frame) - 30, 0, 30, 21)];
+    checkInLabel.textColor = [UIColor colorWithRed:233/255.0 green:79/255.0 blue:46/255.0 alpha:1.0];
+    checkInLabel.textAlignment = NSTextAlignmentCenter;
+    [bannerView addSubview:checkInLabel];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initAudio];
@@ -56,6 +63,7 @@
     bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
     bannerView.delegate = self;
     [_bottomView addSubview:bannerView];
+    [self initCheckLabel];
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
     [_voiceButton.layer setBorderWidth:1.0];
     
@@ -68,6 +76,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self getAllItems];
+    checkInLabel.text = [UserDefaultManager checkInTimes];
 }
 
 //初始化数据
