@@ -408,9 +408,8 @@
 - (void)bannerViewActionDidFinish:(ADBannerView *)banner {
     NSLog(@"Ad did finish");
     [UserDefaultManager saveCheckInDate:[NSDate date]];
+    checkInLabel.text = [UserDefaultManager checkInTimes];
 }
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _stepTableView) {
@@ -501,6 +500,9 @@
 }
 
 - (void)slowButtonClicked:(id)sender {
+    if (isReading) {
+        return;
+    }
     NSInteger index = [sender tag];
     [self read:index isSlow:YES];
 }
@@ -714,6 +716,5 @@
     _item = allItems[index];
     [self initData];
 }
-
 
 @end
