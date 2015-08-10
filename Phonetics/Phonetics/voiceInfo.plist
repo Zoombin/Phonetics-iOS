@@ -3636,7 +3636,7 @@
 					<key>step_voices</key>
 					<string>0:0,0,0:0,0&amp;&amp;2:27.258,1.379,1:37.254,1.187</string>
 					<key>step_pics</key>
-					<string>ʃ1,ʃ2,ʃ3&amp;&amp;ʃ4,ʃ5,ʃ6</string>
+					<string>ʃ1,ʃ2,ʃ3,ʃ0&amp;&amp;ʃ4,ʃ5,ʃ6</string>
 					<key>examples_pics</key>
 					<string></string>
 				</dict>
