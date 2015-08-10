@@ -390,6 +390,7 @@
     } else {
         imgView = _gifImageView2;
     }
+    imgView.image = imgArray[0];
     //imageView的动画图片是数组images
     imgView.animationImages = imgArray;
     //按照原始比例缩放图片，保持纵横比
