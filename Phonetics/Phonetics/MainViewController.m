@@ -15,6 +15,7 @@
 #import "UserDefaultManager.h"
 #import "PhoneticsUtils.h"
 #import "UserDefaultManager.h"
+#import "WebViewController.h"
 #import "TutorialFirstStepViewController.h"
 
 
@@ -103,6 +104,12 @@
     }
 }
 
+- (void)contactUs {
+    WebViewController *webViewController = [WebViewController new];
+    webViewController.url = @"http://url.cn/e1QPcQ";
+    [self.navigationController pushViewController:webViewController animated:YES];
+}
+
 - (void)scoreApp {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id1020531456"]];
 }
@@ -120,14 +127,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _menuTableView) {
-        return 3;
+        return 4;
     }
     return [voiceArray count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _menuTableView) {
-        return 44;
+        return 35;
     }
     return 130;
 }
@@ -148,6 +155,9 @@
         } else if (indexPath.row == 2) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
             cell.textLabel.text = @"新手说明";
+        } else if (indexPath.row == 3) {
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
+            cell.textLabel.text = @"联系客服";
         }
         return cell;
     } else {
@@ -197,10 +207,12 @@
             }
         } else if (indexPath.row == 1) {
             [self showShareActionSheet];
-        } else {
+        } else  if (indexPath.row == 2){
             [self menuButtonClicked:nil];
             TutorialFirstStepViewController *firstStepViewController = [TutorialFirstStepViewController new];
             [self.navigationController pushViewController:firstStepViewController animated:NO];
+        } else {
+            [self contactUs];
         }
     }
 }

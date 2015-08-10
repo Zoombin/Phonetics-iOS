@@ -10,6 +10,8 @@
 		186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F57D01B248DCD00774A2F /* VoiceItem.m */; };
 		18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18877ED11B2DCBFF00B11029 /* StepCell.m */; };
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
+		18A8DB1C1B78511C0082D2BD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8DB1A1B78511C0082D2BD /* WebViewController.m */; };
+		18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8DB1B1B78511C0082D2BD /* WebViewController.xib */; };
 		18F9FB051B648531007BCF0E /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9FB041B648531007BCF0E /* AnimationButton.m */; };
 		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
 		58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B861B3C05F30081113D /* libWeChatSDK.a */; };
@@ -83,6 +85,9 @@
 		18877ED01B2DCBFF00B11029 /* StepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCell.h; sourceTree = "<group>"; };
 		18877ED11B2DCBFF00B11029 /* StepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepCell.m; sourceTree = "<group>"; };
 		18877ED21B2DCBFF00B11029 /* StepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		18A8DB191B78511C0082D2BD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		18A8DB1A1B78511C0082D2BD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		18A8DB1B1B78511C0082D2BD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		18F9FB031B648531007BCF0E /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
 		18F9FB041B648531007BCF0E /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
@@ -329,6 +334,9 @@
 				58635FF31B39C32200A757C4 /* VoiceSelectViewController.h */,
 				58635FF41B39C32200A757C4 /* VoiceSelectViewController.m */,
 				58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */,
+				18A8DB191B78511C0082D2BD /* WebViewController.h */,
+				18A8DB1A1B78511C0082D2BD /* WebViewController.m */,
+				18A8DB1B1B78511C0082D2BD /* WebViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -541,6 +549,7 @@
 				580D535E1B3C0F140092E408 /* ShareSDKLocalizable.strings in Resources */,
 				586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */,
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
+				18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */,
 				58029B8B1B3C05F30081113D /* read_me.txt in Resources */,
 				58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */,
 				58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */,
@@ -573,6 +582,7 @@
 				5808F3171B1EDFA700ED3377 /* AppDelegate.m in Sources */,
 				58635FF61B39C32200A757C4 /* VoiceSelectViewController.m in Sources */,
 				58B77E5F1B5F446600D9C116 /* TutorialFirstStepViewController.m in Sources */,
+				18A8DB1C1B78511C0082D2BD /* WebViewController.m in Sources */,
 				5839D50F1B5CF49000B0D96B /* CheckInInfo.m in Sources */,
 				5808F33D1B1EE39D00ED3377 /* VoiceDetailViewController.m in Sources */,
 				587288451B3CF4BB0088BF00 /* TimeUtil.m in Sources */,
