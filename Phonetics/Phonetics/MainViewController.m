@@ -221,9 +221,9 @@
 - (void)showShareActionSheet {
     id<ISSContent> publishContent = [ShareSDK content:@"推荐：花华组基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
                                      "关注官方公众号：hanakagumi"
+                                     "金版音标图谱下载地址：http://t.cn/RLirgVF"
                                      "花华组主页：http://hanaka.5858.com"
                                      "官方贴吧地址：http://url.cn/e1QPcQ"
-                                     "金版音标图谱下载地址：http://t.cn/RLirgVF"
                                        defaultContent:@"微信"
                                                 image:nil
                                                 title:@"金版音标图谱"
