@@ -61,6 +61,7 @@
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
     bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
+    bannerView.backgroundColor = [UIColor lightGrayColor];
     bannerView.delegate = self;
     [_bottomView addSubview:bannerView];
     [self initCheckLabel];

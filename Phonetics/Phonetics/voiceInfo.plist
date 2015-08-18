@@ -995,7 +995,7 @@
 					<key>similar_read</key>
 					<string></string>
 					<key>examples_read</key>
-					<string>15:35.248,0.646,7:12.250,0.612</string>
+					<string>15:35.248,0.646,7:12.000,0.862</string>
 					<key>examples_slow_read</key>
 					<string>22:08.063,2.104,22:08.063,2.104</string>
 					<key>similar_yb</key>
