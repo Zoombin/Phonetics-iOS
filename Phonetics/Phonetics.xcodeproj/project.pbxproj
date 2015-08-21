@@ -247,7 +247,6 @@
 		5808F3051B1EDFA700ED3377 = {
 			isa = PBXGroup;
 			children = (
-				5839D5091B5CDE2700B0D96B /* CoreLocation.framework */,
 				5808F3101B1EDFA700ED3377 /* Phonetics */,
 				5808F32A1B1EDFA700ED3377 /* PhoneticsTests */,
 				5808F30F1B1EDFA700ED3377 /* Products */,
@@ -404,6 +403,7 @@
 		580D53701B3C0FB70092E408 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				5839D5091B5CDE2700B0D96B /* CoreLocation.framework */,
 				580D536E1B3C0F9E0092E408 /* Security.framework */,
 				580D536C1B3C0F980092E408 /* libz.1.2.5.dylib */,
 				580D536A1B3C0F880092E408 /* libicucore.dylib */,
