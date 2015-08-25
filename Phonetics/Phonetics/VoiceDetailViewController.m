@@ -574,45 +574,45 @@
     } else {
         ybStr = _item.similarYBName;
     }
-    
     NSArray *ybsArray = [ybStr componentsSeparatedByString:@"&&"];
+    NSMutableArray *yinbiao = [[NSMutableArray alloc] init];
     for (int i = 0; i < [ybsArray count]; i++) {
         NSArray *wordsYBS = [ybsArray[i] componentsSeparatedByString:@","];
         NSMutableString *pics = [@"" mutableCopy];
-        for (int i = 0; i < [wordsYBS count]; i++) {
-            NSString *yb = wordsYBS[i];
+        for (int j = 0; j < [wordsYBS count]; j++) {
+            NSString *yb = wordsYBS[j];
             VoiceItem *item = [self searchVoiceByName:yb];
             if (item) {
                 NSArray *ybs = [item.picsFront componentsSeparatedByString:@","];
-                for (int j = 0; j < [ybs count]; j++) {
-                    if (j == 0 && i != 0) {
-                        [pics appendString:@","];
-                    }
-                    if (i != [wordsYBS count] - 1) {
-                        if (j == 3) {
-                            [pics appendFormat:@"%@", ybs[j]];
+                for (int k = 0; k < [ybs count]; k++) {
+                    if (j != 0) {
+                        if (k >3 && j != [wordsYBS count] - 1) {
                             break;
                         }
-                        [pics appendFormat:@"%@,", ybs[j]];
+                        [pics appendFormat:@",%@", ybs[k]];
                     } else {
-                        [pics appendFormat:@"%@%@", ybs[j], j == [ybs count] - 1 ? @"" : @","];
+                        if (k >3 && j != [wordsYBS count] - 1) {
+                            break;
+                        }
+                        [pics appendFormat:@"%@%@", k == 0 ? @"" : @",", ybs[k]];
                     }
-                }
-            }
-            if (i != 0) {
-                if (isExp) {
-                    _item.examplesPics = [NSString stringWithFormat:@"%@&&%@", _item.examplesPics,pics];
-                } else {
-                    _item.similarPics = [NSString stringWithFormat:@"%@&&%@", _item.similarPics,pics];
-                }
-            } else {
-                if (isExp) {
-                    _item.examplesPics = pics;
-                } else {
-                    _item.similarPics = pics;
                 }
             }
         }
+        [yinbiao addObject:pics];
+    }
+    
+    NSMutableString *ybString = [@"" mutableCopy];
+    int i = 0;
+    for (NSString *name in yinbiao) {
+        [ybString appendFormat:@"%@%@", i == 0 ? @"" : @"&&", name];
+        i++;
+    }
+    NSLog(@"%@", ybString);
+    if (isExp) {
+        _item.examplesPics = ybString;
+    } else {
+        _item.similarPics = ybString;
     }
 }
 
