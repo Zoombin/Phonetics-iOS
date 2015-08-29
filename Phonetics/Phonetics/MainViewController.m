@@ -157,7 +157,7 @@
             cell.textLabel.text = @"新手说明";
         } else if (indexPath.row == 3) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            cell.textLabel.text = @"联系客服";
+            cell.textLabel.text = @"在线交流";
         }
         return cell;
     } else {

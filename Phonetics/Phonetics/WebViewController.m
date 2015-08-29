@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"联系客服";
+    self.title = @"在线交流";
     self.navigationController.navigationBarHidden = NO;
     // Do any additional setup after loading the view from its nib.
     [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_url]]];
