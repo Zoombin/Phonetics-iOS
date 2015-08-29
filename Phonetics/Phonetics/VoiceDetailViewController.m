@@ -608,7 +608,6 @@
         [ybString appendFormat:@"%@%@", i == 0 ? @"" : @"&&", name];
         i++;
     }
-    NSLog(@"%@", ybString);
     if (isExp) {
         _item.examplesPics = ybString;
     } else {
