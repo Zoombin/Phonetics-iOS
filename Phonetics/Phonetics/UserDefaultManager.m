@@ -70,7 +70,8 @@
 
 + (void)saveCheckInDate:(NSDate *)date {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *dict = [userDefaults objectForKey:CHECK_IN];
+    NSDictionary *dict = [userDefaults objectForKey:CHECK_IN];
+    NSMutableDictionary *infoDict = [NSMutableDictionary dictionaryWithDictionary:dict];
     NSDateFormatter *formatter1 = [[NSDateFormatter alloc] init];
     [formatter1 setDateFormat:@"yyyy-MM"];
     NSString *month = [formatter1 stringFromDate:date];
@@ -89,14 +90,19 @@
             } else {
                 //今天还没签到
                 NSInteger times = [timesStr integerValue] + 1;
-                dict[@"times"] = [NSString stringWithFormat:@"%ld", times];
-                dict[@"lastdate"] = currentdate;
+                infoDict[@"times"] = [NSString stringWithFormat:@"%ld", times];
+                infoDict[@"month"] = monthStr;
+                infoDict[@"lastdate"] = currentdate;
+                [userDefaults setObject:infoDict forKey:CHECK_IN];
+                [userDefaults synchronize];
             }
         } else {
             //新的一个月开始啦
-            dict[@"times"] = @"1";
-            dict[@"lastdate"] = currentdate;
-            dict[@"month"] = month;
+            infoDict[@"times"] = [NSString stringWithFormat:@"1"];
+            infoDict[@"lastdate"] = currentdate;
+            infoDict[@"month"] = month;
+            [userDefaults setObject:infoDict forKey:CHECK_IN];
+            [userDefaults synchronize];
         }
     } else {
         //还没签到过

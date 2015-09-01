@@ -9,11 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
 #import "AnimationButton.h"
-#import <iAd/iAd.h>
 
-@interface TutorialSecondStepViewController : UIViewController <ADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
-    ADBannerView *bannerView;
-}
+@interface TutorialSecondStepViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) VoiceItem *item;
 @property (nonatomic, assign) BOOL isBasic;

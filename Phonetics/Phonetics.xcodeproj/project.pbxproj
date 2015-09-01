@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186BFAA81B940399002D9AFD /* sdk_v2.13_2015-07-23.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */; };
+		186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA91B940485002D9AFD /* CoreMotion.framework */; };
+		186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAB1B94048E002D9AFD /* CFNetwork.framework */; };
+		186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAD1B94049F002D9AFD /* StoreKit.framework */; };
+		186BFAB01B9404AD002D9AFD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAF1B9404AD002D9AFD /* ImageIO.framework */; };
 		186F57D11B248DCD00774A2F /* VoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F57D01B248DCD00774A2F /* VoiceItem.m */; };
 		18877ED31B2DCBFF00B11029 /* StepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18877ED11B2DCBFF00B11029 /* StepCell.m */; };
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
@@ -80,6 +85,13 @@
 
 /* Begin PBXFileReference section */
 		181A4D371B709C9E004F479D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		186BFAA51B940399002D9AFD /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
+		186BFAA61B940399002D9AFD /* NewWorldSpt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWorldSpt.h; sourceTree = "<group>"; };
+		186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "sdk_v2.13_2015-07-23.a"; sourceTree = "<group>"; };
+		186BFAA91B940485002D9AFD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		186BFAAB1B94048E002D9AFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		186BFAAD1B94049F002D9AFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		186BFAAF1B9404AD002D9AFD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		186F57CF1B248DCD00774A2F /* VoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceItem.h; sourceTree = "<group>"; };
 		186F57D01B248DCD00774A2F /* VoiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceItem.m; sourceTree = "<group>"; };
 		18877ED01B2DCBFF00B11029 /* StepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepCell.h; sourceTree = "<group>"; };
@@ -175,7 +187,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186BFAB01B9404AD002D9AFD /* ImageIO.framework in Frameworks */,
+				186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */,
+				186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */,
+				186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */,
 				5839D50A1B5CDE2700B0D96B /* CoreLocation.framework in Frameworks */,
+				186BFAA81B940399002D9AFD /* sdk_v2.13_2015-07-23.a in Frameworks */,
 				580D536F1B3C0F9E0092E408 /* Security.framework in Frameworks */,
 				580D536D1B3C0F980092E408 /* libz.1.2.5.dylib in Frameworks */,
 				580D536B1B3C0F880092E408 /* libicucore.dylib in Frameworks */,
@@ -209,6 +226,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186BFAA31B940399002D9AFD /* YoumiSDK */ = {
+			isa = PBXGroup;
+			children = (
+				186BFAA41B940399002D9AFD /* include */,
+				186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */,
+			);
+			path = YoumiSDK;
+			sourceTree = "<group>";
+		};
+		186BFAA41B940399002D9AFD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				186BFAA51B940399002D9AFD /* ConfigHeader.h */,
+				186BFAA61B940399002D9AFD /* NewWorldSpt.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		58029B801B3BD8C20081113D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +261,7 @@
 		58029B841B3C05E50081113D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				186BFAA31B940399002D9AFD /* YoumiSDK */,
 				5839D5021B5CDAA700B0D96B /* BaiduMob */,
 				580D53461B3C0F140092E408 /* ShareSDK */,
 				58029B851B3C05F30081113D /* WeChatSDK_1.5 */,
@@ -247,6 +283,10 @@
 		5808F3051B1EDFA700ED3377 = {
 			isa = PBXGroup;
 			children = (
+				186BFAAF1B9404AD002D9AFD /* ImageIO.framework */,
+				186BFAAD1B94049F002D9AFD /* StoreKit.framework */,
+				186BFAAB1B94048E002D9AFD /* CFNetwork.framework */,
+				186BFAA91B940485002D9AFD /* CoreMotion.framework */,
 				5808F3101B1EDFA700ED3377 /* Phonetics */,
 				5808F32A1B1EDFA700ED3377 /* PhoneticsTests */,
 				5808F30F1B1EDFA700ED3377 /* Products */,
@@ -723,6 +763,7 @@
 					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
+					"$(PROJECT_DIR)/Phonetics/Library/YoumiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -751,6 +792,7 @@
 					"$(PROJECT_DIR)/Phonetics/Library/WeChatSDK_1.5",
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
+					"$(PROJECT_DIR)/Phonetics/Library/YoumiSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

@@ -106,7 +106,7 @@
     } else if (currentStep == 3) {
         _stepView4.hidden = NO;
         _clickButton4.hidden = NO;
-        _clickButton4.center = CGPointMake((CGRectGetMaxX(_bottomView.frame) / 4) * 2.5, CGRectGetMinY(_bottomView.frame) + _bottomView.frame.size.height / 4);
+        _clickButton4.center = CGPointMake((CGRectGetMaxX(_bottomView.frame) / 4) * 2.5, CGRectGetMinY(_bottomView.frame) + _bottomView.frame.size.height / 2);
     } else if (currentStep == 4) {
         _stepView5.hidden = NO;
         _clickButton5.hidden = NO;
@@ -200,9 +200,6 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-    bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
-    bannerView.delegate = self;
-    [_bottomView addSubview:bannerView];
     
     [self initData];
     
@@ -238,20 +235,7 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat height = 220;
-//    
-//    CGFloat photoWidth = 960;
-//    CGFloat photoHeight = 744;
-//    
-//    CGFloat newWidth = width;
-//    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
-//    if (newHeight > height) {
-//        newWidth = (photoWidth * height) / photoHeight;
-//        newHeight = height;
-//    }
-//    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
-//    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
+    
     if (!_isBasic) {
         [self showLastImg];
     }
@@ -363,10 +347,9 @@
 
 - (void)initBottomButton {
     [bottomButtons removeAllObjects];
+    
     for (UIView *v in _bottomView.subviews) {
-        if (![v isKindOfClass:[ADBannerView class]]) {
-            [v removeFromSuperview];
-        }
+        [v removeFromSuperview];
     }
     
     NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
@@ -375,11 +358,10 @@
     }
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
-        //        _segmentedControl.hidden = YES;
     }
     
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
-    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
+    CGFloat buttonHeight = _bottomView.frame.size.height;
     
     for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -532,25 +514,6 @@
 - (void)playStop {
     [audioPlayer stop];
 }
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    NSLog(@"Error loading");
-}
-
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    NSLog(@"Ad loaded");
-}
-
-- (void)bannerViewWillLoadAd:(ADBannerView *)banner {
-    NSLog(@"Ad will load");
-}
-
-- (void)bannerViewActionDidFinish:(ADBannerView *)banner {
-    NSLog(@"Ad did finish");
-    [UserDefaultManager saveCheckInDate:[NSDate date]];
-}
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _stepTableView) {

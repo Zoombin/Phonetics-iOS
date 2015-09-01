@@ -11,6 +11,7 @@
 #import "MainViewController.h"
 #import "BaiduMobStat.h"
 #import "PhoneticsUtils.h"
+#import "NewWorldSpt.h"
 #import "Constant.h"
 
 @interface AppDelegate ()
@@ -28,6 +29,15 @@
     [ShareSDK connectWeChatWithAppId:WeChatAppKey
                            appSecret:WeChatSercert
                            wechatCls:[WXApi class]];
+    
+    //请把你从官网申请的appid和secretkey替换到这里再测试。
+    //否则会提示错误
+ 
+    [NewWorldSpt initQQWDeveloperParams:YouMiAppkey QQ_SecretId:YouMiSecretId];
+    //可选方法,默认不写这个方法（本方法为了解决广告界面的点击失效问题）
+    [NewWorldSpt setWindow:[UIApplication sharedApplication].delegate.window];
+    //使用前先初始化一下插屏
+    [NewWorldSpt initQQWDeveLoper:kTypePortrait];//填上你对应的横竖屏模式
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     MainViewController *mainViewController = [MainViewController new];

@@ -14,6 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TimeUtil.h"
 #import "UserDefaultManager.h"
+#import "NewWorldSpt.h"
 
 @interface VoiceDetailViewController ()
 
@@ -41,15 +42,25 @@
     audioPlayer.volume = 1;
 }
 
-- (void)initCheckLabel {
-    checkInLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bannerView.frame) - 30, 0, 30, 21)];
-    checkInLabel.textColor = [UIColor colorWithRed:233/255.0 green:79/255.0 blue:46/255.0 alpha:1.0];
-    checkInLabel.textAlignment = NSTextAlignmentCenter;
-    [bannerView addSubview:checkInLabel];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [NewWorldSpt showQQWSPTAction:^(BOOL flag) {
+
+    }];
+    [NewWorldSpt clickQQWSPTAction:^(BOOL flag) {
+        if (flag) {
+            @try {
+                [UserDefaultManager saveCheckInDate:[NSDate date]];
+            }
+            @catch (NSException *exception) {
+                NSLog(@"exception=>%@", exception);
+            }
+            @finally {
+                
+            }
+            
+        }
+    }];
     [self initAudio];
     shouldDG = NO;
     isReading = NO;
@@ -60,11 +71,7 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-    bannerView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)];
-    bannerView.backgroundColor = [UIColor lightGrayColor];
-    bannerView.delegate = self;
-    [_bottomView addSubview:bannerView];
-    [self initCheckLabel];
+
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
     [_voiceButton.layer setBorderWidth:1.0];
     
@@ -93,20 +100,6 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat height = 220;
-//    
-//    CGFloat photoWidth = 960;
-//    CGFloat photoHeight = 744;
-//    
-//    CGFloat newWidth = width;
-//    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
-//    if (newHeight > height) {
-//        newWidth = (photoWidth * height) / photoHeight;
-//        newHeight = height;
-//    }
-//    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
-//    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
     
     if (!_isBasic) {
         [self showLastImg];
@@ -220,9 +213,7 @@
 - (void)initBottomButton {
     [bottomButtons removeAllObjects];
     for (UIView *v in _bottomView.subviews) {
-        if (![v isKindOfClass:[ADBannerView class]]) {
-            [v removeFromSuperview];
-        }
+        [v removeFromSuperview];
     }
     
     NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
@@ -231,11 +222,10 @@
     }
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
-        //        _segmentedControl.hidden = YES;
     }
     
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
-    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
+    CGFloat buttonHeight = _bottomView.frame.size.height;
     
     for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -392,24 +382,6 @@
 - (void)playStop {
     [audioPlayer stop];
     isReading = NO;
-}
-
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    NSLog(@"Error loading");
-}
-
-- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
-    NSLog(@"Ad loaded");
-}
-
-- (void)bannerViewWillLoadAd:(ADBannerView *)banner {
-    NSLog(@"Ad will load");
-}
-
-- (void)bannerViewActionDidFinish:(ADBannerView *)banner {
-    NSLog(@"Ad did finish");
-    [UserDefaultManager saveCheckInDate:[NSDate date]];
-    checkInLabel.text = [UserDefaultManager checkInTimes];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

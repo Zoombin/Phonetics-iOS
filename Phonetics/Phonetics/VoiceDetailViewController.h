@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
-#import <iAd/iAd.h>
 
-@interface VoiceDetailViewController : UIViewController <ADBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
-    ADBannerView *bannerView;
+@interface VoiceDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     UILabel *checkInLabel;
 }
 
