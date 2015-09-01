@@ -49,16 +49,7 @@
     }];
     [NewWorldSpt clickQQWSPTAction:^(BOOL flag) {
         if (flag) {
-            @try {
-                [UserDefaultManager saveCheckInDate:[NSDate date]];
-            }
-            @catch (NSException *exception) {
-                NSLog(@"exception=>%@", exception);
-            }
-            @finally {
-                
-            }
-            
+            [UserDefaultManager saveCheckInDate:[NSDate date]];
         }
     }];
     [self initAudio];
