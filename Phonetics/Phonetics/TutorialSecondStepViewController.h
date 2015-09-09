@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
 #import "AnimationButton.h"
+#import "GDTMobBannerView.h"
 
-@interface TutorialSecondStepViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TutorialSecondStepViewController : UIViewController <GDTMobBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
+    GDTMobBannerView *bannerView;
+}
 
 @property (nonatomic, strong) VoiceItem *item;
 @property (nonatomic, assign) BOOL isBasic;

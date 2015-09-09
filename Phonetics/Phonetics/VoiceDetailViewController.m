@@ -14,7 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TimeUtil.h"
 #import "UserDefaultManager.h"
-#import "NewWorldSpt.h"
+#import "Constant.h"
 
 @interface VoiceDetailViewController ()
 
@@ -42,16 +42,15 @@
     audioPlayer.volume = 1;
 }
 
+- (void)initCheckLabel {
+    checkInLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bannerView.frame) - 30, 0, 30, 21)];
+    checkInLabel.textColor = [UIColor colorWithRed:233/255.0 green:79/255.0 blue:46/255.0 alpha:1.0];
+    checkInLabel.textAlignment = NSTextAlignmentCenter;
+    [bannerView addSubview:checkInLabel];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NewWorldSpt showQQWSPTAction:^(BOOL flag) {
-
-    }];
-    [NewWorldSpt clickQQWSPTAction:^(BOOL flag) {
-        if (flag) {
-            [UserDefaultManager saveCheckInDate:[NSDate date]];
-        }
-    }];
     [self initAudio];
     shouldDG = NO;
     isReading = NO;
@@ -62,7 +61,19 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-
+    bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)
+                                                  appkey:TXAPPkEY
+                                             placementId:TXBannerID];
+    bannerView.delegate = self; // 设置Delegate
+    bannerView.currentViewController = self; //设置当前的ViewController
+    bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
+    bannerView.isGpsOn = NO; //【可选】开启GPS定位;默认关闭
+    bannerView.showCloseBtn = NO; //【可选】展示关闭按钮;默认显示
+    bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
+    [_bottomView addSubview:bannerView];
+    [bannerView loadAdAndShow];
+    
+    [self initCheckLabel];
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
     [_voiceButton.layer setBorderWidth:1.0];
     
@@ -91,6 +102,20 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
+//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+//    CGFloat height = 220;
+//    
+//    CGFloat photoWidth = 960;
+//    CGFloat photoHeight = 744;
+//    
+//    CGFloat newWidth = width;
+//    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
+//    if (newHeight > height) {
+//        newWidth = (photoWidth * height) / photoHeight;
+//        newHeight = height;
+//    }
+//    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
+//    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
     
     if (!_isBasic) {
         [self showLastImg];
@@ -204,7 +229,9 @@
 - (void)initBottomButton {
     [bottomButtons removeAllObjects];
     for (UIView *v in _bottomView.subviews) {
-        [v removeFromSuperview];
+        if (![v isKindOfClass:[GDTMobBannerView class]]) {
+            [v removeFromSuperview];
+        }
     }
     
     NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
@@ -213,10 +240,11 @@
     }
     if (!_isBasic) {
         names = @[@"描述", @"举例"];
+        //        _segmentedControl.hidden = YES;
     }
     
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
-    CGFloat buttonHeight = _bottomView.frame.size.height;
+    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
     
     for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -373,6 +401,20 @@
 - (void)playStop {
     [audioPlayer stop];
     isReading = NO;
+}
+
+- (void)bannerViewClicked {
+    [UserDefaultManager saveCheckInDate:[NSDate date]];
+    checkInLabel.text = [UserDefaultManager checkInTimes];
+}
+
+- (void)bannerViewDidReceived {
+    NSLog(@"加载成功!");
+}
+
+- (void)bannerViewFailToReceived:(NSError *)error {
+    NSLog(@"加载失败!");
+    NSLog(@"%@", error.description);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

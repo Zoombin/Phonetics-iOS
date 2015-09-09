@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
+#import "GDTMobBannerView.h"
 
-@interface VoiceDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface VoiceDetailViewController : UIViewController <GDTMobBannerViewDelegate, UITableViewDataSource, UITableViewDelegate> {
+    GDTMobBannerView *bannerView;
     UILabel *checkInLabel;
 }
 

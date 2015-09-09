@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		186BFAA81B940399002D9AFD /* sdk_v2.13_2015-07-23.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */; };
 		186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA91B940485002D9AFD /* CoreMotion.framework */; };
 		186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAB1B94048E002D9AFD /* CFNetwork.framework */; };
 		186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAD1B94049F002D9AFD /* StoreKit.framework */; };
@@ -17,6 +16,8 @@
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
 		18A8DB1C1B78511C0082D2BD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8DB1A1B78511C0082D2BD /* WebViewController.m */; };
 		18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8DB1B1B78511C0082D2BD /* WebViewController.xib */; };
+		18EF929C1B9FFC25005C4CCE /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */; };
+		18EF929E1B9FFF25005C4CCE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF929D1B9FFF25005C4CCE /* AdSupport.framework */; };
 		18F9FB051B648531007BCF0E /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9FB041B648531007BCF0E /* AnimationButton.m */; };
 		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
 		58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B861B3C05F30081113D /* libWeChatSDK.a */; };
@@ -70,7 +71,6 @@
 		58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */; };
 		58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */; };
 		58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */; };
-		58FD81D41B296FBD00BA1264 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD81D31B296FBD00BA1264 /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,9 +85,6 @@
 
 /* Begin PBXFileReference section */
 		181A4D371B709C9E004F479D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		186BFAA51B940399002D9AFD /* ConfigHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigHeader.h; sourceTree = "<group>"; };
-		186BFAA61B940399002D9AFD /* NewWorldSpt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWorldSpt.h; sourceTree = "<group>"; };
-		186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "sdk_v2.13_2015-07-23.a"; sourceTree = "<group>"; };
 		186BFAA91B940485002D9AFD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		186BFAAB1B94048E002D9AFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		186BFAAD1B94049F002D9AFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -100,6 +97,11 @@
 		18A8DB191B78511C0082D2BD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		18A8DB1A1B78511C0082D2BD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		18A8DB1B1B78511C0082D2BD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		18EF92981B9FFC25005C4CCE /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		18EF92991B9FFC25005C4CCE /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		18EF929A1B9FFC25005C4CCE /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
+		18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
+		18EF929D1B9FFF25005C4CCE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		18F9FB031B648531007BCF0E /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
 		18F9FB041B648531007BCF0E /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
@@ -179,7 +181,6 @@
 		58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInfo.h; sourceTree = "<group>"; };
 		58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceInfo.m; sourceTree = "<group>"; };
 		58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voiceInfo.plist; sourceTree = "<group>"; };
-		58FD81D31B296FBD00BA1264 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,12 +188,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EF929E1B9FFF25005C4CCE /* AdSupport.framework in Frameworks */,
 				186BFAB01B9404AD002D9AFD /* ImageIO.framework in Frameworks */,
 				186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */,
 				186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */,
 				186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */,
 				5839D50A1B5CDE2700B0D96B /* CoreLocation.framework in Frameworks */,
-				186BFAA81B940399002D9AFD /* sdk_v2.13_2015-07-23.a in Frameworks */,
 				580D536F1B3C0F9E0092E408 /* Security.framework in Frameworks */,
 				580D536D1B3C0F980092E408 /* libz.1.2.5.dylib in Frameworks */,
 				580D536B1B3C0F880092E408 /* libicucore.dylib in Frameworks */,
@@ -211,7 +212,7 @@
 				58029B8D1B3C076F0081113D /* SystemConfiguration.framework in Frameworks */,
 				58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */,
 				580D53651B3C0F140092E408 /* ShareSDKShareActionSheet.framework in Frameworks */,
-				58FD81D41B296FBD00BA1264 /* iAd.framework in Frameworks */,
+				18EF929C1B9FFC25005C4CCE /* libGDTMobSDK.a in Frameworks */,
 				580D53641B3C0F140092E408 /* ShareSDKFlatShareViewUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,22 +227,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		186BFAA31B940399002D9AFD /* YoumiSDK */ = {
+		18EF92971B9FFC25005C4CCE /* TXSDK */ = {
 			isa = PBXGroup;
 			children = (
-				186BFAA41B940399002D9AFD /* include */,
-				186BFAA71B940399002D9AFD /* sdk_v2.13_2015-07-23.a */,
+				18EF92981B9FFC25005C4CCE /* GDTMobBannerView.h */,
+				18EF92991B9FFC25005C4CCE /* GDTMobInterstitial.h */,
+				18EF929A1B9FFC25005C4CCE /* GDTNativeAd.h */,
+				18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */,
 			);
-			path = YoumiSDK;
-			sourceTree = "<group>";
-		};
-		186BFAA41B940399002D9AFD /* include */ = {
-			isa = PBXGroup;
-			children = (
-				186BFAA51B940399002D9AFD /* ConfigHeader.h */,
-				186BFAA61B940399002D9AFD /* NewWorldSpt.h */,
-			);
-			path = include;
+			path = TXSDK;
 			sourceTree = "<group>";
 		};
 		58029B801B3BD8C20081113D /* Utils */ = {
@@ -261,7 +255,7 @@
 		58029B841B3C05E50081113D /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				186BFAA31B940399002D9AFD /* YoumiSDK */,
+				18EF92971B9FFC25005C4CCE /* TXSDK */,
 				5839D5021B5CDAA700B0D96B /* BaiduMob */,
 				580D53461B3C0F140092E408 /* ShareSDK */,
 				58029B851B3C05F30081113D /* WeChatSDK_1.5 */,
@@ -439,6 +433,7 @@
 		580D53701B3C0FB70092E408 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				18EF929D1B9FFF25005C4CCE /* AdSupport.framework */,
 				186BFAAF1B9404AD002D9AFD /* ImageIO.framework */,
 				186BFAAD1B94049F002D9AFD /* StoreKit.framework */,
 				186BFAAB1B94048E002D9AFD /* CFNetwork.framework */,
@@ -453,7 +448,6 @@
 				58029B901B3C078F0081113D /* libsqlite3.0.dylib */,
 				58029B8E1B3C077A0081113D /* libz.dylib */,
 				58029B8C1B3C076F0081113D /* SystemConfiguration.framework */,
-				58FD81D31B296FBD00BA1264 /* iAd.framework */,
 			);
 			name = FrameWork;
 			sourceTree = "<group>";
@@ -764,6 +758,11 @@
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 					"$(PROJECT_DIR)/Phonetics/Library/YoumiSDK",
+					"$(PROJECT_DIR)/Phonetics/Library/TXSDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -793,6 +792,11 @@
 					"$(PROJECT_DIR)/Phonetics/Library/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/Phonetics/Library/BaiduMob",
 					"$(PROJECT_DIR)/Phonetics/Library/YoumiSDK",
+					"$(PROJECT_DIR)/Phonetics/Library/TXSDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
