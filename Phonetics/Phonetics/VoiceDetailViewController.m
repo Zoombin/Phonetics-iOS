@@ -62,7 +62,7 @@
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
     bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)
-                                                  appkey:TXAPPkEY
+                                                  appkey:TXAppKey
                                              placementId:TXBannerID];
     bannerView.delegate = self; // 设置Delegate
     bannerView.currentViewController = self; //设置当前的ViewController
@@ -72,6 +72,15 @@
     bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
     [_bottomView addSubview:bannerView];
     [bannerView loadAdAndShow];
+    
+    int value = (arc4random() % 5) + 1;
+    if (value == 5) {
+        NSLog(@"加载插屏广告!");
+        interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:TXAppKey
+                                                         placementId:TXFullScreenID];
+        interstitialObj.delegate = self;
+        [interstitialObj loadAd];
+    }
     
     [self initCheckLabel];
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
@@ -414,6 +423,19 @@
 
 - (void)bannerViewFailToReceived:(NSError *)error {
     NSLog(@"加载失败!");
+    NSLog(@"%@", error.description);
+}
+
+// 广告预加载成功回调
+- (void)interstitialSuccessToLoadAd:(GDTMobInterstitial *)interstitial {
+    NSLog(@"加载成功! - 插屏");
+    UIViewController *vc = [[[UIApplication sharedApplication] keyWindow]
+                            rootViewController]; [interstitial presentFromRootViewController:vc];
+}
+
+// 广告预加载失败回调
+- (void)interstitialFailToLoadAd:(GDTMobInterstitial *)interstitial error:(NSError *)error {
+    NSLog(@"加载失败! - 插屏");
     NSLog(@"%@", error.description);
 }
 

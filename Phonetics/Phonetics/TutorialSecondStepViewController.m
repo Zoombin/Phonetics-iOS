@@ -14,6 +14,7 @@
 #import "VoiceButton.h"
 #import <AVFoundation/AVFoundation.h>
 #import "TimeUtil.h"
+#import "Constant.h"
 #import "UserDefaultManager.h"
 
 @interface TutorialSecondStepViewController ()
@@ -201,8 +202,8 @@
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
     bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)
-                                                  appkey:@"100720253"
-                                             placementId:@"9079537207574943610"];
+                                                  appkey:TXAppKey
+                                             placementId:TXBannerID];
     bannerView.delegate = self; // 设置Delegate
     bannerView.currentViewController = self; //设置当前的ViewController
     bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
