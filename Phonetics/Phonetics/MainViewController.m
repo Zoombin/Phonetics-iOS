@@ -94,7 +94,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (alertView.tag == SHARE_ALERT) {
         if (alertView.cancelButtonIndex == buttonIndex) {
-            [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:0.5];
+            [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:1.0];
         }
     } else if (alertView.tag == SCORE_ALERT) {
         if (alertView.cancelButtonIndex != buttonIndex) {
