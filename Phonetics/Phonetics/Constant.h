@@ -11,5 +11,6 @@
 #define WeChatAppKey    @"wxf1ce482aa1ad2023"
 #define WeChatSercert   @"1af038971efee027911b4c2e622eab74"
 #define BaiduMobAppKey  @"c11110105c"
-#define YouMiAppkey  @"d1c3c6b451b6b844"
-#define YouMiSecretId  @"dfc02a9fbd00aba7"
+#define TXAppKey        @"1104776799"
+#define TXBannerID      @"4080609518776628"
+#define TXFullScreenID  @"7070602548972619"
