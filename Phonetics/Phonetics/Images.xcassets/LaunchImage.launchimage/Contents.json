@@ -3,9 +3,9 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
+      "filename" : "appstore4_480h.png",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "appstore4_480h.png",
       "scale" : "2x"
     },
     {
@@ -15,6 +15,22 @@
       "filename" : "appstore4_568h.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
+      "scale" : "2x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "ipad",
+      "filename" : "appstore4_512h.png",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
+      "scale" : "1x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "ipad",
+      "filename" : "appstore4_1024h.png",
+      "extent" : "full-screen",
+      "minimum-system-version" : "7.0",
       "scale" : "2x"
     }
   ],
