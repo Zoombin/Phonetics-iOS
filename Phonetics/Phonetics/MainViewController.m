@@ -75,10 +75,12 @@
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
                                                         message:@"微信朋友圈分享成功后、才能查阅此页面。"
                                                        delegate:self
-                                              cancelButtonTitle:@"分享"
-                                              otherButtonTitles:nil];
+                                              cancelButtonTitle:@"取消"
+                                              otherButtonTitles:@"分享", nil];
     alertView.tag = SHARE_ALERT;
     [alertView show];
+    //TODO: 此处改为只弹出一次了
+    [UserDefaultManager saveHasShare:YES];
 }
 
 - (void)showScoreAlert {
@@ -89,11 +91,13 @@
                                              otherButtonTitles:@"去评分", nil];
     alertView.tag = SCORE_ALERT;
     [alertView show];
+    //TODO: 此处改为只弹出一次了
+    [UserDefaultManager saveHasScore:YES];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (alertView.tag == SHARE_ALERT) {
-        if (alertView.cancelButtonIndex == buttonIndex) {
+        if (alertView.cancelButtonIndex != buttonIndex) {
             [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:1.0];
         }
     } else if (alertView.tag == SCORE_ALERT) {
