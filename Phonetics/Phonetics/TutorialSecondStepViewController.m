@@ -99,11 +99,14 @@
 
 - (void)nextStep {
     [self allHidden];
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     currentStep++;
     if (currentStep == 1) {
         _stepView2.hidden = NO;
     } else if (currentStep == 2) {
         _stepView3.hidden = NO;
+        _stepView3.frame = CGRectMake(_stepView3.frame.origin.x, _gifImageView.frame.size.height, _stepView3.frame.size.width, _stepView3.frame.size.height);
     } else if (currentStep == 3) {
         _stepView4.hidden = NO;
         _clickButton4.hidden = NO;
@@ -111,23 +114,32 @@
     } else if (currentStep == 4) {
         _stepView5.hidden = NO;
         _clickButton5.hidden = NO;
+        _clickButton5.frame = CGRectMake(_gifImageView.frame.size.width / 2, _gifImageView.frame.size.height / 2, _clickButton5.frame.size.width, _clickButton5.frame.size.height);
     } else if (currentStep == 5) {
         _stepView6.hidden = NO;
+        _stepView6.frame = CGRectMake(_stepView6.frame.origin.x, screenHeight/2, _stepView6.frame.size.width, _stepView6.frame.size.height);
         _clickButton6.hidden = NO;
+        _clickButton6.frame = CGRectMake(screenWidth - _clickButton6.frame.size.width * 1.7, _gifImageView.frame.size.height - _clickButton6.frame.size.height, _clickButton6.frame.size.width, _clickButton6.frame.size.height);
+        _segmentedControl6.frame = _segmentedControl.frame;
         _segmentedControl6.hidden = NO;
     } else if (currentStep == 6) {
         _stepView7.hidden = NO;
+        _stepView7.frame = CGRectMake(_stepView7.frame.origin.x, _gifImageView.frame.size.height - _stepView7.frame.size.height / 3, _stepView7.frame.size.width, _stepView7.frame.size.height);
+        _clickButton7.frame = CGRectMake(_clickButton7.frame.origin.x - 5, _describeView.frame.origin.y + 85, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
         _clickButton7.hidden = NO;
     } else if (currentStep == 7) {
         _stepView8.hidden = NO;
         _clickButton8.hidden = NO;
+        _clickButton8.frame = CGRectMake(screenWidth / 2 - _clickButton8.frame.size.width - 5, _gifImageView.frame.size.height + 55, _clickButton8.frame.size.width, _clickButton8.frame.size.height);
     } else if (currentStep == 8) {
         _stepView9.hidden = NO;
         _clickButton9.hidden = NO;
+        _clickButton9.frame = CGRectMake(_clickButton9.frame.origin.x, _describeView.frame.origin.y + 75, _clickButton9.frame.size.width, _clickButton9.frame.size.height);
     } else if (currentStep == 9) {
         _stepView10.hidden = NO;
     } else if (currentStep == 10) {
         _stepView11.hidden = NO;
+        _stepView11.frame = CGRectMake(_stepView11.frame.origin.x, _gifImageView.frame.size.height, _stepView11.frame.size.width, _stepView11.frame.size.height);
     }
 }
 
@@ -211,7 +223,7 @@
     bannerView.showCloseBtn = NO; //【可选】展示关闭按钮;默认显示
     bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
     [_bottomView addSubview:bannerView];
-    [bannerView loadAdAndShow];
+//    [bannerView loadAdAndShow];
     
     [self initData];
     
@@ -242,25 +254,11 @@
     
     _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
-    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
+//    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat height = 220;
-//    
-//    CGFloat photoWidth = 960;
-//    CGFloat photoHeight = 744;
-//    
-//    CGFloat newWidth = width;
-//    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
-//    if (newHeight > height) {
-//        newWidth = (photoWidth * height) / photoHeight;
-//        newHeight = height;
-//    }
-//    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
-//    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
     if (!_isBasic) {
         [self showLastImg];
     }

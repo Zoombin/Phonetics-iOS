@@ -61,7 +61,7 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-    bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)
+    bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 50)
                                                   appkey:TXAppKey
                                              placementId:TXBannerID];
     bannerView.delegate = self; // 设置Delegate
