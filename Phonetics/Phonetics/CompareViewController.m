@@ -147,6 +147,7 @@
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
     CGFloat viewHeight = (screenHeight - 40) / 2;
     _voiceView1.frame = CGRectMake(0, 0, screenWidth, viewHeight);
+    _gifImageView1.frame = _voiceView1.frame;
     _voiceView2.frame = CGRectMake(0, CGRectGetMaxY(_voiceView1.frame), screenWidth, viewHeight);
     [self addGod];
 }
