@@ -106,25 +106,11 @@
     [self getTmpItem];
     _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
-    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
+//    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
-//    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-//    CGFloat height = 220;
-//    
-//    CGFloat photoWidth = 960;
-//    CGFloat photoHeight = 744;
-//    
-//    CGFloat newWidth = width;
-//    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
-//    if (newHeight > height) {
-//        newWidth = (photoWidth * height) / photoHeight;
-//        newHeight = height;
-//    }
-//    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
-//    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
     
     if (!_isBasic) {
         [self showLastImg];
