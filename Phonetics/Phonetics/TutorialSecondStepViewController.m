@@ -104,6 +104,7 @@
     currentStep++;
     if (currentStep == 1) {
         _stepView2.hidden = NO;
+        _stepView2.frame = CGRectMake(_stepView2.frame.origin.x, _gifImageView.frame.size.height, _stepView2.frame.size.width, _stepView2.frame.size.height);
     } else if (currentStep == 2) {
         _stepView3.hidden = NO;
         _stepView3.frame = CGRectMake(_stepView3.frame.origin.x, _gifImageView.frame.size.height, _stepView3.frame.size.width, _stepView3.frame.size.height);
@@ -114,7 +115,7 @@
     } else if (currentStep == 4) {
         _stepView5.hidden = NO;
         _clickButton5.hidden = NO;
-        _clickButton5.frame = CGRectMake(_gifImageView.frame.size.width / 2, _gifImageView.frame.size.height / 2, _clickButton5.frame.size.width, _clickButton5.frame.size.height);
+        _clickButton5.frame = CGRectMake(_gifImageView.frame.size.width / 2, _gifImageView.frame.size.height / 2 - _clickButton5.frame.size.height / 2, _clickButton5.frame.size.width, _clickButton5.frame.size.height);
     } else if (currentStep == 5) {
         _stepView6.hidden = NO;
         _stepView6.frame = CGRectMake(_stepView6.frame.origin.x, screenHeight/2, _stepView6.frame.size.width, _stepView6.frame.size.height);
@@ -124,17 +125,17 @@
         _segmentedControl6.hidden = NO;
     } else if (currentStep == 6) {
         _stepView7.hidden = NO;
-        _stepView7.frame = CGRectMake(_stepView7.frame.origin.x, _gifImageView.frame.size.height - _stepView7.frame.size.height / 3, _stepView7.frame.size.width, _stepView7.frame.size.height);
+        _stepView7.frame = CGRectMake(_stepView7.frame.origin.x, _gifImageView.frame.size.height - _stepView7.frame.size.height / 2, _stepView7.frame.size.width, _stepView7.frame.size.height);
         _clickButton7.frame = CGRectMake(_clickButton7.frame.origin.x - 5, _describeView.frame.origin.y + 85, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
         _clickButton7.hidden = NO;
     } else if (currentStep == 7) {
         _stepView8.hidden = NO;
         _clickButton8.hidden = NO;
-        _clickButton8.frame = CGRectMake(screenWidth / 2 - _clickButton8.frame.size.width - 5, _gifImageView.frame.size.height + 55, _clickButton8.frame.size.width, _clickButton8.frame.size.height);
+        _clickButton8.frame = CGRectMake(screenWidth / 2 - _clickButton7.frame.size.width, _describeView.frame.origin.y + 25, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
     } else if (currentStep == 8) {
         _stepView9.hidden = NO;
         _clickButton9.hidden = NO;
-        _clickButton9.frame = CGRectMake(_clickButton9.frame.origin.x, _describeView.frame.origin.y + 75, _clickButton9.frame.size.width, _clickButton9.frame.size.height);
+        _clickButton9.frame = CGRectMake(_clickButton9.frame.origin.x, _describeView.frame.origin.y + 70, _clickButton9.frame.size.width, _clickButton9.frame.size.height);
     } else if (currentStep == 9) {
         _stepView10.hidden = NO;
     } else if (currentStep == 10) {
