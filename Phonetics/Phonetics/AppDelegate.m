@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <ShareSDK/ShareSDK.h>
+#import <ShareSDKConnector/ShareSDKConnector.h>
+#import "WXApi.h"
 #import "MainViewController.h"
 #import "BaiduMobStat.h"
 #import "PhoneticsUtils.h"
@@ -24,13 +26,16 @@
     // Override point for customization after application launch.
     [self initBaiduMod];
     
-    [ShareSDK registerApp:ShareSDKAppKey];
-    [ShareSDK connectWeChatWithAppId:WeChatAppKey
-                           appSecret:WeChatSercert
-                           wechatCls:[WXApi class]];
+    [ShareSDK registerApp:ShareSDKAppKey activePlatforms:@[@(SSDKPlatformSubTypeWechatTimeline)]
+                 onImport:^(SSDKPlatformType platformType) {
+                     [ShareSDKConnector connectWeChat:[WXApi class] delegate:self];
+                 } onConfiguration:^(SSDKPlatformType platformType, NSMutableDictionary *appInfo) {
+                     [appInfo SSDKSetupWeChatByAppId:WeChatAppKey
+                                           appSecret:WeChatSercert];
+                 }];
     
     //请把你从官网申请的appid和secretkey替换到这里再测试。
-    //否则会提示错误    
+    //否则会提示错误
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     MainViewController *mainViewController = [MainViewController new];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainViewController];
@@ -50,24 +55,6 @@
     statTracker.sessionResumeInterval = 10;
     statTracker.shortAppVersion  = [PhoneticsUtils getVersion];
     [statTracker startWithAppId:BaiduMobAppKey];
-}
-
-- (BOOL)application:(UIApplication *)application
-      handleOpenURL:(NSURL *)url
-{
-    return [ShareSDK handleOpenURL:url
-                        wxDelegate:self];
-}
-
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation
-{
-    return [ShareSDK handleOpenURL:url
-                 sourceApplication:sourceApplication
-                        annotation:annotation
-                        wxDelegate:self];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
