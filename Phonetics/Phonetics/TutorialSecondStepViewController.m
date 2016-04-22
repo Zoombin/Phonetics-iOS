@@ -16,6 +16,7 @@
 #import "TimeUtil.h"
 #import "Constant.h"
 #import "UserDefaultManager.h"
+#import "PhoneticsUtils.h"
 
 @interface TutorialSecondStepViewController ()
 
@@ -233,6 +234,14 @@
     [_segmentedControl6 addTarget:self action:@selector(valueChanged6) forControlEvents:UIControlEventValueChanged];
     
     [self startAnimation];
+    
+    if ([PhoneticsUtils isIpad]) {
+        [self initIpadUI];
+    }
+}
+
+- (void)initIpadUI {
+    _describeTextView.font = [UIFont systemFontOfSize:22];
 }
 
 - (void)startAnimation {

@@ -6,9 +6,10 @@
 //  Copyright (c) 2015年 yc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface PhoneticsUtils : NSObject
 
 + (NSString *)getVersion;
++ (BOOL)isIpad;
 @end

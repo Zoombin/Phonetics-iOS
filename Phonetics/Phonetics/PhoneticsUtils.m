@@ -14,4 +14,15 @@
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     return version;
 }
+
++ (BOOL)isIpad {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSLog(@"ipad");
+        return true;
+    } else {
+        NSLog(@"iphone");
+        return false;
+    }
+}
+
 @end

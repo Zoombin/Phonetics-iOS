@@ -15,6 +15,7 @@
 #import "TimeUtil.h"
 #import "UserDefaultManager.h"
 #import "Constant.h"
+#import "PhoneticsUtils.h"
 
 @interface VoiceDetailViewController ()
 
@@ -89,8 +90,16 @@
     [self getAllItems];
     [self initData];
     
+    if ([PhoneticsUtils isIpad]) {
+        [self initIpadUI];
+    }
+    
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)initIpadUI {
+    _describeTextView.font = [UIFont systemFontOfSize:22];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -632,7 +641,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == _exampleTableView) {
         if (isReading) {
-            return;
+             return;
         }
         currentIndex = indexPath.row;
         [self showHeader];
