@@ -11,22 +11,13 @@
 #import "CompareViewController.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
-
 #import <ShareSDK/ShareSDK.h>
-#import <ShareSDKExtension/SSEShareHelper.h>
-#import <ShareSDKUI/ShareSDK+SSUI.h>
-#import <ShareSDKUI/SSUIShareActionSheetStyle.h>
-#import <ShareSDKUI/SSUIShareActionSheetCustomItem.h>
-#import <ShareSDK/ShareSDK+Base.h>
-#import <ShareSDKExtension/ShareSDK+Extension.h>
-
 #import "UserDefaultManager.h"
 #import "PhoneticsUtils.h"
 #import "UserDefaultManager.h"
 #import "WebViewController.h"
 #import "TutorialFirstStepViewController.h"
 #import "PhoneticsUtils.h"
-#import "WXApi.h"
 
 
 @interface MainViewController ()
@@ -95,10 +86,10 @@
 
 - (void)showScoreAlert {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
-                                                        message:@"对比功能需要评分后才能使用哦"
-                                                       delegate:self
-                                              cancelButtonTitle:@"取消"
-                                              otherButtonTitles:@"去评分", nil];
+                                                       message:@"对比功能需要评分后才能使用哦"
+                                                      delegate:self
+                                             cancelButtonTitle:@"取消"
+                                             otherButtonTitles:@"去评分", nil];
     alertView.tag = SCORE_ALERT;
     [alertView show];
     //TODO: 此处改为只弹出一次了
@@ -108,7 +99,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (alertView.tag == SHARE_ALERT) {
         if (alertView.cancelButtonIndex != buttonIndex) {
-            [self performSelector:@selector(showShareActionSheet:) withObject:self.view afterDelay:1.0];
+            [self performSelector:@selector(showShareActionSheet) withObject:nil afterDelay:1.0];
         }
     } else if (alertView.tag == SCORE_ALERT) {
         if (alertView.cancelButtonIndex != buttonIndex) {
@@ -220,7 +211,7 @@
                 [self showScoreAlert];
             }
         } else if (indexPath.row == 1) {
-            [self showShareActionSheet:self.view];
+            [self showShareActionSheet];
         } else  if (indexPath.row == 2){
             [self menuButtonClicked:nil];
             TutorialFirstStepViewController *firstStepViewController = [TutorialFirstStepViewController new];
@@ -232,83 +223,64 @@
 }
 
 
+- (void)showShareActionSheet {
+    id<ISSContent> publishContent = [ShareSDK content:@"我很喜欢这个软件：【花华组】基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
+                                     "下载地址：http://url.cn/cxFZ8s贴吧地址：http://url.cn/Scmk8i关注官方公众号：hanakagumi"
+                                       defaultContent:@"微信"
+                                                image:nil
+                                                title:@"金版音标图谱"
+                                                  url:@"http://hanaka.5858.com"
+                                          description:@"分享信息"
+                                            mediaType:SSPublishContentMediaTypeText];
+    
+    id<ISSShareActionSheetItem> weChatTimeLineItem = [ShareSDK shareActionSheetItemWithTitle:[ShareSDK getClientNameWithType:ShareTypeWeixiTimeline]
+                                                                                icon:[ShareSDK getClientIconWithType:ShareTypeWeixiTimeline]
+                                                                        clickHandler:^{
+                                                                            [ShareSDK shareContent:publishContent
+                                                                                              type:ShareTypeWeixiTimeline
+                                                                                       authOptions:nil
+                                                                                     statusBarTips:NO
+                                                                                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                                                                if (state == SSResponseStateSuccess)
+                                                                                {
+                                                                                    [self showAlert:@"分享成功"];
+                                                                                    [UserDefaultManager saveHasShare:YES];
+                                                                                }
+                                                                                else if (state == SSResponseStateFail)
+                                                                                {
+                                                                                    [self showAlert:@"分享失败"];
+                                                                                }
 
+                                                                            }];
+                                                                        }];
+    
 
-- (void)showShareActionSheet:(UIView *)view
-{
-    if (![WXApi isWXAppInstalled]) {
-        [self showAlert:@"您尚未安装微信客户端!"];
-        return;
+    NSArray *shareList = [ShareSDK customShareListWithType:weChatTimeLineItem, nil];
+    
+    //创建弹出菜单容器
+    id<ISSContainer> container = [ShareSDK container];
+    if ([PhoneticsUtils isIpad]) {
+        [container setIPadContainerWithView:self.view rect:CGRectMake(self.tableView.center.x, self.tableView.center.y - 260, 0, 0) arrowDirect:UIPopoverArrowDirectionUp];
+    } else {
+        [container setIPhoneContainerWithViewController:self];
     }
     
-    NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
-    
-    [shareParams SSDKSetupShareParamsByText:@"我很喜欢这个软件：【花华组】基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。下载地址：http://url.cn/cxFZ8s贴吧地址：http://url.cn/Scmk8i关注官方公众号：hanakagumi"
-                                     images:nil
-                                        url:[NSURL URLWithString:@"http://hanaka.5858.com"]
-                                      title:@"金版音标图谱"
-                                       type:SSDKContentTypeAuto];
-    
-    //2、分享
-    [ShareSDK showShareActionSheet:view
-                             items:nil
-                       shareParams:shareParams
-               onShareStateChanged:^(SSDKResponseState state, SSDKPlatformType platformType, NSDictionary *userData, SSDKContentEntity *contentEntity, NSError *error, BOOL end) {
-                   
-                   switch (state) {
-                           
-                       case SSDKResponseStateBegin:
-                       {
-                           break;
-                       }
-                       case SSDKResponseStateSuccess:
-                       {
-                           //Facebook Messenger、WhatsApp等平台捕获不到分享成功或失败的状态，最合适的方式就是对这些平台区别对待
-                           if (platformType == SSDKPlatformTypeFacebookMessenger)
-                           {
-                               break;
-                           }
-                           
-                           UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享成功"
-                                                                               message:nil
-                                                                              delegate:nil
-                                                                     cancelButtonTitle:@"确定"
-                                                                     otherButtonTitles:nil];
-                           [alertView show];
-                           break;
-                       }
-                       case SSDKResponseStateFail:
-                       {
-                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"分享失败"
-                                                                           message:[NSString stringWithFormat:@"%@",error]
-                                                                          delegate:nil
-                                                                 cancelButtonTitle:@"OK"
-                                                                 otherButtonTitles:nil, nil];
-                           [alert show];
-                           break;
-                       }
-                       case SSDKResponseStateCancel:
-                       {
-                           UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"分享已取消"
-                                                                               message:nil
-                                                                              delegate:nil
-                                                                     cancelButtonTitle:@"确定"
-                                                                     otherButtonTitles:nil];
-                           [alertView show];
-                           break;
-                       }
-                       default:
-                           break;
-                   }
-                   
-                   if (state != SSDKResponseStateBegin)
-                   {
-                       //                       [theController showLoadingView:NO];
-                       //                       [theController.tableView reloadData];
-                   }
-                   
-               }];
-    
+    //弹出分享菜单
+    [ShareSDK showShareActionSheet:container
+                         shareList:shareList
+                           content:publishContent
+                     statusBarTips:YES
+                       authOptions:nil
+                      shareOptions:nil
+                            result:^(ShareType type, SSResponseState state, id<ISSPlatformShareInfo> statusInfo, id<ICMErrorInfo> error, BOOL end) {
+                                if (state == SSResponseStateSuccess) {
+                                    [self showAlert:@"分享成功"];
+                                    [UserDefaultManager saveHasShare:YES];
+                                }
+                                else if (state == SSResponseStateFail){
+                                    [self showAlert:@"分享失败"];
+                                }
+                            }];
 }
 
 - (void)showAlert:(NSString *)message {
