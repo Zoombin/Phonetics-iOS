@@ -228,6 +228,7 @@
 //    [bannerView loadAdAndShow];
     
     [self initData];
+    [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
     
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
@@ -269,6 +270,9 @@
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
+    
+    [self changeImageUI];
+    
     if (!_isBasic) {
         [self showLastImg];
     }
@@ -278,6 +282,23 @@
     [self loadStepInfo];
     [self loadExampleInfo];
     [self loadSimilarInfo];
+}
+
+- (void)changeImageUI {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = self.gifImageView.frame.size.height;
+    
+    CGFloat photoWidth = 480;
+    CGFloat photoHeight = 372;
+    
+    CGFloat newWidth = width;
+    CGFloat newHeight = (newWidth * photoHeight) / photoWidth;
+    if (newHeight > height) {
+        newWidth = (photoWidth * height) / photoHeight;
+        newHeight = height;
+    }
+    CGFloat startX = newWidth < width ? (width - newWidth) : 0;
+    _gifImageView.frame = CGRectMake(startX, 0, newWidth, newHeight);
 }
 
 - (void)showLastImg {
