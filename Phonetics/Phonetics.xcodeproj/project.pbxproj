@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183202BB1CCE241300E56993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183202BA1CCE241300E56993 /* LaunchScreen.storyboard */; };
 		186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA91B940485002D9AFD /* CoreMotion.framework */; };
 		186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAB1B94048E002D9AFD /* CFNetwork.framework */; };
 		186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAD1B94049F002D9AFD /* StoreKit.framework */; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		181A4D371B709C9E004F479D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		183202BA1CCE241300E56993 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		186BFAA91B940485002D9AFD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		186BFAAB1B94048E002D9AFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		186BFAAD1B94049F002D9AFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -295,6 +297,7 @@
 		5808F3101B1EDFA700ED3377 /* Phonetics */ = {
 			isa = PBXGroup;
 			children = (
+				183202BA1CCE241300E56993 /* LaunchScreen.storyboard */,
 				5808F3151B1EDFA700ED3377 /* AppDelegate.h */,
 				5808F3161B1EDFA700ED3377 /* AppDelegate.m */,
 				5808F31E1B1EDFA700ED3377 /* Images.xcassets */,
@@ -580,6 +583,7 @@
 				5808F31F1B1EDFA700ED3377 /* Images.xcassets in Resources */,
 				5808F3381B1EE0BD00ED3377 /* MainViewController.xib in Resources */,
 				18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */,
+				183202BB1CCE241300E56993 /* LaunchScreen.storyboard in Resources */,
 				580D535E1B3C0F140092E408 /* ShareSDKLocalizable.strings in Resources */,
 				586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */,
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
@@ -739,7 +743,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -775,7 +778,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				ENABLE_BITCODE = NO;
