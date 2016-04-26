@@ -228,7 +228,6 @@
 //    [bannerView loadAdAndShow];
     
     [self initData];
-    [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
     
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
@@ -237,6 +236,7 @@
     [self startAnimation];
     
     if ([PhoneticsUtils isIpad]) {
+        [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
         [self initIpadUI];
     }
 }

@@ -88,11 +88,10 @@
     [_voiceButton.layer setBorderWidth:1.0];
     
     [self getAllItems];
-    
     [self initData];
-    [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
     
     if ([PhoneticsUtils isIpad]) {
+        [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
         [self initIpadUI];
     }
     
