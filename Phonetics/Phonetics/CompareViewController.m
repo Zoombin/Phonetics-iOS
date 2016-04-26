@@ -441,7 +441,7 @@
     info.title = @"日语发音";
     NSMutableArray *voice = [[NSMutableArray alloc] init];
     NSArray *jpNames = @[@"ア", @"イ", @"ウ", @"エ", @"オ"];
-    NSArray *ybNames = @[@"ɑ", @"j", @"ʊ", @"æ", @"ʊ"];
+    NSArray *ybNames = @[@"ɑ", @"j", @"ʊ", @"æ", @"ɔː"];
     for (int i = 0; i < [ybNames count]; i++) {
         NSString *yb = ybNames[i];
         VoiceItem *tmpItem = [self searchVoiceByName:yb];
