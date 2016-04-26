@@ -122,7 +122,9 @@
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
     }
     
-    [self changeImageUI];
+    if ([PhoneticsUtils isIpad]) {
+        [self changeImageUI];
+    }
     
     if (!_isBasic) {
         [self showLastImg];
