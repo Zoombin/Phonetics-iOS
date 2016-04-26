@@ -224,8 +224,7 @@
 
 
 - (void)showShareActionSheet {
-    id<ISSContent> publishContent = [ShareSDK content:@"我很喜欢这个软件：【花华组】基于国外著名大学研究成果，结合世界级美工特效，打造出的全球最精细的音标学习软件。"
-                                     "下载地址：http://url.cn/cxFZ8s贴吧地址：http://url.cn/Scmk8i关注官方公众号：hanakagumi"
+    id<ISSContent> publishContent = [ShareSDK content:@"知道s、θ、ʃ、z这些音标具体有什么区别吗？这软件里有很直观的图文教程：http://url.cn/cxFZ8s贴吧地址：http://url.cn/Scmk8i"
                                        defaultContent:@"微信"
                                                 image:nil
                                                 title:@"金版音标图谱"
