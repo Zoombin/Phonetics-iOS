@@ -63,6 +63,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initLocalizedString];
+    
     [self initAudio];
     self.title = NSLocalizedString(@"音标对比", nil);
     [self loadJPVoices];
@@ -80,7 +82,7 @@
     [self changeViewAndView2Size];
     [self initData];
     
-    [self initLocalizedString];
+    
 }
 
 - (void)initLocalizedString {
@@ -292,6 +294,7 @@
     } else {
        [_voiceButton1 setBackgroundImage:[UIImage imageNamed:item1.imgName] forState:UIControlStateNormal];
     }
+    [self valueChanged1];
 }
 
 - (void)loadDownData {
@@ -306,6 +309,7 @@
     } else {
         [_voiceButton2 setBackgroundImage:[UIImage imageNamed:item2.imgName] forState:UIControlStateNormal];
     }
+    [self valueChanged2];
 }
 
 - (void)voiceSelected:(VoiceItem *)item andIsUp:(BOOL)isUp {
