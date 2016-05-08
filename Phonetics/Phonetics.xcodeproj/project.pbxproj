@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		183202BB1CCE241300E56993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183202BA1CCE241300E56993 /* LaunchScreen.storyboard */; };
+		1857265B1CDF200900D21F5D /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1857265D1CDF200900D21F5D /* voiceInfo.plist */; };
 		186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA91B940485002D9AFD /* CoreMotion.framework */; };
 		186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAB1B94048E002D9AFD /* CFNetwork.framework */; };
 		186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAD1B94049F002D9AFD /* StoreKit.framework */; };
@@ -71,7 +72,6 @@
 		58B77E691B5F4AAA00D9C116 /* TutorialSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */; };
 		58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */; };
 		58FCDF2D1B202D8C00A12529 /* VoiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */; };
-		58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +87,14 @@
 /* Begin PBXFileReference section */
 		181A4D371B709C9E004F479D /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		183202BA1CCE241300E56993 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185726581CDF1FC900D21F5D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
+		185726591CDF1FD800D21F5D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
+		1857265A1CDF1FDD00D21F5D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ShareSDKLocalizable.strings"; sourceTree = "<group>"; };
+		1857265C1CDF200900D21F5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/voiceInfo.plist; sourceTree = "<group>"; };
+		1857265E1CDF200B00D21F5D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/voiceInfo.plist"; sourceTree = "<group>"; };
+		1857265F1CDF200D00D21F5D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/voiceInfo.plist; sourceTree = "<group>"; };
+		185726601CDF200D00D21F5D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hant"; path = "zh-Hant.lproj/voiceInfo.plist"; sourceTree = "<group>"; };
+		185726611CDF200F00D21F5D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/voiceInfo.plist; sourceTree = "<group>"; };
 		186BFAA91B940485002D9AFD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		186BFAAB1B94048E002D9AFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		186BFAAD1B94049F002D9AFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -182,7 +190,6 @@
 		58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSecondStepViewController.xib; sourceTree = "<group>"; };
 		58FCDF2B1B202D8C00A12529 /* VoiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceInfo.h; sourceTree = "<group>"; };
 		58FCDF2C1B202D8C00A12529 /* VoiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceInfo.m; sourceTree = "<group>"; };
-		58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = voiceInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,7 +325,7 @@
 				580D53701B3C0FB70092E408 /* FrameWork */,
 				5808F3121B1EDFA700ED3377 /* Info.plist */,
 				5808F3131B1EDFA700ED3377 /* main.m */,
-				58FCDF2E1B202FBC00A12529 /* voiceInfo.plist */,
+				1857265D1CDF200900D21F5D /* voiceInfo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -557,6 +564,9 @@
 				en,
 				Base,
 				"zh-Hans",
+				ko,
+				ja,
+				"zh-Hant",
 			);
 			mainGroup = 5808F3051B1EDFA700ED3377;
 			productRefGroup = 5808F30F1B1EDFA700ED3377 /* Products */;
@@ -589,7 +599,7 @@
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
 				18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */,
 				58029B8B1B3C05F30081113D /* read_me.txt in Resources */,
-				58FCDF2F1B202FBC00A12529 /* voiceInfo.plist in Resources */,
+				1857265B1CDF200900D21F5D /* voiceInfo.plist in Resources */,
 				58B77E6A1B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib in Resources */,
 				580D535F1B3C0F140092E408 /* Resource.bundle in Resources */,
 			);
@@ -651,11 +661,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1857265D1CDF200900D21F5D /* voiceInfo.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1857265C1CDF200900D21F5D /* en */,
+				1857265E1CDF200B00D21F5D /* zh-Hans */,
+				1857265F1CDF200D00D21F5D /* ko */,
+				185726601CDF200D00D21F5D /* zh-Hant */,
+				185726611CDF200F00D21F5D /* ja */,
+			);
+			name = voiceInfo.plist;
+			sourceTree = "<group>";
+		};
 		580D534C1B3C0F140092E408 /* ShareSDKLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				580D534D1B3C0F140092E408 /* en */,
 				580D53501B3C0F140092E408 /* zh-Hans */,
+				185726581CDF1FC900D21F5D /* ko */,
+				185726591CDF1FD800D21F5D /* ja */,
+				1857265A1CDF1FDD00D21F5D /* zh-Hant */,
 			);
 			name = ShareSDKLocalizable.strings;
 			sourceTree = "<group>";
