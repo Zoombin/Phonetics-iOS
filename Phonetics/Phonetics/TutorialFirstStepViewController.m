@@ -30,6 +30,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self loadVoiceInfo];
     [_stepButton startAnimation];
+    
+    [self initLocalizedString];
+}
+
+- (void)initLocalizedString {
+    [_segmentedControl setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
+    [_segmentedControl setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    
+    [_titleLabel setText:NSLocalizedString(@"英语音标", nil)];
+    [_step1Label setText:NSLocalizedString(@"首先烦请点按钮上的蓝色圆圈。", nil)];
+    [_closeButton setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
 }
 
 - (void)dealloc {

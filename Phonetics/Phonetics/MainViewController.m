@@ -43,6 +43,15 @@
     _checkInLabel.text = [UserDefaultManager checkInTimes];
 }
 
+- (void)initLocalizedString {
+    [_segmentedControl setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
+    [_segmentedControl setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    
+    [_titleLabel setText:NSLocalizedString(@"英语音标", nil)];
+    [_appNameLabel setText:NSLocalizedString(@"金版音标图谱", nil)];
+    [_closeButton setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     voiceArray = [[NSMutableArray alloc] init];;
@@ -54,6 +63,8 @@
     _checkInLabel.center = CGPointMake(CGRectGetMaxX(_iconImageView.frame), CGRectGetMinY(_iconImageView.frame));
     [_bkgView bringSubviewToFront:_checkInLabel];
     _versionsLabel.text = [PhoneticsUtils getVersion];
+    
+    [self initLocalizedString];
 }
 
 - (void)valueChanged:(id)sender {
@@ -153,16 +164,16 @@
         }
         if (indexPath.row == 0) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            cell.textLabel.text = @"音标对比";
+            cell.textLabel.text = NSLocalizedString(@"音标对比", nil);
         } else if (indexPath.row == 1) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            cell.textLabel.text = @"分享到朋友圈";
+            cell.textLabel.text = NSLocalizedString(@"分享到朋友圈", nil);
         } else if (indexPath.row == 2) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            cell.textLabel.text = @"新手说明";
+            cell.textLabel.text = NSLocalizedString(@"新手说明", nil);
         } else if (indexPath.row == 3) {
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
-            cell.textLabel.text = @"在线交流";
+            cell.textLabel.text = NSLocalizedString(@"在线交流", nil);
         }
         return cell;
     } else {

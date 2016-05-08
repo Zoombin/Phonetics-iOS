@@ -97,6 +97,13 @@
     
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
+    
+    [self initLocalizedString];
+}
+
+- (void)initLocalizedString {
+    [_segmentedControl setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:0];
+    [_segmentedControl setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
 }
 
 - (void)initIpadUI {
@@ -260,12 +267,12 @@
         }
     }
     
-    NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
+    NSArray *names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil), NSLocalizedString(@"相似", nil)];
     if ([_item.similar length] == 0) {
-        names = @[@"基础", @"日式", @"举例"];
+        names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil)];
     }
     if (!_isBasic) {
-        names = @[@"描述", @"举例"];
+        names = @[NSLocalizedString(@"描述", nil), NSLocalizedString(@"举例", nil)];
         //        _segmentedControl.hidden = YES;
     }
     

@@ -64,7 +64,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initAudio];
-    self.title = @"音标对比";
+    self.title = NSLocalizedString(@"音标对比", nil);
     [self loadJPVoices];
     isEdit = NO;
     compares = [[NSMutableArray alloc] init];
@@ -79,6 +79,19 @@
      [_segmentedControl2 addTarget:self action:@selector(valueChanged2) forControlEvents:UIControlEventValueChanged];
     [self changeViewAndView2Size];
     [self initData];
+    
+    [self initLocalizedString];
+}
+
+- (void)initLocalizedString {
+    [_voiceButton1 setTitle:NSLocalizedString(@"点击此处", nil) forState:UIControlStateNormal];
+    [_voiceButton2 setTitle:NSLocalizedString(@"点击此处", nil) forState:UIControlStateNormal];
+    
+    [_segmentedControl1 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:0];
+    [_segmentedControl2 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
+    
+    [_segmentedControl1 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:1];
+    [_segmentedControl2 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
 }
 
 - (void)valueChanged1 {
@@ -221,8 +234,8 @@
     _segmentedControl1.selectedSegmentIndex = 1;
     _segmentedControl2.selectedSegmentIndex = 1;
     currentIndex++;
-    [_voiceButton1 setTitle:@"点击此处" forState:UIControlStateNormal];
-    [_voiceButton2 setTitle:@"点击此处" forState:UIControlStateNormal];
+    [_voiceButton1 setTitle:NSLocalizedString(@"点击此处", nil) forState:UIControlStateNormal];
+    [_voiceButton2 setTitle:NSLocalizedString(@"点击此处", nil) forState:UIControlStateNormal];
     if ([compares count] > currentIndex) {
         if (currentIndex - 1 <= [compares count] - 1 && isEdit) {
             [self saveCurrent:currentIndex - 1];

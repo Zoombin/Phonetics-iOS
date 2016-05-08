@@ -239,6 +239,51 @@
         [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
         [self initIpadUI];
     }
+    
+    [self initLocalizedString];
+}
+
+- (void)initLocalizedString {
+    [_segmentedControl setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
+    [_segmentedControl setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    
+    [_segmentedControl6 setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
+    [_segmentedControl6 setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    
+    [_close2Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step2Label setText:NSLocalizedString(@"这个页面使用3D模型向您介绍发音技巧。", nil)];
+    [_next2Button setTitle:NSLocalizedString(@"下一步", nil) forState:UIControlStateNormal];
+    
+    [_close3Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    NSString *step3String = [NSString stringWithFormat:@"%@\n%@\n%@\n%@", NSLocalizedString(@"1.舌的位置", nil), NSLocalizedString(@"2.气息", nil), NSLocalizedString(@"3.喉咙是否震动（蓝色八角星=震动）", nil),
+                             NSLocalizedString(@"可以单独点击每一步查阅相应动作", nil)];
+    [_step3Label setText:step3String];
+    [_next3Button setTitle:NSLocalizedString(@"下一步", nil) forState:UIControlStateNormal];
+   
+    [_close4Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step4Label setText:NSLocalizedString(@"下一步我们来看一下单词，烦请点击下面的“举例”标签", nil)];
+    
+    [_close5Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step5Label setText:NSLocalizedString(@"烦请点击模型、听一下发音", nil)];
+    
+    [_close6Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step6Label setText:NSLocalizedString(@"点击“正面”或“侧面”按钮可以改变模型角度", nil)];
+    
+    [_close7Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step7Label setText:NSLocalizedString(@"烦请点击单词、听一下发音。", nil)];
+    
+    [_close8Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step8Label setText:NSLocalizedString(@"烦请点击“音标按钮”、听一下音标的发音。", nil)];
+    
+    [_close9Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step9Label setText:NSLocalizedString(@"点击“SLOW”按钮可以听到慢放的发音。", nil)];
+    
+    [_close10Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step10Label setText:NSLocalizedString(@"点击左下角回退按钮、可以退回主界面。", nil)];
+    [_next10Button setTitle:NSLocalizedString(@"下一步", nil) forState:UIControlStateNormal];
+    
+    [_close11Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
+    [_step11Label setText:NSLocalizedString(@"新手说明完成", nil)];
 }
 
 - (void)initIpadUI {
@@ -409,12 +454,12 @@
         }
     }
     
-    NSArray *names = @[@"基础", @"日式", @"举例", @"相似"];
+    NSArray *names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil), NSLocalizedString(@"相似", nil)];
     if ([_item.similar length] == 0) {
-        names = @[@"基础", @"日式", @"举例"];
+        names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil)];
     }
     if (!_isBasic) {
-        names = @[@"描述", @"举例"];
+        names = @[NSLocalizedString(@"描述", nil), NSLocalizedString(@"举例", nil)];
         //        _segmentedControl.hidden = YES;
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,17 +14,40 @@
                 <outlet property="clickButton7" destination="DaS-BS-NGO" id="BRI-WY-RyO"/>
                 <outlet property="clickButton8" destination="8Li-Bj-9x3" id="eWC-Zd-Jw8"/>
                 <outlet property="clickButton9" destination="ueE-76-x1w" id="t4d-ut-gfT"/>
+                <outlet property="close10Button" destination="LSv-ee-AT3" id="9UH-xf-utG"/>
+                <outlet property="close11Button" destination="MC8-Ad-wL9" id="aKq-ia-Dge"/>
+                <outlet property="close2Button" destination="mSb-R9-lsA" id="leA-xW-Yni"/>
+                <outlet property="close3Button" destination="R9n-6M-ars" id="Zai-Ok-uAE"/>
+                <outlet property="close4Button" destination="dOY-9Q-Eau" id="Xln-b4-5Py"/>
+                <outlet property="close5Button" destination="NDX-16-34p" id="ttB-YF-RUw"/>
+                <outlet property="close6Button" destination="LGx-GX-2o9" id="fGy-hf-vXQ"/>
+                <outlet property="close7Button" destination="3jk-Bk-6vd" id="imA-ON-5ez"/>
+                <outlet property="close8Button" destination="eAW-gj-Iqt" id="NGY-2m-Pd6"/>
+                <outlet property="close9Button" destination="KC3-lc-XJc" id="NRu-Bu-Gf8"/>
                 <outlet property="describeTextView" destination="bDL-07-DhG" id="eau-ee-xni"/>
                 <outlet property="describeView" destination="XKs-r5-hEm" id="bpZ-W6-qYD"/>
                 <outlet property="exampleTableView" destination="xtx-Tv-hg3" id="vXX-gk-DPm"/>
                 <outlet property="gifImageView" destination="0dU-Tp-EEN" id="ffB-9F-roK"/>
                 <outlet property="headerView" destination="5ap-bP-KjT" id="p8d-ey-vJs"/>
                 <outlet property="liView" destination="quq-r9-vXX" id="OeR-6e-vgr"/>
+                <outlet property="next10Button" destination="O7N-SH-KtZ" id="5KC-OS-k4U"/>
+                <outlet property="next2Button" destination="yeC-9y-yUm" id="DOv-dK-tDn"/>
+                <outlet property="next3Button" destination="uGd-vw-Tdm" id="zsS-zZ-x9p"/>
                 <outlet property="nextButton" destination="Q7F-yq-tiQ" id="hU4-lS-4fO"/>
                 <outlet property="preButton" destination="buY-e0-IF6" id="ipX-hS-h7O"/>
                 <outlet property="segmentedControl" destination="bip-cL-hpR" id="UUE-t0-SpL"/>
                 <outlet property="segmentedControl6" destination="PbD-ea-9il" id="gUu-fA-Jah"/>
                 <outlet property="selectMaleOrFemaleBtn" destination="A19-8w-jLK" id="dE9-qw-AIi"/>
+                <outlet property="step10Label" destination="nTL-6L-Pfd" id="rdX-tu-RH5"/>
+                <outlet property="step11Label" destination="6CT-la-j0S" id="12b-DO-OxK"/>
+                <outlet property="step2Label" destination="H80-TG-hU9" id="HaB-ZH-E7n"/>
+                <outlet property="step3Label" destination="hek-kL-hIM" id="xTd-4f-oJM"/>
+                <outlet property="step4Label" destination="Ffl-T3-kgy" id="bd1-ZY-TF5"/>
+                <outlet property="step5Label" destination="x6F-gT-rSF" id="s97-i5-W1N"/>
+                <outlet property="step6Label" destination="U6f-B0-vLm" id="Moz-n5-V19"/>
+                <outlet property="step7Label" destination="wFt-T8-1eT" id="Spf-UZ-ibz"/>
+                <outlet property="step8Label" destination="veV-Gx-V98" id="LIx-8y-AOA"/>
+                <outlet property="step9Label" destination="Eku-8q-D9t" id="yG7-i1-PQH"/>
                 <outlet property="stepTableView" destination="g5b-jH-yfU" id="y5S-sj-Qdh"/>
                 <outlet property="stepView" destination="tAC-4w-rAC" id="aSO-6k-CSm"/>
                 <outlet property="stepView10" destination="QYy-Ot-7Ul" id="5RN-Cm-o2C"/>

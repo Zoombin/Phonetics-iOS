@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"选择音标";
+    self.title = NSLocalizedString(@"选择音标", nil);
     // Do any additional setup after loading the view from its nib.
 }
 

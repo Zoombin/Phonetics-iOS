@@ -21,6 +21,11 @@
 @property (nonatomic, weak) IBOutlet UILabel *versionsLabel;
 @property (nonatomic, weak) IBOutlet UILabel *checkInLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *iconImageView;
+
+@property (nonatomic, weak) IBOutlet UILabel *appNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UIButton *closeButton;
+
 - (IBAction)menuButtonClicked:(id)sender;
 @end
 

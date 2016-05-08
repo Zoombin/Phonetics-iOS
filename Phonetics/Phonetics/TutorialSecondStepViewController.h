@@ -60,6 +60,40 @@
 @property (nonatomic, weak) IBOutlet AnimationButton *clickButton8;
 @property (nonatomic, weak) IBOutlet AnimationButton *clickButton9;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *segmentedControl6;
+
+@property (nonatomic, weak) IBOutlet UILabel *step2Label;
+@property (nonatomic, weak) IBOutlet UIButton *next2Button;
+@property (nonatomic, weak) IBOutlet UIButton *close2Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step3Label;
+@property (nonatomic, weak) IBOutlet UIButton *next3Button;
+@property (nonatomic, weak) IBOutlet UIButton *close3Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step4Label;
+@property (nonatomic, weak) IBOutlet UIButton *close4Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step5Label;
+@property (nonatomic, weak) IBOutlet UIButton *close5Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step6Label;
+@property (nonatomic, weak) IBOutlet UIButton *close6Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step7Label;
+@property (nonatomic, weak) IBOutlet UIButton *close7Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step8Label;
+@property (nonatomic, weak) IBOutlet UIButton *close8Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step9Label;
+@property (nonatomic, weak) IBOutlet UIButton *close9Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step10Label;
+@property (nonatomic, weak) IBOutlet UIButton *next10Button;
+@property (nonatomic, weak) IBOutlet UIButton *close10Button;
+
+@property (nonatomic, weak) IBOutlet UILabel *step11Label;
+@property (nonatomic, weak) IBOutlet UIButton *close11Button;
+
 - (IBAction)clickButtonClicked:(id)sender;
 - (IBAction)nextStepButtonClicked:(id)sender;
 - (IBAction)closeButtonClicked:(id)sender;
