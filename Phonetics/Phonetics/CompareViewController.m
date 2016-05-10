@@ -90,9 +90,9 @@
     [_voiceButton2 setTitle:NSLocalizedString(@"点击此处", nil) forState:UIControlStateNormal];
     
     [_segmentedControl1 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:0];
-    [_segmentedControl2 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
+    [_segmentedControl1 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
     
-    [_segmentedControl1 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:1];
+    [_segmentedControl2 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:1];
     [_segmentedControl2 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
 }
 
