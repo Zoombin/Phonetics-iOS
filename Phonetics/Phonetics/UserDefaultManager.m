@@ -68,6 +68,48 @@
     }
 }
 
++ (BOOL)hasShowScoreTen {
+    if ([self hasScoreAlready]) {
+        return true;
+    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *hasScore = [userDefaults objectForKey:[NSString stringWithFormat:@"%@%@Ten", HAS_SCORE, ZM_VERSION]];
+    if (hasScore) {
+        return [hasScore boolValue];
+    }
+    //TODO:这边改成YES的话，就不需要评价就能点对比了。
+    return IS_DEBUG;
+}
+
++ (void)saveHasShowScoreTen:(BOOL)hasScore {
+    if (hasScore) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:@"1" forKey:[NSString stringWithFormat:@"%@%@Ten", HAS_SCORE, ZM_VERSION]];
+        [userDefaults synchronize];
+    }
+}
+
++ (BOOL)hasShowScoreAll {
+    if ([self hasScoreAlready]) {
+        return true;
+    }
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *hasScore = [userDefaults objectForKey:[NSString stringWithFormat:@"%@%@All", HAS_SCORE, ZM_VERSION]];
+    if (hasScore) {
+        return [hasScore boolValue];
+    }
+    //TODO:这边改成YES的话，就不需要评价就能点对比了。
+    return IS_DEBUG;
+}
+
++ (void)saveHasShowScoreAll:(BOOL)hasScore {
+    if (hasScore) {
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:@"1" forKey:[NSString stringWithFormat:@"%@%@All", HAS_SCORE, ZM_VERSION]];
+        [userDefaults synchronize];
+    }
+}
+
 + (void)saveCheckInDate:(NSDate *)date {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *dict = [userDefaults objectForKey:CHECK_IN];

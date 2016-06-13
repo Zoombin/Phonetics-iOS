@@ -123,7 +123,7 @@
     [self getTmpItem];
     _segmentedControl.selectedSegmentIndex = 1;
     [_voiceButton setBackgroundImage:[UIImage imageNamed:_item.imgName] forState:UIControlStateNormal];
-//    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
+    //    self.view.backgroundColor = [UIColor colorWithRed:226.0/255.0 green:223.0/255.0 blue:219.0/255.0 alpha:1.0];
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
@@ -142,6 +142,22 @@
     [self loadStepInfo];
     [self loadExampleInfo];
     [self loadSimilarInfo];
+    
+    
+    if (_isBasic) {
+        NSInteger index = [allItems indexOfObject:_item];
+        if (index == 9) {
+            if (![UserDefaultManager hasShowScoreTen]) {
+                [UserDefaultManager saveHasShowScoreTen:YES];
+                [self showScoreAlert];
+            }
+        } else if (index == allItems.count - 1) {
+            if (![UserDefaultManager hasShowScoreAll]) {
+                [UserDefaultManager saveHasShowScoreAll:YES];
+                [self showScoreAlert];
+            }
+        }
+    }
 }
 
 - (void)changeImageUI {
@@ -670,7 +686,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (tableView == _exampleTableView) {
         if (isReading) {
-             return;
+            return;
         }
         currentIndex = indexPath.row;
         [self showHeader];
@@ -766,6 +782,26 @@
     }
     _item = allItems[index];
     [self initData];
+}
+
+- (void)showScoreAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"对比功能需要评分后才能使用哦"
+                                                       delegate:self
+                                              cancelButtonTitle:@"取消"
+                                              otherButtonTitles:@"去评分", nil];
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.cancelButtonIndex != buttonIndex) {
+        [UserDefaultManager saveHasScore:YES];
+        [self scoreApp];
+    }
+}
+
+- (void)scoreApp {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://itunes.apple.com/app/id1020531456"]];
 }
 
 @end

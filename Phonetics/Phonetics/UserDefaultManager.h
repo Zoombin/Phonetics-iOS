@@ -13,6 +13,7 @@
 #define CHECK_IN @"check_in"
 #define FIRST_LAUNCH @"first_launch"
 #define HAS_SCORE @"has_score"
+#define ZM_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
 @interface UserDefaultManager : NSObject
 
@@ -27,6 +28,12 @@
 //是否已经评分过了
 + (BOOL)hasScoreAlready;
 + (void)saveHasScore:(BOOL)hasScore;
+
++ (BOOL)hasShowScoreTen;
++ (void)saveHasShowScoreTen:(BOOL)hasScore;
+
++ (BOOL)hasShowScoreAll;
++ (void)saveHasShowScoreAll:(BOOL)hasScore;
 
 + (void)saveCheckInDate:(NSDate *)date;
 + (NSString *)checkInTimes;
