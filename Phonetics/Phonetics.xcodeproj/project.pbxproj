@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		183202BB1CCE241300E56993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183202BA1CCE241300E56993 /* LaunchScreen.storyboard */; };
 		1844DBA31CDF279C00D824A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1844DBA51CDF279C00D824A2 /* Localizable.strings */; };
+		184F5DA61D40771900F3BC22 /* VoiceDetailViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F5DA51D40771900F3BC22 /* VoiceDetailViewControlleriPad.xib */; };
+		184F5DA81D40911200F3BC22 /* TutorialSecondStepViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F5DA71D40911200F3BC22 /* TutorialSecondStepViewControlleriPad.xib */; };
 		1857265B1CDF200900D21F5D /* voiceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1857265D1CDF200900D21F5D /* voiceInfo.plist */; };
 		186BFAAA1B940485002D9AFD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAA91B940485002D9AFD /* CoreMotion.framework */; };
 		186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186BFAAB1B94048E002D9AFD /* CFNetwork.framework */; };
@@ -94,6 +96,8 @@
 		1844DBA71CDF279F00D824A2 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1844DBA81CDF279F00D824A2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1844DBA91CDF27A100D824A2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		184F5DA51D40771900F3BC22 /* VoiceDetailViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceDetailViewControlleriPad.xib; sourceTree = "<group>"; };
+		184F5DA71D40911200F3BC22 /* TutorialSecondStepViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialSecondStepViewControlleriPad.xib; sourceTree = "<group>"; };
 		185726581CDF1FC900D21F5D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
 		185726591CDF1FD800D21F5D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ShareSDKLocalizable.strings; sourceTree = "<group>"; };
 		1857265A1CDF1FDD00D21F5D /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ShareSDKLocalizable.strings"; sourceTree = "<group>"; };
@@ -404,6 +408,7 @@
 				5808F33A1B1EE39D00ED3377 /* VoiceDetailViewController.h */,
 				5808F33B1B1EE39D00ED3377 /* VoiceDetailViewController.m */,
 				5808F33C1B1EE39D00ED3377 /* VoiceDetailViewController.xib */,
+				184F5DA51D40771900F3BC22 /* VoiceDetailViewControlleriPad.xib */,
 				58635FF31B39C32200A757C4 /* VoiceSelectViewController.h */,
 				58635FF41B39C32200A757C4 /* VoiceSelectViewController.m */,
 				58635FF51B39C32200A757C4 /* VoiceSelectViewController.xib */,
@@ -514,6 +519,7 @@
 				58B77E661B5F4AAA00D9C116 /* TutorialSecondStepViewController.h */,
 				58B77E671B5F4AAA00D9C116 /* TutorialSecondStepViewController.m */,
 				58B77E681B5F4AAA00D9C116 /* TutorialSecondStepViewController.xib */,
+				184F5DA71D40911200F3BC22 /* TutorialSecondStepViewControlleriPad.xib */,
 				18F9FB031B648531007BCF0E /* AnimationButton.h */,
 				18F9FB041B648531007BCF0E /* AnimationButton.m */,
 			);
@@ -633,11 +639,13 @@
 				5808F3381B1EE0BD00ED3377 /* MainViewController.xib in Resources */,
 				18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */,
 				1886F4D11CDF2A0900FCE403 /* InfoPlist.strings in Resources */,
+				184F5DA81D40911200F3BC22 /* TutorialSecondStepViewControlleriPad.xib in Resources */,
 				183202BB1CCE241300E56993 /* LaunchScreen.storyboard in Resources */,
 				580D535E1B3C0F140092E408 /* ShareSDKLocalizable.strings in Resources */,
 				586B27331B2EC7650000A91E /* ExampleCell.xib in Resources */,
 				5808F33E1B1EE39D00ED3377 /* VoiceDetailViewController.xib in Resources */,
 				18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */,
+				184F5DA61D40771900F3BC22 /* VoiceDetailViewControlleriPad.xib in Resources */,
 				58029B8B1B3C05F30081113D /* read_me.txt in Resources */,
 				1857265B1CDF200900D21F5D /* voiceInfo.plist in Resources */,
 				1844DBA31CDF279C00D824A2 /* Localizable.strings in Resources */,

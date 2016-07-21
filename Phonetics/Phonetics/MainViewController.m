@@ -197,7 +197,7 @@
 }
 
 - (void)voiceButtonClicked:(VoiceItem *)item {
-    VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
+    VoiceDetailViewController *detailViewController = [[VoiceDetailViewController alloc] initWithNibName:[PhoneticsUtils isIpad] ? @"VoiceDetailViewControlleriPad" : @"VoiceDetailViewController" bundle:nil];
     if (_segmentedControl.selectedSegmentIndex == 0) {
         detailViewController.isBasic = YES;
         detailViewController.voiceArray = basicsArr;

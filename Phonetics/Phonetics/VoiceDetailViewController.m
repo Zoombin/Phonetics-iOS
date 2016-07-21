@@ -90,11 +90,6 @@
     [self getAllItems];
     [self initData];
     
-    if ([PhoneticsUtils isIpad]) {
-        [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
-        [self initIpadUI];
-    }
-    
     // Do any additional setup after loading the view from its nib.
     [_segmentedControl addTarget:self action:@selector(valueChanged) forControlEvents:UIControlEventValueChanged];
     
@@ -127,10 +122,6 @@
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
-    }
-    
-    if ([PhoneticsUtils isIpad]) {
-        [self changeImageUI];
     }
     
     if (!_isBasic) {

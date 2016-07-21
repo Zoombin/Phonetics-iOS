@@ -102,37 +102,53 @@
     [self allHidden];
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+    BOOL isIpad = [PhoneticsUtils isIpad];
     currentStep++;
     if (currentStep == 1) {
         _stepView2.hidden = NO;
+        if (isIpad) {
+            return;
+        }
         _stepView2.frame = CGRectMake(_stepView2.frame.origin.x, _gifImageView.frame.size.height, _stepView2.frame.size.width, _stepView2.frame.size.height);
     } else if (currentStep == 2) {
         _stepView3.hidden = NO;
+        if (isIpad) {
+            return;
+        }
         _stepView3.frame = CGRectMake(_stepView3.frame.origin.x, _gifImageView.frame.size.height, _stepView3.frame.size.width, _stepView3.frame.size.height);
     } else if (currentStep == 3) {
         _stepView4.hidden = NO;
         _clickButton4.hidden = NO;
         _clickButton4.center = CGPointMake((CGRectGetMaxX(_bottomView.frame) / 4) * 2.5, CGRectGetMinY(_bottomView.frame) + _bottomView.frame.size.height / 4);
+        if (isIpad) {
+            return;
+        }
     } else if (currentStep == 4) {
         _stepView5.hidden = NO;
         _clickButton5.hidden = NO;
         _clickButton5.frame = CGRectMake(_gifImageView.frame.size.width / 2, _gifImageView.frame.size.height / 2 - _clickButton5.frame.size.height / 2, _clickButton5.frame.size.width, _clickButton5.frame.size.height);
     } else if (currentStep == 5) {
         _stepView6.hidden = NO;
-        _stepView6.frame = CGRectMake(_stepView6.frame.origin.x, screenHeight/2, _stepView6.frame.size.width, _stepView6.frame.size.height);
         _clickButton6.hidden = NO;
+        _segmentedControl6.hidden = NO;
         _clickButton6.frame = CGRectMake(screenWidth - _clickButton6.frame.size.width * 1.7, _gifImageView.frame.size.height - _clickButton6.frame.size.height, _clickButton6.frame.size.width, _clickButton6.frame.size.height);
         _segmentedControl6.frame = _segmentedControl.frame;
-        _segmentedControl6.hidden = NO;
+        if (isIpad) {
+            return;
+        }
+        _stepView6.frame = CGRectMake(_stepView6.frame.origin.x, screenHeight/2, _stepView6.frame.size.width, _stepView6.frame.size.height);
     } else if (currentStep == 6) {
         _stepView7.hidden = NO;
-        _stepView7.frame = CGRectMake(_stepView7.frame.origin.x, _gifImageView.frame.size.height - _stepView7.frame.size.height / 2, _stepView7.frame.size.width, _stepView7.frame.size.height);
         _clickButton7.frame = CGRectMake(_clickButton7.frame.origin.x - 5, _describeView.frame.origin.y + 85, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
         _clickButton7.hidden = NO;
+        if (isIpad) {
+            return;
+        }
+        _stepView7.frame = CGRectMake(_stepView7.frame.origin.x, _gifImageView.frame.size.height - _stepView7.frame.size.height / 2, _stepView7.frame.size.width, _stepView7.frame.size.height);
     } else if (currentStep == 7) {
         _stepView8.hidden = NO;
         _clickButton8.hidden = NO;
-        _clickButton8.frame = CGRectMake(screenWidth / 2 - _clickButton7.frame.size.width, _describeView.frame.origin.y + 25, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
+        _clickButton8.frame = CGRectMake(screenWidth / 2 - _clickButton7.frame.size.width, _describeView.frame.origin.y + 0, _clickButton7.frame.size.width, _clickButton7.frame.size.height);
     } else if (currentStep == 8) {
         _stepView9.hidden = NO;
         _clickButton9.hidden = NO;
@@ -141,6 +157,9 @@
         _stepView10.hidden = NO;
     } else if (currentStep == 10) {
         _stepView11.hidden = NO;
+        if (isIpad) {
+            return;
+        }
         _stepView11.frame = CGRectMake(_stepView11.frame.origin.x, _gifImageView.frame.size.height, _stepView11.frame.size.width, _stepView11.frame.size.height);
     }
 }
@@ -235,20 +254,15 @@
     
     [self startAnimation];
     
-    if ([PhoneticsUtils isIpad]) {
-        [self performSelector:@selector(initData) withObject:nil afterDelay:0.5];
-        [self initIpadUI];
-    }
-    
     [self initLocalizedString];
 }
 
 - (void)initLocalizedString {
-    [_segmentedControl setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
-    [_segmentedControl setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    [_segmentedControl setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:0];
+    [_segmentedControl setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
     
-    [_segmentedControl6 setTitle:NSLocalizedString(@"基础技巧", nil) forSegmentAtIndex:0];
-    [_segmentedControl6 setTitle:NSLocalizedString(@"高级技巧", nil) forSegmentAtIndex:1];
+    [_segmentedControl6 setTitle:NSLocalizedString(@"正面", nil) forSegmentAtIndex:0];
+    [_segmentedControl6 setTitle:NSLocalizedString(@"侧面", nil) forSegmentAtIndex:1];
     
     [_close2Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
     [_step2Label setText:NSLocalizedString(@"这个页面使用3D模型向您介绍发音技巧。", nil)];
@@ -314,10 +328,6 @@
     NSArray *imageName = [_item.picsFront componentsSeparatedByString:@","];
     if ([imageName count] > 0) {
         _gifImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"c%@.jpg",imageName[0]]];
-    }
-    
-    if ([PhoneticsUtils isIpad]) {
-        [self changeImageUI];
     }
     
     if (!_isBasic) {
@@ -713,7 +723,7 @@
 }
 
 - (void)voiceButtonClicked:(VoiceItem *)item {
-    VoiceDetailViewController *detailViewController = [VoiceDetailViewController new];
+    VoiceDetailViewController *detailViewController = [[VoiceDetailViewController alloc] initWithNibName:[PhoneticsUtils isIpad] ? @"VoiceDetailViewControlleriPad" : @"VoiceDetailViewController" bundle:nil];
     detailViewController.item = item;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }

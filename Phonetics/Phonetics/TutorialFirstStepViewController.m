@@ -8,6 +8,7 @@
 
 #import "TutorialFirstStepViewController.h"
 #import "TutorialSecondStepViewController.h"
+#import "PhoneticsUtils.h"
 #import "VoiceCell.h"
 #import "VoiceInfo.h"
 
@@ -64,7 +65,7 @@
     }
     VoiceInfo *voiceInfo = basicsArr[0];
     VoiceItem *item = voiceInfo.voices[3];
-    TutorialSecondStepViewController *secondStepViewController = [TutorialSecondStepViewController new];
+    TutorialSecondStepViewController *secondStepViewController = [[TutorialSecondStepViewController alloc] initWithNibName:[PhoneticsUtils isIpad] ? @"TutorialSecondStepViewControlleriPad" : @"TutorialSecondStepViewController" bundle:nil];
     secondStepViewController.isBasic = YES;
     secondStepViewController.voiceArray = basicsArr;
     secondStepViewController.item = item;
