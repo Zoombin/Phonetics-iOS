@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "VoiceItem.h"
-#import "GDTMobBannerView.h"
-#import "GDTMobInterstitial.h"
 
-@interface VoiceDetailViewController : UIViewController <GDTMobBannerViewDelegate, GDTMobInterstitialDelegate, UITableViewDataSource, UITableViewDelegate> {
-    GDTMobBannerView *bannerView;
-    GDTMobInterstitial *interstitialObj;
+@interface VoiceDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     UILabel *checkInLabel;
 }
 

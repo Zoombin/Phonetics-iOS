@@ -22,8 +22,6 @@
 		18877ED41B2DCBFF00B11029 /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18877ED21B2DCBFF00B11029 /* StepCell.xib */; };
 		18A8DB1C1B78511C0082D2BD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A8DB1A1B78511C0082D2BD /* WebViewController.m */; };
 		18A8DB1D1B78511C0082D2BD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8DB1B1B78511C0082D2BD /* WebViewController.xib */; };
-		18EF929C1B9FFC25005C4CCE /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */; };
-		18EF929E1B9FFF25005C4CCE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF929D1B9FFF25005C4CCE /* AdSupport.framework */; };
 		18F9FB051B648531007BCF0E /* AnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F9FB041B648531007BCF0E /* AnimationButton.m */; };
 		58029B831B3BD94A0081113D /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58029B821B3BD94A0081113D /* UserDefaultManager.m */; };
 		58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58029B861B3C05F30081113D /* libWeChatSDK.a */; };
@@ -143,11 +141,6 @@
 		18A8DB191B78511C0082D2BD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		18A8DB1A1B78511C0082D2BD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		18A8DB1B1B78511C0082D2BD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
-		18EF92981B9FFC25005C4CCE /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
-		18EF92991B9FFC25005C4CCE /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
-		18EF929A1B9FFC25005C4CCE /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
-		18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
-		18EF929D1B9FFF25005C4CCE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		18F9FB031B648531007BCF0E /* AnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButton.h; sourceTree = "<group>"; };
 		18F9FB041B648531007BCF0E /* AnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButton.m; sourceTree = "<group>"; };
 		58029B811B3BD94A0081113D /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
@@ -233,7 +226,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18EF929E1B9FFF25005C4CCE /* AdSupport.framework in Frameworks */,
 				186BFAB01B9404AD002D9AFD /* ImageIO.framework in Frameworks */,
 				186BFAAE1B94049F002D9AFD /* StoreKit.framework in Frameworks */,
 				186BFAAC1B94048E002D9AFD /* CFNetwork.framework in Frameworks */,
@@ -257,7 +249,6 @@
 				58029B8D1B3C076F0081113D /* SystemConfiguration.framework in Frameworks */,
 				58029B8A1B3C05F30081113D /* libWeChatSDK.a in Frameworks */,
 				580D53651B3C0F140092E408 /* ShareSDKShareActionSheet.framework in Frameworks */,
-				18EF929C1B9FFC25005C4CCE /* libGDTMobSDK.a in Frameworks */,
 				580D53641B3C0F140092E408 /* ShareSDKFlatShareViewUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,17 +263,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18EF92971B9FFC25005C4CCE /* TXSDK */ = {
-			isa = PBXGroup;
-			children = (
-				18EF92981B9FFC25005C4CCE /* GDTMobBannerView.h */,
-				18EF92991B9FFC25005C4CCE /* GDTMobInterstitial.h */,
-				18EF929A1B9FFC25005C4CCE /* GDTNativeAd.h */,
-				18EF929B1B9FFC25005C4CCE /* libGDTMobSDK.a */,
-			);
-			path = TXSDK;
-			sourceTree = "<group>";
-		};
 		58029B801B3BD8C20081113D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +280,6 @@
 		58029B841B3C05E50081113D /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				18EF92971B9FFC25005C4CCE /* TXSDK */,
 				5839D5021B5CDAA700B0D96B /* BaiduMob */,
 				580D53461B3C0F140092E408 /* ShareSDK */,
 				58029B851B3C05F30081113D /* WeChatSDK_1.5 */,
@@ -482,7 +461,6 @@
 		580D53701B3C0FB70092E408 /* FrameWork */ = {
 			isa = PBXGroup;
 			children = (
-				18EF929D1B9FFF25005C4CCE /* AdSupport.framework */,
 				186BFAAF1B9404AD002D9AFD /* ImageIO.framework */,
 				186BFAAD1B94049F002D9AFD /* StoreKit.framework */,
 				186BFAAB1B94048E002D9AFD /* CFNetwork.framework */,

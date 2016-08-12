@@ -44,10 +44,10 @@
 }
 
 - (void)initCheckLabel {
-    checkInLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bannerView.frame) - 30, 0, 30, 21)];
-    checkInLabel.textColor = [UIColor colorWithRed:233/255.0 green:79/255.0 blue:46/255.0 alpha:1.0];
-    checkInLabel.textAlignment = NSTextAlignmentCenter;
-    [bannerView addSubview:checkInLabel];
+//    checkInLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(bannerView.frame) - 30, 0, 30, 21)];
+//    checkInLabel.textColor = [UIColor colorWithRed:233/255.0 green:79/255.0 blue:46/255.0 alpha:1.0];
+//    checkInLabel.textAlignment = NSTextAlignmentCenter;
+//    [bannerView addSubview:checkInLabel];
 }
 
 - (void)viewDidLoad {
@@ -62,26 +62,6 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-    bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, [UIScreen mainScreen].bounds.size.width, 50)
-                                                  appkey:TXAppKey
-                                             placementId:TXBannerID];
-    bannerView.delegate = self; // 设置Delegate
-    bannerView.currentViewController = self; //设置当前的ViewController
-    bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
-    bannerView.isGpsOn = NO; //【可选】开启GPS定位;默认关闭
-    bannerView.showCloseBtn = NO; //【可选】展示关闭按钮;默认显示
-    bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
-    [_bottomView addSubview:bannerView];
-    [bannerView loadAdAndShow];
-    
-    int value = (arc4random() % 5) + 1;
-    if (value == 5) {
-        NSLog(@"加载插屏广告!");
-        interstitialObj = [[GDTMobInterstitial alloc] initWithAppkey:TXAppKey
-                                                         placementId:TXFullScreenID];
-        interstitialObj.delegate = self;
-        [interstitialObj loadAd];
-    }
     
     [self initCheckLabel];
     [_voiceButton.layer setBorderColor:[UIColor colorWithRed:255/255.0 green:215/255.0 blue:0 alpha:1.0].CGColor];
@@ -269,9 +249,7 @@
 - (void)initBottomButton {
     [bottomButtons removeAllObjects];
     for (UIView *v in _bottomView.subviews) {
-        if (![v isKindOfClass:[GDTMobBannerView class]]) {
-            [v removeFromSuperview];
-        }
+        [v removeFromSuperview];
     }
     
     NSArray *names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil), NSLocalizedString(@"相似", nil)];
@@ -446,28 +424,6 @@
 - (void)bannerViewClicked {
     [UserDefaultManager saveCheckInDate:[NSDate date]];
     checkInLabel.text = [UserDefaultManager checkInTimes];
-}
-
-- (void)bannerViewDidReceived {
-    NSLog(@"加载成功!");
-}
-
-- (void)bannerViewFailToReceived:(NSError *)error {
-    NSLog(@"加载失败!");
-    NSLog(@"%@", error.description);
-}
-
-// 广告预加载成功回调
-- (void)interstitialSuccessToLoadAd:(GDTMobInterstitial *)interstitial {
-    NSLog(@"加载成功! - 插屏");
-    UIViewController *vc = [[[UIApplication sharedApplication] keyWindow]
-                            rootViewController]; [interstitial presentFromRootViewController:vc];
-}
-
-// 广告预加载失败回调
-- (void)interstitialFailToLoadAd:(GDTMobInterstitial *)interstitial error:(NSError *)error {
-    NSLog(@"加载失败! - 插屏");
-    NSLog(@"%@", error.description);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

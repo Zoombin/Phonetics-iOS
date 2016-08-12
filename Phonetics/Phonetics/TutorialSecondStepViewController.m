@@ -234,17 +234,6 @@
     isExample = YES;
     self.title = @"详情";
     bottomButtons = [[NSMutableArray alloc] init];
-    bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 50, 320, 50)
-                                                  appkey:TXAppKey
-                                             placementId:TXBannerID];
-    bannerView.delegate = self; // 设置Delegate
-    bannerView.currentViewController = self; //设置当前的ViewController
-    bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
-    bannerView.isGpsOn = NO; //【可选】开启GPS定位;默认关闭
-    bannerView.showCloseBtn = NO; //【可选】展示关闭按钮;默认显示
-    bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
-    [_bottomView addSubview:bannerView];
-//    [bannerView loadAdAndShow];
     
     [self initData];
     
@@ -297,7 +286,7 @@
     [_next10Button setTitle:NSLocalizedString(@"下一步", nil) forState:UIControlStateNormal];
     
     [_close11Button setTitle:NSLocalizedString(@"关闭", nil) forState:UIControlStateNormal];
-    [_step11Label setText:NSLocalizedString(@"新手说明完成", nil)];
+    [_step11Label setText:NSLocalizedString(@"新手说明结束。欢迎大家关注花华组官方微信：hanakagumi —花华组 ", nil)];
 }
 
 - (void)initIpadUI {
@@ -459,9 +448,7 @@
 - (void)initBottomButton {
     [bottomButtons removeAllObjects];
     for (UIView *v in _bottomView.subviews) {
-        if (![v isKindOfClass:[GDTMobBannerView class]]) {
-            [v removeFromSuperview];
-        }
+        [v removeFromSuperview];
     }
     
     NSArray *names = @[NSLocalizedString(@"基础", nil), NSLocalizedString(@"日式", nil), NSLocalizedString(@"举例", nil), NSLocalizedString(@"相似", nil)];

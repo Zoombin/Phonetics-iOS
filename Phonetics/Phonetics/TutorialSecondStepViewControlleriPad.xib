@@ -119,11 +119,11 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" id="VrK-om-SBX">
-                    <rect key="frame" x="0.0" y="595" width="768" height="269"/>
+                    <rect key="frame" x="0.0" y="595" width="768" height="319"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Y7a-VC-V7k">
-                            <rect key="frame" x="0.0" y="0.0" width="768" height="269"/>
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="319"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
@@ -135,11 +135,11 @@
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" id="lcW-Rd-c9M">
-                    <rect key="frame" x="0.0" y="595" width="768" height="269"/>
+                    <rect key="frame" x="0.0" y="595" width="768" height="319"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                     <subviews>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="hqX-mT-jw9">
-                            <rect key="frame" x="10" y="4" width="748" height="261"/>
+                            <rect key="frame" x="10" y="4" width="748" height="311"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -153,11 +153,11 @@
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" id="JTf-YG-dzw">
-                    <rect key="frame" x="0.0" y="595" width="768" height="269"/>
+                    <rect key="frame" x="0.0" y="595" width="768" height="319"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1CF-Rz-4NG">
-                            <rect key="frame" x="0.0" y="0.0" width="768" height="269"/>
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="319"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
@@ -169,7 +169,7 @@
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" id="HDX-Mn-W2a">
-                    <rect key="frame" x="0.0" y="864" width="768" height="100"/>
+                    <rect key="frame" x="0.0" y="914" width="768" height="50"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
