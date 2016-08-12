@@ -119,7 +119,7 @@
     } else if (currentStep == 3) {
         _stepView4.hidden = NO;
         _clickButton4.hidden = NO;
-        _clickButton4.center = CGPointMake((CGRectGetMaxX(_bottomView.frame) / 4) * 2.5, CGRectGetMinY(_bottomView.frame) + _bottomView.frame.size.height / 4);
+        _clickButton4.center = CGPointMake((CGRectGetMaxX(_bottomView.frame) / 4) * 2.5, CGRectGetMinY(_bottomView.frame) + _bottomView.frame.size.height / 2);
         if (isIpad) {
             return;
         }
@@ -461,7 +461,7 @@
     }
     
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
-    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
+    CGFloat buttonHeight = _bottomView.frame.size.height;
     
     for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];

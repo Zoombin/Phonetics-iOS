@@ -262,7 +262,7 @@
     }
     
     CGFloat buttonWidth = [UIScreen mainScreen].bounds.size.width / [names count];
-    CGFloat buttonHeight = _bottomView.frame.size.height / 2;
+    CGFloat buttonHeight = _bottomView.frame.size.height;
     
     for (int i = 0; i < [names count]; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
