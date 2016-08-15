@@ -81,8 +81,6 @@
      [_segmentedControl2 addTarget:self action:@selector(valueChanged2) forControlEvents:UIControlEventValueChanged];
     [self changeViewAndView2Size];
     [self initData];
-    
-    
 }
 
 - (void)initLocalizedString {
@@ -164,6 +162,7 @@
     _voiceView1.frame = CGRectMake(0, 0, screenWidth, viewHeight);
     _gifImageView1.frame = _voiceView1.frame;
     _voiceView2.frame = CGRectMake(0, CGRectGetMaxY(_voiceView1.frame), screenWidth, viewHeight);
+    _gifImageView2.frame = CGRectMake(0, 0, screenWidth, viewHeight);
     [self addGod];
 }
 
